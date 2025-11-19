@@ -1,148 +1,161 @@
-Neurosymbolic AI - Enterprise Manual
-Version: 7.0
-Architecture: Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic)
+Here is your clean, bullet-listed version of the Neurosymbolic AI Enterprise Manual formatted for a README.md on GitHub.
+
+⸻
+
+Neurosymbolic AI – Enterprise Manual
+
+Version: 7.0.0
 Author: Psypher Labs
+Architecture: Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic)
 
-1. System Overview
+⸻
 
-Neurosymbolic AI is a threat analysis platform that bridges the gap between unstructured data (e.g., logs, reports) and structured reasoning (e.g., logic, math).
+System Overview
+	•	Bridges unstructured data (logs, reports) and structured reasoning (logic, math)
+	•	Core Capabilities:
+	•	Perception: Transformer models (BERT/LLM) extract threat entities from text
+	•	Knowledge: MITRE ATT&CK mapping using NetworkX + SQLite
+	•	Reasoning: Predicts future attack paths using Kripke Semantics and Game Theory
+	•	Prediction: Uses Bayesian updates + Fuzzy Logic for threat probability
 
-Core Capabilities
+⸻
 
-	•	Perception: Uses Transformer models (e.g., BERT or LLMs) to extract threat entities from text.
-	•	Knowledge: Maps entities to MITRE ATT&CK using a hybrid graph (NetworkX + SQLite).
-	•	Reasoning: Simulates future attack states using Kripke Semantics and Game Theory.
-	•	Prediction: Uses Bayesian updates and Fuzzy Logic to compute future threat probabilities.
-
-
-2. Installation & Setup
-
-Prerequisites
+Installation & Setup
+	•	Prerequisites:
 	•	OS: Ubuntu/Debian Linux or macOS
 	•	Python: 3.8+
-	•	System: Minimum 4GB RAM (8GB+ recommended for LLM mode)
-	•	Compilers: gcc / g++ (required for llama-cpp-python)
-
-Step 1: Bootstrap
+	•	RAM: 4GB minimum (8GB+ recommended for LLM)
+	•	Tools: gcc/g++ (for llama-cpp-python)
+	•	Step 1: Bootstrap
 
 ./bootstrap_prod.sh
 
-Step 2: Preflight Check
+
+	•	Step 2: Preflight Check
 
 cd directory
 python3 scripts/preflight.py
 
 
-3. Configuration Reference
 
-A. settings.json
+⸻
 
-Located in directory/config/.
+Configuration Reference
 
-Section	Key	Type	Description
-Paths	raw_data	String	Folder with input logs
-	database	String	Path to SQLite DB
-AI Engine	enabled	Bool	Enable AI
-	provider	String	"local" or "external"
-	model_type	String	"bert" or "llm"
-	model_name	String	HuggingFace model ID
-	llm_path	String	Path to GGUF model
-Database	download_enabled	Bool	Download MITRE CTI
-	use_cache	Bool	Use .pkl cache
-	use_sqlite_graph	Bool	Persist graph to DB
-Reasoning	max_simulation_depth	Int	Future steps to simulate
-	fuzzy_threshold	Float	Confidence cutoff
-	enable_defender_simulation	Bool	Run minimax defender sim
-SIEM	enabled	Bool	Poll mock alert API
+settings.json
+	•	Paths
+	•	raw_data: Directory for logs
+	•	database: Path to SQLite DB
+	•	AI Engine
+	•	enabled: true (AI mode) or false (regex fallback)
+	•	provider: "local" or "external"
+	•	model_type: "bert" or "llm"
+	•	model_name: e.g. distilbert-base-uncased
+	•	llm_path: path to GGUF model file
+	•	Database
+	•	download_enabled: Fetch MITRE CTI from GitHub
+	•	use_cache: Load .pkl cache if available
+	•	use_sqlite_graph: Save nodes/edges to SQLite
+	•	Reasoning
+	•	max_simulation_depth: How far to simulate (e.g., 5)
+	•	fuzzy_threshold: Threat confidence threshold
+	•	enable_defender_simulation: Use minimax logic
+	•	SIEM
+	•	enabled: Enable alert polling
 
-B. assets.json
+assets.json
+	•	Assets:
+	•	"DomainController": 100
+	•	"Printer": 5
+	•	Actions:
+	•	"encrypt": 10.0
+	•	"phishing": 1.0
 
-Defines target values and action impact:
+⸻
 
-"DomainController": 100,
-"Printer": 5,
-"encrypt": 10.0,
-"phishing": 1.0
-
-
-
-4. Data Management
-
-Input Formats
-	•	.txt – Human reports:
-T1059 was detected on Host A...
-	•	.json – Machine logs:
-[{"message": "...", "event_id": 4624}]
-
-Caching Mechanism
-	•	Cache file: data/knowledge_base/mitre_cache.pkl
-	•	To refresh data:
-Delete .pkl file or set "use_cache": false in settings.json
-
-SQLite Graph Database
+Data Management
+	•	Input Files:
+	•	.txt: Incident narratives
+	•	.json: Structured logs (event logs)
+	•	Caching:
+	•	Cached to: data/knowledge_base/mitre_cache.pkl
+	•	Delete .pkl or set "use_cache": false to refresh
+	•	Graph DB (SQLite):
 	•	Path: data/db/neurosymbolic.db
-	•	Tables: nodes, edges, feedback
+	•	Tables:
+	•	nodes: Threat IDs and descriptions
+	•	edges: Relationships and probabilities
+	•	feedback: User corrections (true/false positives)
 
-5. Operational Guide
+⸻
 
-Run the Analyzer
+Operational Guide
+	•	Run Analysis
 
 python3 -m src.main
 
-Interpreting Output
-	•	Risk Assessment: Confidence from BERT, LLM, or heuristic
+
+	•	Output Types:
+	•	Risk Score: BERT, LLM, or heuristic confidence
 	•	Worlds:
-	•	World 0 = current state
-	•	World 1+ = predicted future threats
-	•	Trace: Fact → Inference → Prediction
-	•	Alerts: Trigger if threat appears in a future world but not present
+	•	World 0: Current
+	•	World 1+: Predicted futures
+	•	Reasoning Trace: Fact → Inference → Prediction
+	•	Alerts: Triggered only for future threats
 
+⸻
 
-6. Tools & Utilities
-
-A. Graph Visualizer
-
-Serve reports:
+Tools & Utilities
+	•	Graph Visualizer
+	•	Serve HTML:
 
 python3 scripts/visualize_graph.py serve
 
-Inspect threats:
+
+	•	Inspect a threat node:
 
 python3 scripts/visualize_graph.py inspect T1059 --depth 2
 
-B. Preflight Checker
+
+	•	Preflight Checker
+	•	Validates Python deps, model files, paths:
 
 python3 scripts/preflight.py
 
-Checks:
-	•	Python dependencies
-	•	GGUF model presence
-	•	File access and structure
-
-7. Algorithms & Logic
-
-1. Sliding Window NLP (src/semantic_analysis.py)
-	•	Scans 200-character windows for chains like:
-Threat A → keyword → Threat B
-	•	Keywords: leads to, implies, if/then, etc.
-
-2. Epistemic Math (src/epistemic_math.py)
-	•	Bayesian Update:
-P(H|E) = P(E|H) * P(H) / P(E)
-	•	Brier Score: Accuracy of probabilistic predictions
-	•	Clamping: Keeps probabilities in range [0.0, 1.0]
-
-3. Game Theory (src/epistemic_reasoning.py)
-	•	Minimax Algorithm
-	•	Simulates defender actions and attacker utilities
-	•	Chooses defender moves to minimize attacker advantage
 
 
-8. Troubleshooting
+⸻
 
-Symptom	Cause	Solution
-Output doesn’t update	Stale cache	Delete .pkl or set "use_cache": false
-ModuleNotFoundError: src	Wrong path	Run from root or use patched main.py
-LLM_NOT_LOADED	Model missing	Run preflight.py to download
-1.16 Confidence	Overflow	Ensure v7.0 is used (includes clamping)
-Empty graph HTML	No data	Place .txt in data/raw/ and enable auto-download
+Algorithms & Logic
+	•	Sliding Window NLP (semantic_analysis.py)
+	•	Detects threat chains using a 200-char window
+	•	Example keywords: "leads to", "if/then", "results in"
+	•	Epistemic Math (epistemic_math.py)
+	•	Bayesian Update: P(H|E) = P(E|H) * P(H) / P(E)
+	•	Brier Score: Accuracy evaluator
+	•	Clamping: Probabilities capped between 0.0 and 1.0
+	•	Game Theory (epistemic_reasoning.py)
+	•	Minimax simulation
+	•	Chooses optimal Defender action based on Attacker utility
+
+⸻
+
+Troubleshooting
+	•	Data changes ignored:
+	•	Cause: Old .pkl cache
+	•	Fix: Delete mitre_cache.pkl or disable cache in settings.json
+	•	ModuleNotFoundError: src:
+	•	Fix: Run from repo root or use patched main.py
+	•	LLM_NOT_LOADED:
+	•	Cause: Missing model or dependency
+	•	Fix: Run preflight.py, ensure model and llama-cpp-python exist
+	•	1.16 Confidence Score:
+	•	Cause: Math overflow
+	•	Fix: Use version 7.0 (includes clamping)
+	•	Blank graph output:
+	•	Cause: No input data
+	•	Fix: Add .txt to data/raw/, enable auto-download in settings.json
+
+⸻
+
+Let me know if you want this saved as a README.md or packaged with a .gitignore and setup script.
