@@ -1,161 +1,180 @@
-Here is your clean, bullet-listed version of the Neurosymbolic AI Enterprise Manual formatted for a README.md on GitHub.
+# Neurosymbolic AI – Enterprise Manual
 
-Neurosymbolic AI – Enterprise Manual
+**Version**: 7.0.0  
+**Author**: Psypher Labs  
+**Architecture**: Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic)
 
-Version: 7.0.0
-Author: Psypher Labs
-Architecture: Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic)
+---
 
+## System Overview
 
+Neurosymbolic AI is a threat analysis platform that bridges unstructured data (logs, reports) and structured reasoning (logic, math).
 
-System Overview
+### Core Capabilities
 
-	•	Bridges unstructured data (logs, reports) and structured reasoning (logic, math)
-	•	Core Capabilities:
-	•	Perception: Transformer models (BERT/LLM) extract threat entities from text
-	•	Knowledge: MITRE ATT&CK mapping using NetworkX + SQLite
-	•	Reasoning: Predicts future attack paths using Kripke Semantics and Game Theory
-	•	Prediction: Uses Bayesian updates + Fuzzy Logic for threat probability
+- **Perception**: Uses Transformer models (e.g., BERT or LLMs) to extract threat entities from unstructured text.
+- **Knowledge**: Maps those entities to the MITRE ATT&CK framework using a hybrid NetworkX + SQLite graph.
+- **Reasoning**: Simulates future attack states using Kripke Semantics (Possible Worlds) and Game Theory.
+- **Prediction**: Calculates threat probabilities using Bayesian updates and Fuzzy Logic.
 
+---
 
+## Installation & Setup
 
-Installation & Setup
+### Prerequisites
 
-	•	Prerequisites:
-	•	OS: Ubuntu/Debian Linux or macOS
-	•	Python: 3.8+
-	•	RAM: 4GB minimum (8GB+ recommended for LLM)
-	•	Tools: gcc/g++ (for llama-cpp-python)
-	•	Step 1: Bootstrap
+- OS: Ubuntu/Debian Linux or macOS
+- Python: 3.8+
+- Memory: 4GB RAM minimum (8GB+ recommended for LLM mode)
+- Compilers: `gcc`, `g++` (required for `llama-cpp-python`)
 
+### Step 1: Bootstrap
+
+```bash
 ./bootstrap_prod.sh
 
-
-	•	Step 2: Preflight Check
+Step 2: Preflight Check
 
 cd directory
 python3 scripts/preflight.py
 
 
-
 Configuration Reference
 
-settings.json
+A. settings.json
 
-	•	Paths
-	•	raw_data: Directory for logs
-	•	database: Path to SQLite DB
-	•	AI Engine
-	•	enabled: true (AI mode) or false (regex fallback)
-	•	provider: "local" or "external"
-	•	model_type: "bert" or "llm"
-	•	model_name: e.g. distilbert-base-uncased
-	•	llm_path: path to GGUF model file
-	•	Database
-	•	download_enabled: Fetch MITRE CTI from GitHub
-	•	use_cache: Load .pkl cache if available
-	•	use_sqlite_graph: Save nodes/edges to SQLite
-	•	Reasoning
-	•	max_simulation_depth: How far to simulate (e.g., 5)
-	•	fuzzy_threshold: Threat confidence threshold
-	•	enable_defender_simulation: Use minimax logic
-	•	SIEM
-	•	enabled: Enable alert polling
+Located at: directory/config/settings.json
 
-assets.json
+Core Keys
+	•	raw_data (string): Directory for log input files
+	•	database (string): Path to the SQLite file
+	•	enabled (bool): Enable AI (true) or fallback to regex (false)
+	•	provider (string): "local" or "external" model execution
+	•	model_type (string): "bert" or "llm"
+	•	model_name (string): HuggingFace model ID (e.g., distilbert-base-uncased)
+	•	llm_path (string): Path to local .gguf model file
+	•	download_enabled (bool): Automatically pull MITRE CTI from GitHub
+	•	use_cache (bool): Use pickled .pkl MITRE cache
+	•	use_sqlite_graph (bool): Save knowledge graph to SQLite
+	•	max_simulation_depth (int): Number of future states to simulate
+	•	fuzzy_threshold (float): Confidence score cutoff (0.0–1.0)
+	•	enable_defender_simulation (bool): Enable Minimax-based defense simulation
+	•	enabled under SIEM: Enable polling of mock alerts
 
-	•	Assets:
-	•	"DomainController": 100
-	•	"Printer": 5
-	•	Actions:
-	•	"encrypt": 10.0
-	•	"phishing": 1.0
+B. assets.json
 
+Defines Game Theory weights:
+
+"DomainController": 100,
+"Printer": 5,
+"encrypt": 10.0,
+"phishing": 1.0
 
 
 Data Management
 
-	•	Input Files:
-	•	.txt: Incident narratives
-	•	.json: Structured logs (event logs)
-	•	Caching:
-	•	Cached to: data/knowledge_base/mitre_cache.pkl
-	•	Delete .pkl or set "use_cache": false to refresh
-	•	Graph DB (SQLite):
-	•	Path: data/db/neurosymbolic.db
-	•	Tables:
-	•	nodes: Threat IDs and descriptions
-	•	edges: Relationships and probabilities
-	•	feedback: User corrections (true/false positives)
+Input Files
+	•	.txt: Human-written incident narratives
+Example:
+T1059 was detected on Host A. This suggests T1003.
+	•	.json: Structured machine logs
+Example:
+[{"message": "...", "event_id": 4624}]
 
+Caching Behavior
+	•	Cache file: data/knowledge_base/mitre_cache.pkl
+	•	To refresh:
+	•	Delete .pkl, or
+	•	Set "use_cache": false in settings.json
+
+Graph Database (SQLite)
+	•	File: data/db/neurosymbolic.db
+	•	Tables:
+	•	nodes: Threat identifiers and descriptions
+	•	edges: Relationships and their weights
+	•	feedback: Stores user-provided truth labels
 
 
 Operational Guide
 
-	•	Run Analysis
+Run Main Analyzer
 
 python3 -m src.main
 
-
-	•	Output Types:
-	•	Risk Score: BERT, LLM, or heuristic confidence
-	•	Worlds:
-	•	World 0: Current
-	•	World 1+: Predicted futures
-	•	Reasoning Trace: Fact → Inference → Prediction
-	•	Alerts: Triggered only for future threats
-
+Output Meaning
+	•	Risk Scores:
+	•	neural: BERT classifier
+	•	llm: Extractive confidence
+	•	heuristic: Keyword density
+	•	Possible Worlds:
+	•	World 0 = Current
+	•	World N = Predicted
+	•	Reasoning Trace:
+	•	Fact → Inference → Prediction
+	•	Defender strategy: isolate / monitor / patch
+	•	Alerts:
+	•	Raised when threats appear in future worlds but not World 0
 
 
 Tools & Utilities
-	•	Graph Visualizer
-	•	Serve HTML:
+
+Graph Visualizer
+
+Start local web server:
 
 python3 scripts/visualize_graph.py serve
 
-
-	•	Inspect a threat node:
+Inspect threat node:
 
 python3 scripts/visualize_graph.py inspect T1059 --depth 2
 
-
-	•	Preflight Checker
-	•	Validates Python deps, model files, paths:
+Preflight Environment Checker
 
 python3 scripts/preflight.py
 
-
-
+Validates:
+	•	Python packages (e.g., torch, networkx, llama-cpp-python)
+	•	Model file presence
+	•	Directory write permissions
 
 
 Algorithms & Logic
 
-	•	Sliding Window NLP (semantic_analysis.py)
-	•	Detects threat chains using a 200-char window
-	•	Example keywords: "leads to", "if/then", "results in"
-	•	Epistemic Math (epistemic_math.py)
-	•	Bayesian Update: P(H|E) = P(E|H) * P(H) / P(E)
-	•	Brier Score: Accuracy evaluator
-	•	Clamping: Probabilities capped between 0.0 and 1.0
-	•	Game Theory (epistemic_reasoning.py)
-	•	Minimax simulation
-	•	Chooses optimal Defender action based on Attacker utility
+1. Sliding Window NLP
 
+File: src/semantic_analysis.py
+	•	Treats text as a character stream
+	•	Searches for:
+
+[Threat A] → [Keyword] → [Threat B]
+
+
+	•	Trigger keywords: leads to, implies, if/then, results in
+
+2. Epistemic Math
+
+File: src/epistemic_math.py
+	•	Bayesian Update:
+
+P(H|E) = [P(E|H) * P(H)] / P(E)
+
+
+	•	Brier Score: Measures probability accuracy
+	•	Clamping: Keeps outputs within [0.0, 1.0]
+
+3. Game Theory Engine
+
+File: src/epistemic_reasoning.py
+	•	Minimax Algorithm:
+	•	Simulates defender actions: isolate, monitor, patch
+	•	Chooses action that minimizes attacker’s utility
 
 
 Troubleshooting
 
-	•	Data changes ignored:
-	•	Cause: Old .pkl cache
-	•	Fix: Delete mitre_cache.pkl or disable cache in settings.json
-	•	ModuleNotFoundError: src:
-	•	Fix: Run from repo root or use patched main.py
-	•	LLM_NOT_LOADED:
-	•	Cause: Missing model or dependency
-	•	Fix: Run preflight.py, ensure model and llama-cpp-python exist
-	•	1.16 Confidence Score:
-	•	Cause: Math overflow
-	•	Fix: Use version 7.0 (includes clamping)
-	•	Blank graph output:
-	•	Cause: No input data
-	•	Fix: Add .txt to data/raw/, enable auto-download in settings.json
+Symptom	Cause	Solution
+Output doesn’t update	Stale cache	Delete .pkl or set "use_cache": false
+ModuleNotFoundError: src	Wrong directory context	Run from root folder or use patched main.py
+LLM_NOT_LOADED	Model or library missing	Run preflight.py, ensure .gguf model exists
+1.16 Confidence	Overflow in logic	Use version 7.0+ (includes probability clamping)
+Blank HTML Graph	No input data	Place .txt in data/raw/, enable download_enabled
