@@ -8,6 +8,7 @@ Author: Psypher Labs
 Neurosymbolic AI is a threat analysis platform that bridges the gap between unstructured data (e.g., logs, reports) and structured reasoning (e.g., logic, math).
 
 Core Capabilities
+
 	•	Perception: Uses Transformer models (e.g., BERT or LLMs) to extract threat entities from text.
 	•	Knowledge: Maps entities to MITRE ATT&CK using a hybrid graph (NetworkX + SQLite).
 	•	Reasoning: Simulates future attack states using Kripke Semantics and Game Theory.
