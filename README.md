@@ -30,10 +30,10 @@ Neurosymbolic AI is a threat analysis platform that bridges unstructured data (l
 
 ### Step 1: Bootstrap
 
-```bash
 ./bootstrap_prod.sh
 
-Step 2: Preflight Check
+### Step 2: Preflight Check
+
 
 cd directory
 python3 scripts/preflight.py
@@ -46,6 +46,7 @@ A. settings.json
 Located at: directory/config/settings.json
 
 Core Keys
+
 	•	raw_data (string): Directory for log input files
 	•	database (string): Path to the SQLite file
 	•	enabled (bool): Enable AI (true) or fallback to regex (false)
