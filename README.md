@@ -157,3 +157,4 @@ Output doesn't change after editing data	Stale Cache	Run rm directory/data/knowl
 "LLM_NOT_LOADED"	Missing Model/Lib	Run scripts/preflight.py to download the model. Ensure llama-cpp-python is installed.
 "1.16 Confidence"	Math Overflow	Ensure you are running the v7.0 code (Math Clamping patch applied).
 Empty Graph HTML	No Data	Ensure data/raw has text files and settings.json has download_enabled: true.
+
