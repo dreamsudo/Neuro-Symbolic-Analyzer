@@ -1,180 +1,56 @@
-# Neurosymbolic AI – Enterprise Manual
+# 🧠 Neurosymbolic AI (Enterprise Edition)
 
-**Version**: 7.0.0  
-**Author**: Psypher Labs  
-**Architecture**: Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic)
+> **"Where Deep Learning meets Formal Logic."**
 
----
-
-## System Overview
-
-Neurosymbolic AI is a threat analysis platform that bridges unstructured data (logs, reports) and structured reasoning (logic, math).
-
-### Core Capabilities
-
-- **Perception**: Uses Transformer models (e.g., BERT or LLMs) to extract threat entities from unstructured text.
-- **Knowledge**: Maps those entities to the MITRE ATT&CK framework using a hybrid NetworkX + SQLite graph.
-- **Reasoning**: Simulates future attack states using Kripke Semantics (Possible Worlds) and Game Theory.
-- **Prediction**: Calculates threat probabilities using Bayesian updates and Fuzzy Logic.
+**Version:** 7.1.0  
+**Author:** Psypher Labs  
+**Architecture:** Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic + Game Theory)
 
 ---
 
-## Installation & Setup
+## 📋 Table of Contents
 
-### Prerequisites
+1.  [System Architecture](#1-system-architecture)
+2.  [Directory Structure](#2-directory-structure)
+3.  [Installation & Setup](#3-installation--setup)
+4.  [Configuration Guide](#4-configuration-guide)
+    *   [Main Settings](#a-main-settings-settingsjson)
+    *   [Game Theory Weights](#b-game-theory-weights-assetsjson)
+    *   [Logging](#c-logging-configuration)
+5.  [Operational Workflows](#5-operational-workflows)
+6.  [Algorithms & Logic](#6-algorithms--logic)
+7.  [Tools & Utilities](#7-tools--utilities)
+8.  [Development & Testing](#8-development--testing)
+9.  [Troubleshooting](#9-troubleshooting)
 
-- OS: Ubuntu/Debian Linux or macOS
-- Python: 3.8+
-- Memory: 4GB RAM minimum (8GB+ recommended for LLM mode)
-- Compilers: `gcc`, `g++` (required for `llama-cpp-python`)
+---
 
-### Step 1: Bootstrap
+## 1. System Architecture
 
-./bootstrap_prod.sh
+Neurosymbolic AI is a modular platform designed to predict cyber attacks by combining unstructured data perception with structured mathematical reasoning.
 
-### Step 2: Preflight Check
+| Layer | Component | Technology | Function |
+| :--- | :--- | :--- | :--- |
+| **Perception** | **AI Engine** | BERT / Llama (LLM) | Extracts entities and causal relationships from text. |
+| **Knowledge** | **Ontology** | NetworkX + SQLite | Maps entities to MITRE ATT&CK; stores feedback. |
+| **Reasoning** | **Epistemic Engine** | Kripke Semantics | Simulates "Possible Worlds" (Future States). |
+| **Strategy** | **Game Model** | Minimax Algorithm | Calculates optimal Attacker/Defender moves. |
+| **Interface** | **Visualizer** | PyVis / HTML5 | Renders interactive attack graphs. |
 
+---
 
-cd directory
-python3 scripts/preflight.py
+## 2. Directory Structure
 
-
-Configuration Reference
-
-A. settings.json
-
-Located at: directory/config/settings.json
-
-Core Keys
-
-	•	raw_data (string): Directory for log input files
-	•	database (string): Path to the SQLite file
-	•	enabled (bool): Enable AI (true) or fallback to regex (false)
-	•	provider (string): "local" or "external" model execution
-	•	model_type (string): "bert" or "llm"
-	•	model_name (string): HuggingFace model ID (e.g., distilbert-base-uncased)
-	•	llm_path (string): Path to local .gguf model file
-	•	download_enabled (bool): Automatically pull MITRE CTI from GitHub
-	•	use_cache (bool): Use pickled .pkl MITRE cache
-	•	use_sqlite_graph (bool): Save knowledge graph to SQLite
-	•	max_simulation_depth (int): Number of future states to simulate
-	•	fuzzy_threshold (float): Confidence score cutoff (0.0–1.0)
-	•	enable_defender_simulation (bool): Enable Minimax-based defense simulation
-	•	enabled under SIEM: Enable polling of mock alerts
-
-B. assets.json
-
-Defines Game Theory weights:
-
-"DomainController": 100,
-"Printer": 5,
-"encrypt": 10.0,
-"phishing": 1.0
-
-
-Data Management
-
-Input Files
-	•  .txt: Human-written incident narratives
-Example:
-
-T1059 was detected on Host A. This suggests T1003.
-	•	.json: Structured machine logs
-Example:
-
-[{"message": "...", "event_id": 4624}]
-
-Caching Behavior
-
-	•	Cache file: data/knowledge_base/mitre_cache.pkl
-	•	To refresh:
-	•	Delete .pkl, or
-	•	Set "use_cache": false in settings.json
-
-Graph Database (SQLite)
-
-	•	File: data/db/neurosymbolic.db
-	•	Tables:
-	•	nodes: Threat identifiers and descriptions
-	•	edges: Relationships and their weights
-	•	feedback: Stores user-provided truth labels
-
-
-Operational Guide
-
-Run Main Analyzer
-
-python3 -m src.main
-
-Output Meaning
-
-	•	Risk Scores:
-	•	neural: BERT classifier
-	•	llm: Extractive confidence
-	•	heuristic: Keyword density
-	•	Possible Worlds:
-	•	World 0 = Current
-	•	World N = Predicted
-	•	Reasoning Trace:
-	•	Fact → Inference → Prediction
-	•	Defender strategy: isolate / monitor / patch
-	•	Alerts:
-	•	Raised when threats appear in future worlds but not World 0
-
-
-Tools & Utilities
-
-Graph Visualizer
-
-Start local web server:
-
-python3 scripts/visualize_graph.py serve
-
-Inspect threat node:
-
-python3 scripts/visualize_graph.py inspect T1059 --depth 2
-
-Preflight Environment Checker
-
-python3 scripts/preflight.py
-
-Validates:
-
-	•	Python packages (e.g., torch, networkx, llama-cpp-python)
-	•	Model file presence
-	•	Directory write permissions
-
-
-Algorithms & Logic
-
-1. Sliding Window NLP
-
-File: src/semantic_analysis.py
-
-	•	Treats text as a character stream
-	•	Searches for:
-
-[Threat A] → [Keyword] → [Threat B]
-
-
-	•	Trigger keywords: leads to, implies, if/then, results in
-
-2. Epistemic Math
-
-File: src/epistemic_math.py
-
-	•	Bayesian Update:
-
-P(H|E) = [P(E|H) * P(H)] / P(E)
-
-
-	•	Brier Score: Measures probability accuracy
-	•	Clamping: Keeps outputs within [0.0, 1.0]
-
-3. Game Theory Engine
-
-File: src/epistemic_reasoning.py
-
-	•	Minimax Algorithm:
-	•	Simulates defender actions: isolate, monitor, patch
-	•	Chooses action that minimizes attacker’s utility
+```text
+directory/
+├── config/                 # Configuration files (JSON/YAML)
+├── data/
+│   ├── raw/                # Input logs (.txt, .json)
+│   ├── knowledge_base/     # MITRE STIX 2.0 Data & Cache
+│   ├── models/             # Local GGUF / Transformer models
+│   └── db/                 # SQLite Graph Database
+├── logs/                   # Runtime logs
+├── reports/                # Generated HTML graphs
+├── scripts/                # Utilities (Preflight, Visualizer)
+├── src/                    # Source Code
+└── tests/                  # Unit Tests
