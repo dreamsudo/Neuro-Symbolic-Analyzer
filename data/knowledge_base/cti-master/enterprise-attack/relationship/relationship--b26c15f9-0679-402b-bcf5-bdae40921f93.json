@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--4de1fba2-d735-46b0-8bd1-22c7d95c9493",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b26c15f9-0679-402b-bcf5-bdae40921f93",
+            "created": "2021-08-23T19:38:33.531Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Hornet Security Avaddon June 2020",
+                    "description": "Security Lab. (2020, June 5). Avaddon: From seeking affiliates to in-the-wild in 2 days. Retrieved August 19, 2021.",
+                    "url": "https://www.hornetsecurity.com/en/security-information/avaddon-from-seeking-affiliates-to-in-the-wild-in-2-days/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:05:53.427Z",
+            "description": "[Avaddon](https://attack.mitre.org/software/S0640) uses wmic.exe to delete shadow copies.(Citation: Hornet Security Avaddon June 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--58c5a3a1-928f-4094-9e98-a5a4e56dd5f3",
+            "target_ref": "attack-pattern--01a5a209-b94c-450b-b7f9-946497d91055",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

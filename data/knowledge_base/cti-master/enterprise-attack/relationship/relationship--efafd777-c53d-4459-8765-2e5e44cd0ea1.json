@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--d9cd6de2-9903-42c9-97c0-7b95d492b085",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--efafd777-c53d-4459-8765-2e5e44cd0ea1",
+            "created": "2020-01-30T17:37:22.734Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:16:37.776Z",
+            "description": "File encryption should be enforced across email communications containing sensitive information that may be obtained through access to email services.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--feff9142-e8c2-46f4-842b-bd6fb3d41157",
+            "target_ref": "attack-pattern--f005e783-57d4-4837-88ad-dbe7faee1c51",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

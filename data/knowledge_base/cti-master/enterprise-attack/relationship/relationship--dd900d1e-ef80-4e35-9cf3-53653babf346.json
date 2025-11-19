@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--c0d2d057-90af-44c8-9ad2-1894165f303e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--dd900d1e-ef80-4e35-9cf3-53653babf346",
+            "created": "2020-11-06T18:40:38.322Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "cobaltstrike manual",
+                    "description": "Strategic Cyber LLC. (2017, March 14). Cobalt Strike Manual. Retrieved May 24, 2017.",
+                    "url": "https://web.archive.org/web/20210825130434/https://cobaltstrike.com/downloads/csmanual38.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:13:31.091Z",
+            "description": "[Cobalt Strike](https://attack.mitre.org/software/S0154) can make tokens from known credentials.(Citation: cobaltstrike manual)",
+            "relationship_type": "uses",
+            "source_ref": "malware--a7881f21-e978-4fe4-af56-92c9416a2616",
+            "target_ref": "attack-pattern--8cdeb020-e31e-4f88-a582-f53dcfbda819",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

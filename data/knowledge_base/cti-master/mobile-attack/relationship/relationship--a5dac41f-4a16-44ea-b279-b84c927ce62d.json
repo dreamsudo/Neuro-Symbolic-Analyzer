@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--5f2d3d7a-2a2c-4902-864e-ca656c5ac525",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--a5dac41f-4a16-44ea-b279-b84c927ce62d",
+            "created": "2019-09-03T20:08:00.760Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Talos Gustuff Apr 2019",
+                    "description": "Vitor Ventura. (2019, April 9).  Gustuff banking botnet targets Australia . Retrieved September 3, 2019.",
+                    "url": "https://blog.talosintelligence.com/2019/04/gustuff-targets-australia.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:50:41.240Z",
+            "description": "[Gustuff](https://attack.mitre.org/software/S0406) communicates with the command and control server using HTTP requests.(Citation: Talos Gustuff Apr 2019)",
+            "relationship_type": "uses",
+            "source_ref": "malware--ff8e0c38-be47-410f-a2d3-a3d24a87c617",
+            "target_ref": "attack-pattern--2282a98b-5049-4f61-9381-55baca7c1add",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

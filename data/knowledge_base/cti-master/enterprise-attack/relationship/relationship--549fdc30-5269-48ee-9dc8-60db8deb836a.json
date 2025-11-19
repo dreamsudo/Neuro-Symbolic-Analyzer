@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--0b49302d-7cc6-4d75-bc57-dfd8556e2af6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--549fdc30-5269-48ee-9dc8-60db8deb836a",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ASERT InnaputRAT April 2018",
+                    "description": "ASERT Team. (2018, April 04). Innaput Actors Utilize Remote Access Trojan Since 2016, Presumably Targeting Victim Files. Retrieved July 9, 2018.",
+                    "url": "https://asert.arbornetworks.com/innaput-actors-utilize-remote-access-trojan-since-2016-presumably-targeting-victim-files/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:48:19.633Z",
+            "description": "[InnaputRAT](https://attack.mitre.org/software/S0259) uses an 8-byte XOR key to obfuscate API names and other strings contained in the payload.(Citation: ASERT InnaputRAT April 2018)",
+            "relationship_type": "uses",
+            "source_ref": "malware--c8b6cc43-ce61-42ae-87f3-a5f10526f952",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

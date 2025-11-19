@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--3a1d148e-aa6d-4795-86d8-f777de691cbd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--072c3b1d-1ad6-447e-9512-2c6bc6e797fd",
+            "created": "2021-03-23T20:49:40.321Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "TrendMicro EarthLusca 2022",
+                    "description": "Chen, J., et al. (2022). Delving Deep: An Analysis of Earth Lusca\u2019s Operations. Retrieved July 1, 2022.",
+                    "url": "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/a/earth-lusca-employs-sophisticated-infrastructure-varied-tools-and-techniques/technical-brief-delving-deep-an-analysis-of-earth-lusca-operations.pdf"
+                },
+                {
+                    "source_name": "Kaspersky ShadowPad Aug 2017",
+                    "description": "Kaspersky Lab. (2017, August). ShadowPad: popular server management software hit in supply chain attack. Retrieved March 22, 2021.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2017/08/07172148/ShadowPad_technical_description_PDF.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:54:44.680Z",
+            "description": "[ShadowPad](https://attack.mitre.org/software/S0596) can modify the Registry to store and maintain a configuration block and virtual file system.(Citation: Kaspersky ShadowPad Aug 2017)(Citation: TrendMicro EarthLusca 2022)",
+            "relationship_type": "uses",
+            "source_ref": "malware--ec9e00dd-0313-4d5b-8105-c20aa47abffc",
+            "target_ref": "attack-pattern--57340c81-c025-4189-8fa0-fc7ede51bae4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

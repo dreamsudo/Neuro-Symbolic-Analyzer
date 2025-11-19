@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--8520244d-2988-4413-a86c-3c6aa4de1ae0",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--dd8baf22-4e06-4b5e-81c6-d100048102e8",
+            "created": "2020-02-20T22:02:20.508Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Ready.gov IT DRP",
+                    "description": "Ready.gov. (n.d.). IT Disaster Recovery Plan. Retrieved March 15, 2019.",
+                    "url": "https://www.ready.gov/business/implementation/IT"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:13:30.716Z",
+            "description": "Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data.(Citation: Ready.gov IT DRP) Ensure backups are stored off system and is protected from common methods adversaries may use to gain access and destroy the backups to prevent recovery.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--3efe43d1-6f3f-4fcb-ab39-4a730971f70b",
+            "target_ref": "attack-pattern--1988cc35-ced8-4dad-b2d1-7628488fa967",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

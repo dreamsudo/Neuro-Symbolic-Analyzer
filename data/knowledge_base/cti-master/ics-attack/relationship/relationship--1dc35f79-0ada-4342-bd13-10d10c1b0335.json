@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--5d3ad7bb-d158-48fb-99ec-220fb09d2e4a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--1dc35f79-0ada-4342-bd13-10d10c1b0335",
+            "created": "2021-04-13T12:28:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Ben Hunter and Fred Gutierrez July 2020",
+                    "description": "Ben Hunter and Fred Gutierrez 2020, July 01 EKANS Ransomware Targeting OT ICS Systems Retrieved. 2021/04/12 ",
+                    "url": "https://www.fortinet.com/blog/threat-research/ekans-ransomware-targeting-ot-ics-systems"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T23:01:25.078Z",
+            "description": "[EKANS](https://attack.mitre.org/software/S0605) performs a DNS lookup of an internal domain name associated with its target network to identify if it was deployed on the intended system. (Citation: Ben Hunter and Fred Gutierrez July 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--00e7d565-9883-4ee5-b642-8fd17fd6a3f5",
+            "target_ref": "attack-pattern--ea0c980c-5cf0-43a7-a049-59c4c207566e",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

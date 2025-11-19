@@ -1,0 +1,25 @@
+{
+    "type": "bundle",
+    "id": "bundle--bdf505ea-3e09-45d2-b3f3-4b80c50a318c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--875ed563-004f-4541-99e4-21a556e5400c",
+            "created": "2022-04-19T03:08:44.565Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:29:16.878Z",
+            "description": "Enforce registration and execution of only legitimately signed service drivers where possible.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--590777b3-b475-4c7c-aaf8-f4a73b140312",
+            "target_ref": "attack-pattern--2959d63f-73fd-46a1-abd2-109d7dcede32",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

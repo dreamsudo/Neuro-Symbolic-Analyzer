@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--e0fd2edf-2704-4ffb-a84f-63f94956de2c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--abf03652-acd0-4361-8a66-f7e70e8e4376",
+            "created": "2020-06-02T14:32:31.913Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Volexity Insomnia",
+                    "description": "A. Case, D. Lassalle, M. Meltzer, S. Koessel, et al.. (2020, April 21). Evil Eye Threat Actor Resurfaces with iOS Exploit and Updated Implant. Retrieved June 2, 2020.",
+                    "url": "https://www.volexity.com/blog/2020/04/21/evil-eye-threat-actor-resurfaces-with-ios-exploit-and-updated-implant/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:50:49.959Z",
+            "description": "[INSOMNIA](https://attack.mitre.org/software/S0463) communicates with the C2 server using HTTPS requests.(Citation: Volexity Insomnia)",
+            "relationship_type": "uses",
+            "source_ref": "malware--21b7e0b0-0dea-4ccc-8ad4-8da51fe3a901",
+            "target_ref": "attack-pattern--2282a98b-5049-4f61-9381-55baca7c1add",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

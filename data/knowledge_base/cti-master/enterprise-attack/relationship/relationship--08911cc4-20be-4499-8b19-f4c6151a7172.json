@@ -1,0 +1,25 @@
+{
+    "type": "bundle",
+    "id": "bundle--0ff7a1bd-b39a-4baa-9495-9ead163eb354",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--08911cc4-20be-4499-8b19-f4c6151a7172",
+            "created": "2024-02-26T14:23:36.958Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:55:06.499Z",
+            "description": "Use secure methods to boot a system and verify the integrity of the operating system and loading mechanisms.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--7da0387c-ba92-4553-b291-b636ee42b2eb",
+            "target_ref": "attack-pattern--3f18edba-28f4-4bb9-82c3-8aa60dcac5f7",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

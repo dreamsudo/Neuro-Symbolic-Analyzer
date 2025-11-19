@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--6f7bb5ee-5fa5-4fd5-8caa-e72fc150302a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--5bd58ef1-ad36-47ac-91e5-4e7df618dd87",
+            "created": "2022-01-11T16:36:29.707Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Novetta Winnti April 2015",
+                    "description": "Novetta Threat Research Group. (2015, April 7). Winnti Analysis. Retrieved February 8, 2017.",
+                    "url": "https://web.archive.org/web/20150412223949/http://www.novetta.com/wp-content/uploads/2015/04/novetta_winntianalysis.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:17:38.772Z",
+            "description": "[Winnti for Windows](https://attack.mitre.org/software/S0141) can add a service named <code>wind0ws</code> to the Registry to achieve persistence after reboot.(Citation: Novetta Winnti April 2015)",
+            "relationship_type": "uses",
+            "source_ref": "malware--d3afa961-a80c-4043-9509-282cdf69ab21",
+            "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

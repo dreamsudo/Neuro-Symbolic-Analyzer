@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--1dec5e7e-5812-4f90-ad51-510e768f35c4",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--5d7d90a4-1ea6-4eca-94bd-3461d9a54229",
+            "created": "2021-07-16T18:29:48.908Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Group IB GrimAgent July 2021",
+                    "description": "Priego, A. (2021, July). THE BROTHERS GRIM: THE REVERSING TALE OF GRIMAGENT MALWARE USED BY RYUK. Retrieved September 19, 2024.",
+                    "url": "https://www.group-ib.com/blog/grimagent/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:18:08.737Z",
+            "description": "(Citation: Group IB GrimAgent July 2021)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--dd2d9ca6-505b-4860-a604-233685b802c7",
+            "target_ref": "malware--c9b99d03-ff11-4a48-95f0-82660d582c25",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

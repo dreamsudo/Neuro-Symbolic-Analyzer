@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--6621f55a-0cba-4eaf-bd15-c5bb51d47ade",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--80abde96-13dc-4551-9430-d8edddbba216",
+            "created": "2020-05-28T16:19:14.596Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Unit 42 MechaFlounder March 2019",
+                    "description": "Falcone, R. (2019, March 4). New Python-Based Payload MechaFlounder Used by Chafer. Retrieved May 27, 2020.",
+                    "url": "https://unit42.paloaltonetworks.com/new-python-based-payload-mechaflounder-used-by-chafer/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:56:38.856Z",
+            "description": "[MechaFlounder](https://attack.mitre.org/software/S0459) has the ability to run commands on a compromised host.(Citation: Unit 42 MechaFlounder March 2019)",
+            "relationship_type": "uses",
+            "source_ref": "malware--dfa03c7d-79ed-4ce2-b9d1-ddc9dbf56ad2",
+            "target_ref": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

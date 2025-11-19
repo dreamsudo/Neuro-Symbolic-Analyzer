@@ -1,0 +1,49 @@
+{
+    "type": "bundle",
+    "id": "bundle--a2e5a4e5-e5f6-40ea-a11f-b3ed7c15b706",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-source",
+            "id": "x-mitre-data-source--221adcd5-cccf-44df-9be6-ef607a6e1c3c",
+            "created": "2021-10-20T15:05:19.273Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datasources/DS0023",
+                    "external_id": "DS0023"
+                },
+                {
+                    "source_name": "Microsoft Named Pipes",
+                    "description": "Microsoft. (2018, May 31). Named Pipes. Retrieved September 28, 2021.",
+                    "url": "https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T15:10:28.402Z",
+            "name": "Named Pipe",
+            "description": "Mechanisms that allow inter-process communication locally or over the network. A named pipe is usually found as a file and processes attach to it(Citation: Microsoft Named Pipes)",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_deprecated": true,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "1.0",
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Center for Threat-Informed Defense (CTID)"
+            ],
+            "x_mitre_collection_layers": [
+                "Host"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "type": "bundle",
+    "id": "bundle--595caf25-1d32-4f42-bea0-33649d5ff96b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--b1c95426-2550-4621-8028-ceebf28b3a47",
+            "created": "2022-04-05T19:45:03.000Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1417/001",
+                    "external_id": "T1417.001"
+                },
+                {
+                    "source_name": "Zeltser-Keyboard",
+                    "description": "Lenny Zeltser. (2016, July 30). Security of Third-Party Keyboard Apps on Mobile Devices. Retrieved December 21, 2016.",
+                    "url": "https://zeltser.com/third-party-keyboards-security/"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/authentication-threats/AUT-13.html",
+                    "external_id": "AUT-13"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:14.276Z",
+            "name": "Keylogging",
+            "description": "Adversaries may log user keystrokes to intercept credentials or other information from the user as the user types them.\n\nSome methods of keylogging include:\n\n* Masquerading as a legitimate third-party keyboard to record user keystrokes.(Citation: Zeltser-Keyboard) On both Android and iOS, users must explicitly authorize the use of third-party keyboard apps. Users should be advised to use extreme caution before granting this authorization when it is requested.\n* Abusing accessibility features. On Android, adversaries may abuse accessibility features to record keystrokes by registering an `AccessibilityService` class, overriding the `onAccessibilityEvent` method, and listening for the `AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED` event type. The event object passed into the function will contain the data that the user typed. \n*Additional methods of keylogging may be possible if root access is available. \n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "collection"
+                },
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Android",
+                "iOS"
+            ],
+            "x_mitre_version": "1.1",
+            "x_mitre_tactic_type": [
+                "Post-Adversary Device Access"
+            ]
+        }
+    ]
+}

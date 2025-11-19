@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--9b7e190a-b787-4bcb-90f8-84e56cc0d12d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9adf592e-f74c-46ed-95ae-85f8c45b0d5e",
+            "created": "2022-08-02T15:42:24.484Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "CISA AR18-352A Quasar RAT December 2018",
+                    "description": "CISA. (2018, December 18). Analysis Report (AR18-352A) Quasar Open-Source Remote Administration Tool. Retrieved August 1, 2022.",
+                    "url": "https://www.cisa.gov/uscert/ncas/analysis-reports/AR18-352A"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:34:32.385Z",
+            "description": "[QuasarRAT](https://attack.mitre.org/software/S0262) has the ability to enumerate the Wide Area Network (WAN) IP through requests to ip-api[.]com, freegeoip[.]net, or api[.]ipify[.]org observed with user-agent string `Mozilla/5.0 (Windows NT 6.3; rv:48.0) Gecko/20100101 Firefox/48.0`.(Citation: CISA AR18-352A Quasar RAT December 2018)",
+            "relationship_type": "uses",
+            "source_ref": "tool--da04ac30-27da-4959-a67d-450ce47d9470",
+            "target_ref": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

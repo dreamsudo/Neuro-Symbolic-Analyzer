@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--8026d6f7-4007-4c0b-96b8-9c4c73b92770",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--bac1d1a4-14f7-4f68-8035-e322e94f92c9",
+            "created": "2021-12-06T15:43:24.495Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "US-CERT TA18-074A",
+                    "description": "US-CERT. (2018, March 16). Alert (TA18-074A): Russian Government Cyber Activity Targeting Energy and Other Critical Infrastructure Sectors. Retrieved June 6, 2018.",
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA18-074A"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:42:46.914Z",
+            "description": "[Dragonfly](https://attack.mitre.org/groups/G0035) has used SMB for C2.(Citation: US-CERT TA18-074A)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "attack-pattern--9a60a291-8960-4387-8a4a-2ab5c18bb50b",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

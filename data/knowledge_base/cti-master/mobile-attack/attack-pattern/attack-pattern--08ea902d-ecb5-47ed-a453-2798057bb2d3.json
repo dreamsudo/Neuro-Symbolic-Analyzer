@@ -1,0 +1,53 @@
+{
+    "type": "bundle",
+    "id": "bundle--09526114-0e17-4b4b-bc44-928d22e0cc88",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--08ea902d-ecb5-47ed-a453-2798057bb2d3",
+            "created": "2022-04-01T15:54:05.633Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1626",
+                    "external_id": "T1626"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/application-threats/APP-22.html",
+                    "external_id": "APP-22"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:21.493Z",
+            "name": "Abuse Elevation Control Mechanism",
+            "description": "Adversaries may circumvent mechanisms designed to control elevated privileges to gain higher-level permissions. Most modern systems contain native elevation control mechanisms that are intended to limit privileges that a user can gain on a machine. Authorization has to be granted to specific users in order to perform tasks that are designated as higher risk. An adversary can use several methods to take advantage of built-in control mechanisms in order to escalate privileges on a system. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Android"
+            ],
+            "x_mitre_version": "1.1",
+            "x_mitre_tactic_type": [
+                "Post-Adversary Device Access"
+            ]
+        }
+    ]
+}

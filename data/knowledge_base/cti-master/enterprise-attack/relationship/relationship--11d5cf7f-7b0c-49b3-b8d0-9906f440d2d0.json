@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--b407bdc6-d904-4928-8fce-92deb00fb1bc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--11d5cf7f-7b0c-49b3-b8d0-9906f440d2d0",
+            "created": "2019-05-31T14:15:06.379Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Dell Dridex Oct 2015",
+                    "description": "Dell SecureWorks Counter Threat Unit Threat Intelligence. (2015, October 13). Dridex (Bugat v5) Botnet Takeover Operation. Retrieved May 31, 2019.",
+                    "url": "https://www.secureworks.com/research/dridex-bugat-v5-botnet-takeover-operation"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:35:27.336Z",
+            "description": "[Dridex](https://attack.mitre.org/software/S0384) contains a module for VNC.(Citation: Dell Dridex Oct 2015)",
+            "relationship_type": "uses",
+            "source_ref": "malware--f01e2711-4b48-4192-a2e8-5f56c945ca19",
+            "target_ref": "attack-pattern--4061e78c-1284-44b4-9116-73e4ac3912f7",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--c9314b49-d417-4c00-a4ef-1b07ecf0d449",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--ba93bce7-7214-45e9-9deb-4fefb5038aab",
+            "created": "2022-02-02T21:05:49.064Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "BiZone Lizar May 2021",
+                    "description": "BI.ZONE Cyber Threats Research Team. (2021, May 13). From pentest to APT attack: cybercriminal group FIN7 disguises its malware as an ethical hacker\u2019s toolkit. Retrieved February 2, 2022.",
+                    "url": "https://bi-zone.medium.com/from-pentest-to-apt-attack-cybercriminal-group-fin7-disguises-its-malware-as-an-ethical-hackers-c23c9a75e319"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-01T20:36:10.914Z",
+            "description": "[Lizar](https://attack.mitre.org/software/S0681) has a module to collect usernames and passwords stored in browsers.(Citation: BiZone Lizar May 2021)",
+            "relationship_type": "uses",
+            "source_ref": "malware--f74a5069-015d-4404-83ad-5ca01056c0dc",
+            "target_ref": "attack-pattern--58a3e6aa-4453-4cc8-a51f-4befe80b31a8",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.3.0"
+        }
+    ]
+}

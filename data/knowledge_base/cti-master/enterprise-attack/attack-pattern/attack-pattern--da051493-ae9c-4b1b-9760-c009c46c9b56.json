@@ -1,0 +1,85 @@
+{
+    "type": "bundle",
+    "id": "bundle--79fbf99d-4976-4ddf-829a-05900476b931",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--da051493-ae9c-4b1b-9760-c009c46c9b56",
+            "created": "2022-09-27T18:02:16.026Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1546/016",
+                    "external_id": "T1546.016"
+                },
+                {
+                    "source_name": "Application Bundle Manipulation Brandon Dalton",
+                    "description": "Brandon Dalton. (2022, August 9). A bundle of nerves: Tweaking macOS security controls to thwart application bundle manipulation. Retrieved September 27, 2022.",
+                    "url": "https://redcanary.com/blog/mac-application-bundles/"
+                },
+                {
+                    "source_name": "Debian Manual Maintainer Scripts",
+                    "description": "Debian Policy Manual v4.6.1.1. (2022, August 14). Package maintainer scripts and installation procedure. Retrieved September 27, 2022.",
+                    "url": "https://www.debian.org/doc/debian-policy/ch-maintainerscripts.html#s-mscriptsinstact"
+                },
+                {
+                    "source_name": "Windows AppleJeus GReAT",
+                    "description": "Global Research & Analysis Team, Kaspersky Lab (GReAT). (2018, August 23). Operation AppleJeus: Lazarus hits cryptocurrency exchange with fake installer and macOS malware. Retrieved September 27, 2022.",
+                    "url": "https://securelist.com/operation-applejeus/87553/"
+                },
+                {
+                    "source_name": "Microsoft Installation Procedures",
+                    "description": "Microsoft. (2021, January 7). Installation Procedure Tables Group. Retrieved December 27, 2023.",
+                    "url": "https://learn.microsoft.com/windows/win32/msi/installation-procedure-tables-group"
+                },
+                {
+                    "source_name": "wardle evilquest parti",
+                    "description": "Patrick Wardle. (2020, June 29). OSX.EvilQuest Uncovered part i: infection, persistence, and more!. Retrieved March 18, 2021.",
+                    "url": "https://objective-see.com/blog/blog_0x59.html"
+                },
+                {
+                    "source_name": "Installer Package Scripting Rich Trouton",
+                    "description": "Rich Trouton. (2019, August 9). Installer Package Scripting: Making your deployments easier, one ! at a time. Retrieved September 27, 2022.",
+                    "url": "https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/4/24696/files/2019/07/psumac2019-345-Installer-Package-Scripting-Making-your-deployments-easier-one-at-a-time.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-15T19:59:13.167Z",
+            "name": "Installer Packages",
+            "description": "Adversaries may establish persistence and elevate privileges by using an installer to trigger the execution of malicious content. Installer packages are OS specific and contain the resources an operating system needs to install applications on a system. Installer packages can include scripts that run prior to installation as well as after installation is complete. Installer scripts may inherit elevated permissions when executed. Developers often use these scripts to prepare the environment for installation, check requirements, download dependencies, and remove files after installation.(Citation: Installer Package Scripting Rich Trouton)\n\nUsing legitimate applications, adversaries have distributed applications with modified installer scripts to execute malicious content. When a user installs the application, they may be required to grant administrative permissions to allow the installation. At the end of the installation process of the legitimate application, content such as macOS `postinstall` scripts can be executed with the inherited elevated permissions. Adversaries can use these scripts to execute a malicious executable or install other malicious components (such as a [Launch Daemon](https://attack.mitre.org/techniques/T1543/004)) with the elevated permissions.(Citation: Application Bundle Manipulation Brandon Dalton)(Citation: wardle evilquest parti)(Citation: Windows AppleJeus GReAT)(Citation: Debian Manual Maintainer Scripts)\n\nDepending on the distribution, Linux versions of package installer scripts are sometimes called maintainer scripts or post installation scripts. These scripts can include `preinst`, `postinst`, `prerm`, `postrm` scripts and run as root when executed.\n\nFor Windows, the Microsoft Installer services uses `.msi` files to manage the installing, updating, and uninstalling of applications. These installation routines may also include instructions to perform additional actions that may be abused by adversaries.(Citation: Microsoft Installation Procedures)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Brandon Dalton @PartyD0lphin",
+                "Rodchenko Aleksandr"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "Windows",
+                "macOS"
+            ],
+            "x_mitre_version": "1.2"
+        }
+    ]
+}

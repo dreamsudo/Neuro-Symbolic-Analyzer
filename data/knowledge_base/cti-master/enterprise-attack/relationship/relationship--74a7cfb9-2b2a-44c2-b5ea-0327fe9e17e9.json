@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--2bd05c21-06a1-442f-906a-c18c3c2860c1",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--74a7cfb9-2b2a-44c2-b5ea-0327fe9e17e9",
+            "created": "2021-07-07T01:33:57.634Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "win10_asr",
+                    "description": "Microsoft. (2021, July 2). Use attack surface reduction rules to prevent malware infection. Retrieved June 24, 2021.",
+                    "url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:54:22.157Z",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to block unsigned/untrusted executable files (such as .exe, .dll, or .scr) from running from USB removable drives. (Citation: win10_asr)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--90f39ee1-d5a3-4aaa-9f28-3b42815b0d46",
+            "target_ref": "attack-pattern--3b744087-9945-4a6f-91e8-9dbceda417a4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

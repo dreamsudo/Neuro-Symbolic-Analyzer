@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--5b017028-20ce-46f6-a76b-0b9f687a9661",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--bddcd118-8a69-450e-b680-c5d52d5098f4",
+            "created": "2020-10-20T03:26:11.192Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:07:49.345Z",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--78bb71be-92b4-46de-acd6-5f998fedf1cc",
+            "target_ref": "attack-pattern--34ab90a3-05f6-4259-8f21-621081fdaba5",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

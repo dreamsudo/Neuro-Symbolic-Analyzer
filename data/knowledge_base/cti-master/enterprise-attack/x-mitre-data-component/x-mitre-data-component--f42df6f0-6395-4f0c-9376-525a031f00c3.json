@@ -1,0 +1,101 @@
+{
+    "type": "bundle",
+    "id": "bundle--f8b59ad0-0a40-4f63-bb6e-ce1d165f842a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--f42df6f0-6395-4f0c-9376-525a031f00c3",
+            "created": "2021-10-20T15:05:19.271Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0001",
+                    "external_id": "DC0001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Scheduled Job Creation",
+            "description": "The establishment of a task or job that will execute at a predefined time or based on specific triggers.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack",
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "Scheduled Job",
+                    "channel": "None"
+                },
+                {
+                    "name": "WinEventLog:Security",
+                    "channel": "EventCode=4698"
+                },
+                {
+                    "name": "linux:syslog",
+                    "channel": "Execution of non-standard script or binary by cron"
+                },
+                {
+                    "name": "WinEventLog:TaskScheduler",
+                    "channel": "EventCode=106"
+                },
+                {
+                    "name": "linux:osquery",
+                    "channel": "crontab, systemd_timers"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "launchd_jobs"
+                },
+                {
+                    "name": "esxi:vmkernel",
+                    "channel": "Startup script and task execution logs"
+                },
+                {
+                    "name": "kubernetes:apiserver",
+                    "channel": "verb=create, resource=cronjobs, group=batch"
+                },
+                {
+                    "name": "linux:osquery",
+                    "channel": "file_events"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "process: crontab edits, launch of cron job"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "file_events - cron, launchd"
+                },
+                {
+                    "name": "esxi:cron",
+                    "channel": "execution of scheduled job"
+                },
+                {
+                    "name": "esxi:hostd",
+                    "channel": "task creation events"
+                },
+                {
+                    "name": "macos:cron",
+                    "channel": "cron/launchd"
+                },
+                {
+                    "name": "WinEventLog:Security",
+                    "channel": "EventCode=4699"
+                },
+                {
+                    "name": "linux:cron",
+                    "channel": "Scheduled execution of unknown or unusual script/binary"
+                }
+            ]
+        }
+    ]
+}

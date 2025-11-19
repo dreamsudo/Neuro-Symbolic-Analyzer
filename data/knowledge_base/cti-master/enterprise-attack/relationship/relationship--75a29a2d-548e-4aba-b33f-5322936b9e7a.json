@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--dec953ef-9dd9-4706-8373-1c5a9e3a68dc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--75a29a2d-548e-4aba-b33f-5322936b9e7a",
+            "created": "2021-03-29T17:06:22.380Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Kubernetes Hardening Guide",
+                    "description": "National Security Agency, Cybersecurity and Infrastructure Security Agency. (2022, March). Kubernetes Hardening Guide. Retrieved April 1, 2022.",
+                    "url": "https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:24:30.786Z",
+            "description": "Ensure containers are not running as root by default. In Kubernetes environments, consider defining Pod Security Standards that prevent pods from running privileged containers.(Citation: Kubernetes Hardening Guide)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "target_ref": "attack-pattern--1126cab1-c700-412f-a510-61f4937bb096",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

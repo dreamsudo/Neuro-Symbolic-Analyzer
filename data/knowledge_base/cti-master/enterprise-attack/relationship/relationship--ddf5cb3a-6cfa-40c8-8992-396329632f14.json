@@ -1,0 +1,36 @@
+{
+    "type": "bundle",
+    "id": "bundle--4dcf4260-9eb3-430f-8fb9-cab048a233bd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--ddf5cb3a-6cfa-40c8-8992-396329632f14",
+            "created": "2019-03-25T15:05:23.691Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Talos Olympic Destroyer 2018",
+                    "description": "Mercer, W. and Rascagneres, P. (2018, February 12). Olympic Destroyer Takes Aim At Winter Olympics. Retrieved March 14, 2019.",
+                    "url": "https://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
+                },
+                {
+                    "source_name": "PsExec Russinovich",
+                    "description": "Russinovich, M. (2004, June 28). PsExec. Retrieved December 17, 2015.",
+                    "url": "http://windowsitpro.com/systems-management/psexec"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:13:35.664Z",
+            "description": "[Olympic Destroyer](https://attack.mitre.org/software/S0365) uses [PsExec](https://attack.mitre.org/software/S0029) to interact with the <code>ADMIN$</code> network share to execute commands on remote systems.(Citation: Talos Olympic Destroyer 2018)(Citation: PsExec Russinovich)",
+            "relationship_type": "uses",
+            "source_ref": "malware--3249e92a-870b-426d-8790-ba311c1abfb4",
+            "target_ref": "attack-pattern--4f9ca633-15c5-463c-9724-bdcd54fde541",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

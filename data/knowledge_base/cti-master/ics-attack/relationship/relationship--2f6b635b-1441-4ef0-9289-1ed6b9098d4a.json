@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--8d8db079-5daf-451f-ac43-54eb7da2ac6e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2f6b635b-1441-4ef0-9289-1ed6b9098d4a",
+            "created": "2020-09-21T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "DHS  National Urban Security Technology Laboratory April 2019",
+                    "description": "DHS  National Urban Security Technology Laboratory 2019, April Radio Frequency Detection, Spectrum Analysis, and Direction Finding Equipment Retrieved. 2020/09/17 ",
+                    "url": "https://www.dhs.gov/sites/default/files/saver-msr-rf-detection_cod-508_10july2019.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:25:02.545Z",
+            "description": "Reduce the range of RF communications to their intended operating range when possible. Propagation reduction methods may include (i) reducing transmission power on wireless signals, (ii) adjusting antenna gain to prevent extensions beyond organizational boundaries, and (iii) employing RF shielding techniques to block excessive signal propagation.  (Citation: DHS  National Urban Security Technology Laboratory April 2019)\n",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--fce6866f-9a87-4d3e-a73c-f02d8937fe0e",
+            "target_ref": "attack-pattern--0fe075d5-beac-4d02-b93e-0f874997db72",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "type": "bundle",
+    "id": "bundle--6aa11be1-0a8f-467d-9f82-5165fa1e13af",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--9d56be63-3501-4dd3-bb5f-63c580833298",
+            "created": "2022-05-11T16:22:58.802Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0108",
+                    "external_id": "DC0108"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T15:10:28.402Z",
+            "name": "Device Alarm",
+            "description": "This includes alarms associated with unexpected device functions, such as shutdowns, restarts, failures, or configuration changes",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "Operational Databases",
+                    "channel": "None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "type": "bundle",
+    "id": "bundle--da37e8cf-2c71-4f1b-9362-76f2a72193d2",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--c08366bb-8d11-4921-853f-f0a3b6a2a1da",
+            "created": "2022-03-28T19:30:15.556Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1474/002",
+                    "external_id": "T1474.002"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-1.html",
+                    "external_id": "SPC-1"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-2.html",
+                    "external_id": "SPC-2"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-4.html",
+                    "external_id": "SPC-4"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-5.html",
+                    "external_id": "SPC-5"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-6.html",
+                    "external_id": "SPC-6"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-7.html",
+                    "external_id": "SPC-7"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-8.html",
+                    "external_id": "SPC-8"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-13.html",
+                    "external_id": "SPC-13"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-16.html",
+                    "external_id": "SPC-16"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-17.html",
+                    "external_id": "SPC-17"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/supply-chain-threats/SPC-21.html",
+                    "external_id": "SPC-21"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:19.406Z",
+            "name": "Compromise Hardware Supply Chain",
+            "description": "Adversaries may manipulate hardware components in products prior to receipt by a final consumer for the purpose of data or system compromise. By modifying hardware or firmware in the supply chain, adversaries can insert a backdoor into consumer networks that may be difficult to detect and give the adversary a high degree of control over the system. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Android",
+                "iOS"
+            ],
+            "x_mitre_version": "1.1",
+            "x_mitre_tactic_type": [
+                "Post-Adversary Device Access"
+            ]
+        }
+    ]
+}

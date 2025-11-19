@@ -1,0 +1,36 @@
+{
+    "type": "bundle",
+    "id": "bundle--633d9cec-4f42-476b-9965-9f6c2f26a98f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--6800b404-bdfe-46bf-8ce3-54819f990e1f",
+            "created": "2020-03-11T14:28:40.154Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "TCG Trusted Platform Module",
+                    "description": "Trusted Computing Group. (2008, April 29). Trusted Platform Module (TPM) Summary. Retrieved June 8, 2016.",
+                    "url": "http://www.trustedcomputinggroup.org/wp-content/uploads/Trusted-Platform-Module-Summary_04292008.pdf"
+                },
+                {
+                    "source_name": "TechNet Secure Boot Process",
+                    "description": "Microsoft. (n.d.). Secure the Windows 10 boot process. Retrieved April 23, 2020.",
+                    "url": "https://docs.microsoft.com/en-us/windows/security/information-protection/secure-the-windows-10-boot-process"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:51:51.880Z",
+            "description": "Use Trusted Platform Module technology and a secure or trusted boot process to prevent system integrity from being compromised. Check the integrity of the existing BIOS or EFI to determine if it is vulnerable to modification. (Citation: TCG Trusted Platform Module) (Citation: TechNet Secure Boot Process)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--7da0387c-ba92-4553-b291-b636ee42b2eb",
+            "target_ref": "attack-pattern--39131305-9282-45e4-ac3b-591d2d4fc3ef",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

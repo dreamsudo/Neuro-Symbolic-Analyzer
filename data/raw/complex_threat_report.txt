@@ -1,0 +1,21 @@
+INCIDENT REPORT: IR-2024-ALPHA
+DATE: 2023-11-15
+SEVERITY: CRITICAL
+STATUS: ACTIVE
+
+EXECUTIVE SUMMARY:
+SOC analysts have detected a sophisticated intrusion attempt targeting the HR subnet.
+
+OBSERVATIONS (CURRENT FACTS):
+1. Network logs detected a successful Phishing (T1566) campaign targeting employee emails.
+2. EDR telemetry found active execution of PowerShell (T1059) scripts on host HR-WKSTN-04.
+3. We have also seen indications that Masquerading (T1036) is active, as the malware is disguising itself as 'svchost.exe'.
+
+ANALYSIS & PROJECTIONS (EPISTEMIC REASONING):
+Based on the behavior, we suspect the attacker has already achieved Persistence via Scheduled Task (T1053). 
+
+If the PowerShell execution continues unchecked, historical data suggests this leads to Impair Defenses (T1562) to disable our antivirus.
+
+CRITICAL PATH PREDICTION:
+If defenses are impaired, we believe this leads to Data Encrypted for Impact (T1486) (Ransomware deployment).
+However, if they pivot to the network, this leads to Remote Services (T1021) for lateral movement.

@@ -1,0 +1,54 @@
+{
+    "type": "bundle",
+    "id": "bundle--0d0549b9-a97b-43e7-a575-221b6baa68fb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--b3c2e5de-0941-4b57-ba61-af029eb5517a",
+            "created": "2017-10-25T14:48:27.307Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": true,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1438",
+                    "external_id": "T1438"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/application-threats/APP-30.html",
+                    "external_id": "APP-30"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:15.184Z",
+            "name": "Exfiltration Over Other Network Medium",
+            "description": "Adversaries may attempt to exfiltrate data over a different network medium than the command and control channel. If the command and control network is a standard Internet connection, the exfiltration may occur, for example, via Bluetooth, or another radio frequency (RF) channel. \n\nAdversaries may choose to do this if they have sufficient access or proximity, and the connection might not be secured or defended as well as the primary Internet-connected channel because it is not routed through the same enterprise network. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Android",
+                "iOS"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_tactic_type": [
+                "Post-Adversary Device Access"
+            ]
+        }
+    ]
+}

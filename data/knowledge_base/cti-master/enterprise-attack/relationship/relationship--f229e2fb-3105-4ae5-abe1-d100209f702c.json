@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--1eae0b75-78c0-4765-8025-b88cfafe542c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f229e2fb-3105-4ae5-abe1-d100209f702c",
+            "created": "2020-03-14T23:19:38.129Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:16:58.571Z",
+            "description": "If it is possible to inspect HTTPS traffic, the captures can be analyzed for connections that appear to be domain fronting.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--7bb5fae9-53ad-4424-866b-f0ea2a8b731d",
+            "target_ref": "attack-pattern--731f4f55-b6d0-41d1-a7a9-072a66389aea",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

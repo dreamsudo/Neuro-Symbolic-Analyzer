@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--d0c3db19-329b-45f5-8e04-56eb1cbf3fce",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--e11a3d87-d9cf-4dcf-b722-fef4b0a324b4",
+            "created": "2018-04-18T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Cisco Group 72",
+                    "description": "Esler, J., Lee, M., and Williams, C. (2014, October 14). Threat Spotlight: Group 72. Retrieved January 14, 2016.",
+                    "url": "http://blogs.cisco.com/security/talos/threat-spotlight-group-72"
+                },
+                {
+                    "source_name": "Novetta-Axiom",
+                    "description": "Novetta. (n.d.). Operation SMN: Axiom Threat Actor Group Report. Retrieved November 12, 2014.",
+                    "url": "https://web.archive.org/web/20230115144216/http://www.novetta.com/wp-content/uploads/2014/11/Executive_Summary-Final_1.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:52:42.459Z",
+            "description": "[Axiom](https://attack.mitre.org/groups/G0001) has been observed using SQL injection to gain access to systems.(Citation: Novetta-Axiom)(Citation: Cisco Group 72)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--a0cb9370-e39b-44d5-9f50-ef78e412b973",
+            "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

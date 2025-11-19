@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--1a648804-b659-4208-b8ea-1c3d528e4912",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--a581fb2c-604a-4417-b782-cafd76b11c37",
+            "created": "2020-10-19T04:16:36.949Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:03:32.404Z",
+            "description": "Users can be trained to identify social engineering techniques and spearphishing attempts.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--2a4f6c11-a4a7-4cb9-b0ef-6ae1bb3a718a",
+            "target_ref": "attack-pattern--8982a661-d84c-48c0-b4ec-1db29c6cf3bc",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

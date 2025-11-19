@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--5f08ce70-27a4-43b5-b2f5-16587b390e2f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--fc8ef14d-1a07-4f96-85c3-b62ba6bcffc1",
+            "created": "2020-03-16T14:49:02.714Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "EnableMPRNotifications",
+                    "description": "Microsoft. (2023, January 26). Policy CSP - WindowsLogon. Retrieved March 30, 2023.",
+                    "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowslogon"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:59:48.943Z",
+            "description": "Ensure only valid password filters are registered. Filter DLLs must be present in Windows installation directory (`C:\\Windows\\System32\\` by default) of a domain controller and/or local computer with a corresponding entry in `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Notification Packages`. \n\nStarting in Windows 11 22H2, the `EnableMPRNotifications` policy can be disabled through Group Policy or through a configuration service provider to prevent Winlogon from sending credentials to network providers.(Citation: EnableMPRNotifications)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--2f316f6c-ae42-44fe-adf8-150989e0f6d3",
+            "target_ref": "attack-pattern--f4c1826f-a322-41cd-9557-562100848c84",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

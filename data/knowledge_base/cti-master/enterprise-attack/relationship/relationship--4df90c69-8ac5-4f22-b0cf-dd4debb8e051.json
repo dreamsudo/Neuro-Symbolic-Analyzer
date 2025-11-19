@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--5f9aae37-b2ba-4d84-93a2-b78dc9d082db",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--4df90c69-8ac5-4f22-b0cf-dd4debb8e051",
+            "created": "2019-06-13T16:43:14.999Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:47:06.778Z",
+            "description": "Encryption and off-system storage of sensitive information may be one way to mitigate collection of files, but may not stop an adversary from acquiring the information if an intrusion persists over a long period of time and the adversary is able to discover and access the data through other means.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--20a2baeb-98c2-4901-bad7-dc62d0a03dea",
+            "target_ref": "attack-pattern--30208d3e-0d6b-43c8-883e-44462a514619",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

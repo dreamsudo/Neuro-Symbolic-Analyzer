@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--978bb3a2-37f2-4c89-a44c-7e4738ca1509",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--290c9d3f-f59b-4e2b-9b7b-115014845c15",
+            "created": "2021-09-24T14:47:34.447Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:28:07.258Z",
+            "description": "Device attestation can often detect rooted devices.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--ff4821f6-5afb-481b-8c0f-26c28c0d666c",
+            "target_ref": "attack-pattern--ccde43e4-78f9-4f32-b401-c081e7db71ea",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

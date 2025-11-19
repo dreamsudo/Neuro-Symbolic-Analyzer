@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--cc564f81-f6d2-4571-812a-086ec24d033f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--c039483a-5e0f-47be-b614-0d766eda9e0f",
+            "created": "2021-09-30T12:25:20.633Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Group IB Ransomware September 2020",
+                    "description": "Group IB. (2020, September). LOCK LIKE  A PRO. Retrieved November 17, 2024.",
+                    "url": "https://web.archive.org/web/20220119114433/https://groupib.pathfactory.com/ransomware-reports/prolock_wp"
+                },
+                {
+                    "source_name": "Red Canary Qbot",
+                    "description": "Rainey, K. (n.d.). Qbot. Retrieved September 27, 2021.",
+                    "url": "https://redcanary.com/threat-detection-report/threats/qbot/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:44:15.913Z",
+            "description": "[QakBot](https://attack.mitre.org/software/S0650) can modify the Registry to store its configuration information in a randomly named subkey under <code>HKCU\\Software\\Microsoft</code>.(Citation: Red Canary Qbot)(Citation: Group IB Ransomware September 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--edc5e045-5401-42bb-ad92-52b5b2ee0de9",
+            "target_ref": "attack-pattern--57340c81-c025-4189-8fa0-fc7ede51bae4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

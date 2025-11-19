@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--9728015f-ec30-4335-aa7b-8fa0f3d21917",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f54ce1d1-519a-417a-b2f5-6132d9690631",
+            "created": "2024-03-26T19:31:35.510Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "CISA Scattered Spider Advisory November 2023",
+                    "description": "CISA. (2023, November 16). Cybersecurity Advisory: Scattered Spider (AA23-320A). Retrieved March 18, 2024.",
+                    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-15T19:34:13.676Z",
+            "description": "[Scattered Spider](https://attack.mitre.org/groups/G1015) has created Amazon EC2 instances within the victim's environment.(Citation: CISA Scattered Spider Advisory November 2023)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--44d37b89-a739-4810-9111-0d2617a8939b",
+            "target_ref": "attack-pattern--cf1c2504-433f-4c4e-a1f8-91de45a0318c",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.3.0"
+        }
+    ]
+}

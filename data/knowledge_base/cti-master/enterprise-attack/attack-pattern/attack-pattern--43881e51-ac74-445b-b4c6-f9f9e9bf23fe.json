@@ -1,0 +1,69 @@
+{
+    "type": "bundle",
+    "id": "bundle--4e3c496a-00c0-4862-92d2-68ba7b7b4cad",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--43881e51-ac74-445b-b4c6-f9f9e9bf23fe",
+            "created": "2020-01-24T19:46:27.750Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1547/010",
+                    "external_id": "T1547.010"
+                },
+                {
+                    "source_name": "Bloxham",
+                    "description": "Bloxham, B. (n.d.). Getting Windows to Play with Itself &#91;PowerPoint slides&#93;. Retrieved November 12, 2014.",
+                    "url": "https://www.defcon.org/images/defcon-22/dc-22-presentations/Bloxham/DEFCON-22-Brady-Bloxham-Windows-API-Abuse-UPDATED.pdf"
+                },
+                {
+                    "source_name": "AddMonitor",
+                    "description": "Microsoft. (n.d.). AddMonitor function. Retrieved September 12, 2024.",
+                    "url": "https://learn.microsoft.com/en-us/windows/win32/printdocs/addmonitor"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:42.872Z",
+            "name": "Port Monitors",
+            "description": "Adversaries may use port monitors to run an adversary supplied DLL during system boot for persistence or privilege escalation. A port monitor can be set through the <code>AddMonitor</code> API call to set a DLL to be loaded at startup.(Citation: AddMonitor) This DLL can be located in <code>C:\\Windows\\System32</code> and will be loaded and run by the print spooler service, `spoolsv.exe`, under SYSTEM level permissions on boot.(Citation: Bloxham) \n\nAlternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to the `Driver` value of an existing or new arbitrarily named subkey of <code>HKLM\\SYSTEM\\CurrentControlSet\\Control\\Print\\Monitors</code>. The Registry key contains entries for the following:\n\n* Local Port\n* Standard TCP/IP Port\n* USB Monitor\n* WSD Port\n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Stefan Kanthak",
+                "Travis Smith, Tripwire",
+                "Harun K\u00fc\u00dfner"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_version": "1.3"
+        }
+    ]
+}

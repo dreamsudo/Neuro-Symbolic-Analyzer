@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--55669279-77d6-4c74-91a8-98ac661a669f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--74cc85f8-594d-428b-a44a-5ede87df0ad9",
+            "created": "2020-08-27T17:46:41.092Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Cycraft Chimera April 2020",
+                    "description": "Cycraft. (2020, April 15). APT Group Chimera - APT Operation Skeleton key Targets Taiwan Semiconductor Vendors. Retrieved August 24, 2020..",
+                    "url": "https://cycraft.com/download/CyCraft-Whitepaper-Chimera_V4.1.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:24:17.437Z",
+            "description": "[Chimera](https://attack.mitre.org/groups/G0114) has renamed malware to GoogleUpdate.exe and WinRAR to jucheck.exe, RecordedTV.ms, teredo.tmp, update.exe, and msadcs1.exe.(Citation: Cycraft Chimera April 2020)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--8c1f0187-0826-4320-bddc-5f326cfcfe2c",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

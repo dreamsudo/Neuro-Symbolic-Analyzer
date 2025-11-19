@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--7e01a7a7-4169-4b2a-aad6-578088173552",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--6bfbee18-c771-4260-b460-8058dbc5c08a",
+            "created": "2022-06-03T14:42:14.556Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "SecureWorks August 2019",
+                    "description": "SecureWorks 2019, August 27 LYCEUM Takes Center Stage in Middle East Campaign Retrieved. 2019/11/19 ",
+                    "url": "https://www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:21:51.147Z",
+            "description": "[DanBot](https://attack.mitre.org/software/S1014) can download additional files to a targeted system.(Citation: SecureWorks August 2019)",
+            "relationship_type": "uses",
+            "source_ref": "malware--b8d48deb-450c-44f6-a934-ac8765aa89cb",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

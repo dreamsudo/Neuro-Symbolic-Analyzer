@@ -1,0 +1,36 @@
+{
+    "type": "bundle",
+    "id": "bundle--c1f5066f-c3fa-4bec-b77e-a38bccc904c8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--49f9b769-57d1-4d73-8194-59b584a72c1b",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Unit 42 Bisonal July 2018",
+                    "description": "Hayashi, K., Ray, V. (2018, July 31). Bisonal Malware Used in Attacks Against Russia and South Korea. Retrieved August 7, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/"
+                },
+                {
+                    "source_name": "Talos Bisonal Mar 2020",
+                    "description": "Mercer, W., et al. (2020, March 5). Bisonal: 10 years of play. Retrieved January 26, 2022.",
+                    "url": "https://blog.talosintelligence.com/2020/03/bisonal-10-years-of-play.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:46:26.917Z",
+            "description": "[Bisonal](https://attack.mitre.org/software/S0268) has decoded strings in the malware using XOR and RC4.(Citation: Unit 42 Bisonal July 2018)(Citation: Talos Bisonal Mar 2020) ",
+            "relationship_type": "uses",
+            "source_ref": "malware--65ffc206-d7c1-45b3-b543-f6b726e7840d",
+            "target_ref": "attack-pattern--3ccef7ae-cb5e-48f6-8302-897105fbf55c",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

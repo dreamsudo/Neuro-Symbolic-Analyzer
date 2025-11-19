@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--da87a348-e6cb-4bdc-a248-fc4bc6dc7760",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--d96d964f-fec6-475e-acc5-d25ff0d46af9",
+            "created": "2020-05-06T21:31:07.621Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ESET Okrum July 2019",
+                    "description": "Hromcova, Z. (2019, July). OKRUM AND KETRICAN: AN OVERVIEW OF RECENT KE3CHANG GROUP ACTIVITY. Retrieved May 6, 2020.",
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2019/07/ESET_Okrum_and_Ketrican.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:12:46.670Z",
+            "description": "[Okrum](https://attack.mitre.org/software/S0439) was seen using a keylogger tool to capture keystrokes. (Citation: ESET Okrum July 2019)",
+            "relationship_type": "uses",
+            "source_ref": "malware--4b6ec280-7bbb-48ff-ae59-b189520ebe83",
+            "target_ref": "attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

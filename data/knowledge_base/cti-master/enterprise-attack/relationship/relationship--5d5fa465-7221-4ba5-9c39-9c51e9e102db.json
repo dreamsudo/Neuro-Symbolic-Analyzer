@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--83b55ce1-6700-41ae-9252-467d2ba462a5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--5d5fa465-7221-4ba5-9c39-9c51e9e102db",
+            "created": "2024-07-30T14:12:52.542Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET WinterVivern 2023",
+                    "description": "Matthieu Faou. (2023, October 25). Winter Vivern exploits zero-day vulnerability in Roundcube Webmail servers. Retrieved July 29, 2024.",
+                    "url": "https://www.welivesecurity.com/en/eset-research/winter-vivern-exploits-zero-day-vulnerability-roundcube-webmail-servers/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:18:07.056Z",
+            "description": "[Winter Vivern](https://attack.mitre.org/groups/G1035) delivered malicious JavaScript to exploit targets when exploiting Roundcube Webmail servers.(Citation: ESET WinterVivern 2023)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--75a07184-a7e5-4222-95a1-a04dbc96a29c",
+            "target_ref": "attack-pattern--0f4a0c76-ab2d-4cb0-85d3-3f0efb8cba0d",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

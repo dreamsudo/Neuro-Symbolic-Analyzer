@@ -1,0 +1,33 @@
+{
+    "type": "bundle",
+    "id": "bundle--dc2d61d2-d547-4e29-80dd-9e3d0efe23cb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--ec225357-8197-47a4-a9cd-57741d592877",
+            "created": "2021-10-20T15:05:19.275Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0095",
+                    "external_id": "DC0095"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T15:10:28.402Z",
+            "name": "Volume Enumeration",
+            "description": "An extracted list of available volumes within a cloud environment (ex: AWS describe-volumes)",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0"
+        }
+    ]
+}

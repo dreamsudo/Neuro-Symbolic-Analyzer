@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--b01780bb-e495-470b-9be7-583fae20f557",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f3f5301d-8861-4c8b-9e28-36aa8581c552",
+            "created": "2020-12-22T17:48:21.493Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Crowdstrike GTR2020 Mar 2020",
+                    "description": "Crowdstrike. (2020, March 2). 2020 Global Threat Report. Retrieved December 11, 2020.",
+                    "url": "https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:17:17.695Z",
+            "description": "(Citation: Crowdstrike GTR2020 Mar 2020)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--18854f55-ac7c-4634-bd9a-352dd07613b7",
+            "target_ref": "malware--8787e86d-8475-4f13-acea-d33eb83b6105",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

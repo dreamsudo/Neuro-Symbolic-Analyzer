@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--09676b97-a49a-4e71-8910-528e36f5f0a3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--0e9968b7-ad1e-440d-9fe3-2599a1571f39",
+            "created": "2020-06-26T14:55:13.387Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Cybereason EventBot",
+                    "description": "D. Frank, L. Rochberger, Y. Rimmer, A. Dahan. (2020, April 30). EventBot: A New Mobile Banking Trojan is Born. Retrieved June 26, 2020.",
+                    "url": "https://www.cybereason.com/blog/eventbot-a-new-mobile-banking-trojan-is-born"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:46:59.077Z",
+            "description": "[EventBot](https://attack.mitre.org/software/S0478) communicates with the C2 using HTTP requests.(Citation: Cybereason EventBot)",
+            "relationship_type": "uses",
+            "source_ref": "malware--aecc0097-c9f8-4786-9b39-e891ff173f54",
+            "target_ref": "attack-pattern--2282a98b-5049-4f61-9381-55baca7c1add",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

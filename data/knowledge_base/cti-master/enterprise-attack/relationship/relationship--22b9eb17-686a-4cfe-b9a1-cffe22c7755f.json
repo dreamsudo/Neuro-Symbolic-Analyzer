@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--8618f4f7-c190-4396-8931-71bd6e7172ac",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--22b9eb17-686a-4cfe-b9a1-cffe22c7755f",
+            "created": "2021-01-20T18:10:33.788Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Trend Micro KillDisk 1",
+                    "description": "Fernando Merces, Byron Gelera, Martin Co. (2018, June 7). KillDisk Variant Hits Latin American Finance Industry. Retrieved January 12, 2021.",
+                    "url": "https://www.trendmicro.com/en_us/research/18/f/new-killdisk-variant-hits-latin-american-financial-organizations-again.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T03:27:37.314Z",
+            "description": "[KillDisk](https://attack.mitre.org/software/S0607) retrieves the hard disk name by calling the <code>CreateFileA to \\\\.\\PHYSICALDRIVE0</code> API.(Citation: Trend Micro KillDisk 1)",
+            "relationship_type": "uses",
+            "source_ref": "malware--e221eb77-1502-4129-af1d-fe1ad55e7ec6",
+            "target_ref": "attack-pattern--f2514ae4-4e9b-4f26-a5ba-c4ae85fe93c3",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.3.0"
+        }
+    ]
+}

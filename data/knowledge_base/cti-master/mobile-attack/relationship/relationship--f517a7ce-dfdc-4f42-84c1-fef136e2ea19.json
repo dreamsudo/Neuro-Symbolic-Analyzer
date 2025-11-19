@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--514a3a9e-c5cd-4579-a127-ce8585210e13",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f517a7ce-dfdc-4f42-84c1-fef136e2ea19",
+            "created": "2020-09-24T15:26:15.607Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "TrendMicro-XLoader-FakeSpy",
+                    "description": "Hiroaki, H., Wu, L., Wu, L.. (2019, April 2). XLoader Disguises as Android Apps, Has FakeSpy Links. Retrieved July 20, 2020.",
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/new-version-of-xloader-that-disguises-as-android-apps-and-an-ios-profile-holds-new-links-to-fakespy/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:52:31.510Z",
+            "description": "[XLoader for iOS](https://attack.mitre.org/software/S0490) has exfiltrated data using HTTP requests.(Citation: TrendMicro-XLoader-FakeSpy)",
+            "relationship_type": "uses",
+            "source_ref": "malware--29944858-da52-4d3d-b428-f8a6eb8dde6f",
+            "target_ref": "attack-pattern--32063d7f-0a39-440d-a4a3-2694488f96cc",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

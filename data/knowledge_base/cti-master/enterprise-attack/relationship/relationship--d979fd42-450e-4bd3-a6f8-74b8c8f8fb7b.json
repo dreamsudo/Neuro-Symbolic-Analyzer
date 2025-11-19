@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--74455805-8c13-4b89-b9d3-d2a1d986b00f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--d979fd42-450e-4bd3-a6f8-74b8c8f8fb7b",
+            "created": "2020-11-06T18:40:38.294Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Talos Cobalt Strike September 2020",
+                    "description": "Mavis, N. (2020, September 21). The Art and Science of Detecting Cobalt Strike. Retrieved September 12, 2024.",
+                    "url": "https://web.archive.org/web/20210219195905/https://talos-intelligence-site.s3.amazonaws.com/production/document_files/files/000/095/031/original/Talos_Cobalt_Strike.pdf"
+                },
+                {
+                    "source_name": "cobaltstrike manual",
+                    "description": "Strategic Cyber LLC. (2017, March 14). Cobalt Strike Manual. Retrieved May 24, 2017.",
+                    "url": "https://web.archive.org/web/20210825130434/https://cobaltstrike.com/downloads/csmanual38.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:50:50.398Z",
+            "description": "[Cobalt Strike](https://attack.mitre.org/software/S0154) can conduct peer-to-peer communication over Windows named pipes encapsulated in the SMB protocol. All protocols use their standard assigned ports.(Citation: cobaltstrike manual)(Citation: Talos Cobalt Strike September 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--a7881f21-e978-4fe4-af56-92c9416a2616",
+            "target_ref": "attack-pattern--9a60a291-8960-4387-8a4a-2ab5c18bb50b",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

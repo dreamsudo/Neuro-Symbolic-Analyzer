@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--a80fea06-ba0b-47f7-b38e-1674cbeaf3f9",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--1010f466-818d-4387-9e43-9ae5e9bf9a40",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Morphisec Cobalt Gang Oct 2018",
+                    "description": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+                    "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+                },
+                {
+                    "source_name": "Talos Cobalt Group July 2018",
+                    "description": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+                    "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:56:56.969Z",
+            "description": "[Cobalt Group](https://attack.mitre.org/groups/G0080) obfuscated several scriptlets and code used on the victim\u2019s machine, including through use of XOR and RC4.(Citation: Talos Cobalt Group July 2018)(Citation: Morphisec Cobalt Gang Oct 2018)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--dc6fe6ee-04c2-49be-ba3d-f38d2463c02a",
+            "target_ref": "attack-pattern--d511a6f6-4a33-41d5-bc95-c343875d1377",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

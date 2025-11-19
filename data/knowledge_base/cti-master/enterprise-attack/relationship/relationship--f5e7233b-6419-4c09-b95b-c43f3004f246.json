@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--a4f9a79b-35f3-4d8d-8e26-83ae3a730569",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f5e7233b-6419-4c09-b95b-c43f3004f246",
+            "created": "2020-05-06T21:01:23.470Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ESET Attor Oct 2019",
+                    "description": "Hromcova, Z. (2019, October). AT COMMANDS, TOR-BASED COMMUNICATIONS: MEET ATTOR, A FANTASY CREATURE AND ALSO A SPY PLATFORM. Retrieved May 6, 2020.",
+                    "url": "https://www.welivesecurity.com/wp-content/uploads/2019/10/ESET_Attor.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:17:36.931Z",
+            "description": "[Attor](https://attack.mitre.org/software/S0438) performs the injection by attaching its code into the APC queue using NtQueueApcThread API.(Citation: ESET Attor Oct 2019)",
+            "relationship_type": "uses",
+            "source_ref": "malware--8f423bd7-6ca7-4303-9e85-008c7ad5fdaa",
+            "target_ref": "attack-pattern--7c0f17c9-1af6-4628-9cbd-9e45482dd605",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

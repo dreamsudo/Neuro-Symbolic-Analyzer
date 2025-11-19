@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--dc0f5331-814f-4be4-8317-f3f9a562d8b3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--4847b10f-f9da-4a35-8df8-e235c6244ba2",
+            "created": "2018-04-18T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Chaos Stolen Backdoor",
+                    "description": "Sebastian Feldmann. (2018, February 14). Chaos: a Stolen Backdoor Rising Again. Retrieved March 5, 2018.",
+                    "url": "http://gosecure.net/2018/02/14/chaos-stolen-backdoor-rising/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:46:04.559Z",
+            "description": "[Chaos](https://attack.mitre.org/software/S0220) provides a reverse shell connection on 8338/TCP, encrypted via AES.(Citation: Chaos Stolen Backdoor)",
+            "relationship_type": "uses",
+            "source_ref": "malware--5bcd5511-6756-4824-a692-e8bb109364af",
+            "target_ref": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

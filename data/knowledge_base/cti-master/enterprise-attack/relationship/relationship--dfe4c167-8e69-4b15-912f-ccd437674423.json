@@ -1,0 +1,42 @@
+{
+    "type": "bundle",
+    "id": "bundle--a0f77084-5904-466f-810f-2671771eae42",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--dfe4c167-8e69-4b15-912f-ccd437674423",
+            "created": "2022-02-17T15:51:18.114Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Symantec Shuckworm January 2022",
+                    "description": "Symantec. (2022, January 31). Shuckworm Continues Cyber-Espionage Attacks Against Ukraine. Retrieved February 17, 2022.",
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/shuckworm-gamaredon-espionage-ukraine"
+                },
+                {
+                    "source_name": "SymantecCarbonBlack_ShuckwormUSB_Apr2025",
+                    "description": "Threat Hunter Team, Symantec and Carbon Black. (2025, April 10). Shuckworm Targets Foreign Military Mission Based in Ukraine. Retrieved July 23, 2025.",
+                    "url": "https://www.security.com/threat-intelligence/shuckworm-ukraine-gammasteel"
+                },
+                {
+                    "source_name": "Unit 42 Gamaredon February 2022",
+                    "description": "Unit 42. (2022, February 3). Russia\u2019s Gamaredon aka Primitive Bear APT Group Actively Targeting Ukraine. Retrieved February 21, 2022.",
+                    "url": "https://unit42.paloaltonetworks.com/gamaredon-primitive-bear-ukraine-update-2021/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-08-21T21:17:08.647Z",
+            "description": "[Gamaredon Group](https://attack.mitre.org/groups/G0047) has used tools to enumerate processes on target hosts including Process Explorer.(Citation: Symantec Shuckworm January 2022)(Citation: Unit 42 Gamaredon February 2022)(Citation: SymantecCarbonBlack_ShuckwormUSB_Apr2025)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf",
+            "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

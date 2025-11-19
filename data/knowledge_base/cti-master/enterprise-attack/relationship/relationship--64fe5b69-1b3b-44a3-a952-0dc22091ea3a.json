@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--dc4c90f2-3d55-4320-a64f-1eac39fe525d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--64fe5b69-1b3b-44a3-a952-0dc22091ea3a",
+            "created": "2022-02-18T13:42:42.386Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Roadtools",
+                    "description": "Dirk-jan Mollema. (2020, April 16). Introducing ROADtools - The Azure AD exploration framework. Retrieved January 31, 2022.",
+                    "url": "https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:51:19.829Z",
+            "description": "[ROADTools](https://attack.mitre.org/software/S0684) leverages valid cloud credentials to perform enumeration operations using the internal Azure AD Graph API.(Citation: Roadtools)\t",
+            "relationship_type": "uses",
+            "source_ref": "tool--6dbdc657-d8e0-4f2f-909b-7251b3e72c6d",
+            "target_ref": "attack-pattern--f232fa7a-025c-4d43-abc7-318e81a73d65",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--b66d6ae5-d796-4679-aa37-c36acc7cb3dc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9fa03a70-ad00-4148-ae5e-8315f3e618d2",
+            "created": "2020-07-15T20:20:59.375Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Bitdefender Mandrake",
+                    "description": "R. Gevers, M. Tivadar, R. Bleotu, A. M. Barbatei, et al.. (2020, May 14). Uprooting Mandrake: The Story of an Advanced Android Spyware Framework That Went Undetected for 4 Years. Retrieved July 15, 2020.",
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/329/Bitdefender-PR-Whitepaper-Mandrake-creat4464-en-EN-interactive.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:50:30.464Z",
+            "description": "[Mandrake](https://attack.mitre.org/software/S0485) can abuse device administrator permissions to ensure that it cannot be uninstalled until its permissions are revoked.(Citation: Bitdefender Mandrake)",
+            "relationship_type": "uses",
+            "source_ref": "malware--52c994fa-b6c8-45a8-9586-a4275cf19307",
+            "target_ref": "attack-pattern--dc01774a-d1c1-45fb-b506-0a5d1d6593d9",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

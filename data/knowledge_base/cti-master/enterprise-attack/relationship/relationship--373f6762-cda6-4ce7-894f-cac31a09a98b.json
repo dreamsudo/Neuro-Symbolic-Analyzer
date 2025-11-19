@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--4f8c62b2-1318-4879-8613-0452d87efcc7",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--373f6762-cda6-4ce7-894f-cac31a09a98b",
+            "created": "2023-03-06T21:15:52.087Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "FireEye APT41 Aug 2019",
+                    "description": "Fraser, N., et al. (2019, August 7). Double DragonAPT41, a dual espionage and cyber crime operation APT41. Retrieved September 23, 2019.",
+                    "url": "https://www.mandiant.com/sites/default/files/2022-02/rt-apt41-dual-operation.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:07:37.048Z",
+            "description": "[APT41](https://attack.mitre.org/groups/G0096) has added user accounts to the User and Admin groups.(Citation: FireEye APT41 Aug 2019) ",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--18854f55-ac7c-4634-bd9a-352dd07613b7",
+            "target_ref": "attack-pattern--3e6831b2-bf4c-4ae6-b328-2e7c6633b291",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

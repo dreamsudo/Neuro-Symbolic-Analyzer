@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--ce16802c-db69-43ee-8a50-3220eb12998a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--fca5a601-68fd-4b20-ad1e-0592cadecb73",
+            "created": "2017-05-31T21:33:27.048Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "FireEye APT30",
+                    "description": "FireEye Labs. (2015, April). APT30 AND THE MECHANICS OF A LONG-RUNNING CYBER ESPIONAGE OPERATION. Retrieved November 17, 2024.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/05/20081935/rpt-apt30.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:59:50.606Z",
+            "description": "(Citation: FireEye APT30)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--f047ee18-7985-4946-8bfb-4ed754d3a0dd",
+            "target_ref": "malware--8b880b41-5139-4807-baa9-309690218719",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

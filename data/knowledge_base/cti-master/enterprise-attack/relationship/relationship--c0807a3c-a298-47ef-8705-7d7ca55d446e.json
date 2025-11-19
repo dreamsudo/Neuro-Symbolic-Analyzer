@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--3aba9107-e982-4315-8ede-848bb725ba00",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--c0807a3c-a298-47ef-8705-7d7ca55d446e",
+            "created": "2022-02-01T16:00:17.492Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Google TAG Lazarus Jan 2021",
+                    "description": "Weidemann, A. (2021, January 25). New campaign targeting security researchers. Retrieved December 20, 2021.",
+                    "url": "https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:44:20.269Z",
+            "description": "[Lazarus Group](https://attack.mitre.org/groups/G0032) has created new Twitter accounts to conduct social engineering against potential victims.(Citation: Google TAG Lazarus Jan 2021)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+            "target_ref": "attack-pattern--b1ccd744-3f78-4a0e-9bb2-2002057f7928",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

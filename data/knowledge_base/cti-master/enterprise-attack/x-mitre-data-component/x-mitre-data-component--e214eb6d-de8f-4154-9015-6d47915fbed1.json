@@ -1,0 +1,52 @@
+{
+    "type": "bundle",
+    "id": "bundle--2abd8163-ff6a-4638-9385-f5a893a6552f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--e214eb6d-de8f-4154-9015-6d47915fbed1",
+            "created": "2021-10-20T15:05:19.272Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0027",
+                    "external_id": "DC0027"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Cloud Storage Metadata",
+            "description": "Cloud Storage Metadata provides contextual information about cloud storage infrastructure and its associated activity. This data may include attributes such as storage name, size, owner, permissions, creation date, region, and activity metadata. It is essential for monitoring, auditing, and identifying anomalies in cloud storage environments. Examples: \n\n- AWS S3 Bucket Metadata: Metadata about an S3 bucket includes the bucket name, region, creation date, owner, storage class, and permissions.\n- Azure Blob Storage Metadata: Metadata for an Azure Blob container includes container name, access level (e.g., private or public), size, and tags.\n- Google Cloud Storage Metadata: Metadata includes bucket name, storage class, location, labels, lifecycle policies, and versioning status.\n- OpenStack Swift Metadata: Metadata for a Swift container includes name, access level, quota, and custom attributes.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "Post-authentication metadata enumeration from GUI session"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "AnonymousLinkCreated"
+                },
+                {
+                    "name": "saas:box",
+                    "channel": "collaboration.invite"
+                },
+                {
+                    "name": "saas:dropbox",
+                    "channel": "Shared link created to external account"
+                }
+            ]
+        }
+    ]
+}

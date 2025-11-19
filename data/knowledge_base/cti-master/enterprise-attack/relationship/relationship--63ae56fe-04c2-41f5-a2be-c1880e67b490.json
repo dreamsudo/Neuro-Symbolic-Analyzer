@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--2811626c-84d5-48c5-82a6-482d1db6a7e4",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--63ae56fe-04c2-41f5-a2be-c1880e67b490",
+            "created": "2020-06-01T16:11:40.135Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "IBM TA505 April 2020",
+                    "description": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+                    "url": "https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:51:05.561Z",
+            "description": "[SDBbot](https://attack.mitre.org/software/S0461) has used a packed installer file.(Citation: IBM TA505 April 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--92b03a94-7147-4952-9d5a-b4d24da7487c",
+            "target_ref": "attack-pattern--deb98323-e13f-4b0c-8d94-175379069062",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

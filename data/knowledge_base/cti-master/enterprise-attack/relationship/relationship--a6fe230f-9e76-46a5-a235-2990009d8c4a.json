@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--8d0a1315-d7ac-4c5f-8d6e-1566a33e3d59",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--a6fe230f-9e76-46a5-a235-2990009d8c4a",
+            "created": "2020-07-15T19:02:25.057Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "IBM IcedID November 2017",
+                    "description": "Kessem, L., et al. (2017, November 13). New Banking Trojan IcedID Discovered by IBM X-Force Research. Retrieved July 14, 2020.",
+                    "url": "https://securityintelligence.com/new-banking-trojan-icedid-discovered-by-ibm-x-force-research/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:03:52.350Z",
+            "description": "[IcedID](https://attack.mitre.org/software/S0483) has used <code>ZwQueueApcThread</code> to inject itself into remote processes.(Citation: IBM IcedID November 2017)",
+            "relationship_type": "uses",
+            "source_ref": "malware--5147ef15-1cae-4707-8ea1-bee8d98b7f1d",
+            "target_ref": "attack-pattern--7c0f17c9-1af6-4628-9cbd-9e45482dd605",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "type": "bundle",
+    "id": "bundle--a0e3485b-b718-4722-9c96-b18a292f0557",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--c191afcc-515a-4f0c-85cc-15af0fd3674a",
+            "created": "2021-09-28T15:46:27.090Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Cyberint Qakbot May 2021",
+                    "description": "Cyberint. (2021, May 25). Qakbot Banking Trojan. Retrieved September 27, 2021.",
+                    "url": "https://blog.cyberint.com/qakbot-banking-trojan"
+                },
+                {
+                    "source_name": "Group IB Ransomware September 2020",
+                    "description": "Group IB. (2020, September). LOCK LIKE  A PRO. Retrieved November 17, 2024.",
+                    "url": "https://web.archive.org/web/20220119114433/https://groupib.pathfactory.com/ransomware-reports/prolock_wp"
+                },
+                {
+                    "source_name": "Kaspersky QakBot September 2021",
+                    "description": "Kuzmenko, A. et al. (2021, September 2). QakBot technical analysis. Retrieved September 27, 2021.",
+                    "url": "https://securelist.com/qakbot-technical-analysis/103931/"
+                },
+                {
+                    "source_name": "Trend Micro Qakbot May 2020",
+                    "description": "Mendoza, E. et al. (2020, May 25). Qakbot Resurges, Spreads through VBS Files. Retrieved September 27, 2021.",
+                    "url": "https://www.trendmicro.com/vinfo/ph/security/news/cybercrime-and-digital-threats/qakbot-resurges-spreads-through-vbs-files"
+                },
+                {
+                    "source_name": "Microsoft Ransomware as a Service",
+                    "description": "Microsoft. (2022, May 9). Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself. Retrieved March 10, 2023.",
+                    "url": "https://www.microsoft.com/en-us/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/"
+                },
+                {
+                    "source_name": "ATT QakBot April 2021",
+                    "description": "Morrow, D. (2021, April 15). The rise of QakBot. Retrieved September 27, 2021.",
+                    "url": "https://cybersecurity.att.com/blogs/labs-research/the-rise-of-qakbot"
+                },
+                {
+                    "source_name": "Kroll Qakbot June 2020",
+                    "description": "Sette, N. et al. (2020, June 4). Qakbot Malware Now Exfiltrating Emails for Sophisticated Thread Hijacking Attacks. Retrieved September 27, 2021.",
+                    "url": "https://www.kroll.com/en/insights/publications/cyber/qakbot-malware-exfiltrating-emails-thread-hijacking-attacks"
+                },
+                {
+                    "source_name": "Trend Micro Qakbot December 2020",
+                    "description": "Trend Micro. (2020, December 17). QAKBOT: A decade-old malware still with new tricks. Retrieved November 17, 2024.",
+                    "url": "https://success.trendmicro.com/en-US/solution/KA-0011282"
+                },
+                {
+                    "source_name": "Deep Instinct Black Basta August 2022",
+                    "description": "Vilkomir-Preisman, S. (2022, August 18). Beating Black Basta Ransomware. Retrieved March 8, 2023.",
+                    "url": "https://www.deepinstinct.com/blog/black-basta-ransomware-threat-emergence"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:44:37.202Z",
+            "description": "[QakBot](https://attack.mitre.org/software/S0650) has spread through emails with malicious attachments.(Citation: Trend Micro Qakbot May 2020)(Citation: Kroll Qakbot June 2020)(Citation: Trend Micro Qakbot December 2020)(Citation: Cyberint Qakbot May 2021)(Citation: ATT QakBot April 2021)(Citation: Kaspersky QakBot September 2021)(Citation: Group IB Ransomware September 2020)(Citation: Deep Instinct Black Basta August 2022)(Citation: Microsoft Ransomware as a Service)",
+            "relationship_type": "uses",
+            "source_ref": "malware--edc5e045-5401-42bb-ad92-52b5b2ee0de9",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

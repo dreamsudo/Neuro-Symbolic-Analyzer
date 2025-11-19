@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--c006ffb0-0b2f-45be-9a8b-9553741fdf05",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--af393cd2-2a5a-41f8-a1b1-218f30beb4dd",
+            "created": "2019-06-21T12:06:48.737Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:05:21.740Z",
+            "description": "If msxsl.exe is unnecessary, then block its execution to prevent abuse by adversaries.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--47e0e9fe-96ce-4f65-8bb1-8be1feacb5db",
+            "target_ref": "attack-pattern--ebbe170d-aa74-4946-8511-9921243415a3",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

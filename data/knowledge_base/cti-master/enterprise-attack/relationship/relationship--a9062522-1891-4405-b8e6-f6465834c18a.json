@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--981a0031-4fe6-40f2-bb35-fdcda2992699",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--a9062522-1891-4405-b8e6-f6465834c18a",
+            "created": "2021-10-15T20:03:19.605Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Secureworks GOLD KINGSWOOD September 2018",
+                    "description": "CTU. (2018, September 27). Cybercriminals Increasingly Trying to Ensnare the Big Financial Fish. Retrieved September 20, 2021.",
+                    "url": "https://www.secureworks.com/blog/cybercriminals-increasingly-trying-to-ensnare-the-big-financial-fish"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:04:14.866Z",
+            "description": "(Citation: Secureworks GOLD KINGSWOOD September 2018)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--dc6fe6ee-04c2-49be-ba3d-f38d2463c02a",
+            "target_ref": "malware--599cd7b5-37b5-4cdd-8174-2811531ce9d0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

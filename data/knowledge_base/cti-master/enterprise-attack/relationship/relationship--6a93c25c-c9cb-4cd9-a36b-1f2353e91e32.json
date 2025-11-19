@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--60a9f11e-b4a6-4b85-8f65-fbbbc8bb1cfc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--6a93c25c-c9cb-4cd9-a36b-1f2353e91e32",
+            "created": "2019-04-19T14:09:25.435Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Unit 42 OilRig Sept 2018",
+                    "description": "Falcone, R., et al. (2018, September 04). OilRig Targets a Middle Eastern Government and Adds Evasion Techniques to OopsIE. Retrieved September 24, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2018/09/unit42-oilrig-targets-middle-eastern-government-adds-evasion-techniques-oopsie/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:52:21.913Z",
+            "description": "[OopsIE](https://attack.mitre.org/software/S0264) performs several anti-VM and sandbox checks on the victim's machine. One technique the group has used was to perform a WMI query <code>SELECT * FROM MSAcpi_ThermalZoneTemperature</code> to check the temperature to see if it\u2019s running in a virtual environment.(Citation: Unit 42 OilRig Sept 2018)",
+            "relationship_type": "uses",
+            "source_ref": "malware--8e101fdd-9f7f-4916-bb04-6bd9e94c129c",
+            "target_ref": "attack-pattern--29be378d-262d-4e99-b00d-852d573628e6",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

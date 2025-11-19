@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--e758d179-cd59-4259-b33d-b9288560c7a5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9c0bf8de-7366-46a4-a1b9-b6a72937c8db",
+            "created": "2022-01-18T18:56:49.724Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "CrowdStrike AQUATIC PANDA December 2021",
+                    "description": "Wiley, B. et al. (2021, December 29). OverWatch Exposes AQUATIC PANDA in Possession of Log4Shell Exploit Tools During Hands-on Intrusion Attempt. Retrieved January 18, 2022.",
+                    "url": "https://www.crowdstrike.com/blog/overwatch-exposes-aquatic-panda-in-possession-of-log-4-shell-exploit-tools/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:01:51.082Z",
+            "description": "(Citation: CrowdStrike AQUATIC PANDA December 2021)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--64b52e7d-b2c4-4a02-9372-08a463f5dc11",
+            "target_ref": "malware--d906e6f7-434c-44c0-b51a-ed50af8f7945",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

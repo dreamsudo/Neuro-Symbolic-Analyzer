@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--caaf1780-a009-4268-be82-11a2969ef595",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--98ae9cb2-1141-48c6-81fd-f16adb430031",
+            "created": "2023-01-18T19:17:07.565Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "cyble_drinik_1022",
+                    "description": "Cyble. (2022, October 27). Drinik Malware Returns With Advanced Capabilities Targeting Indian Taxpayers. Retrieved November 17, 2024.",
+                    "url": "https://web.archive.org/web/20221114031945/https://blog.cyble.com/2022/10/27/drinik-malware-returns-with-advanced-capabilities-targeting-indian-taxpayers/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:50:22.600Z",
+            "description": "[Drinik](https://attack.mitre.org/software/S1054) can request the `READ_EXTERNAL_STORAGE` and `WRITE_EXTERNAL_STORAGE` Android permissions.(Citation: cyble_drinik_1022)",
+            "relationship_type": "uses",
+            "source_ref": "malware--d6e009b7-df5e-447a-bfd2-d5b77374edfe",
+            "target_ref": "attack-pattern--e1c912a9-e305-434b-9172-8a6ce3ec9c4a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--7f6217da-a7a7-4e8d-9a59-04038d81a522",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7e2d9773-1320-4c8f-a595-2b92bf0fd8ed",
+            "created": "2019-07-10T15:35:43.668Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Lookout Dark Caracal Jan 2018",
+                    "description": "Blaich, A., et al. (2018, January 18). Dark Caracal: Cyber-espionage at a Global Scale. Retrieved April 11, 2018.",
+                    "url": "https://info.lookout.com/rs/051-ESQ-475/images/Lookout_Dark-Caracal_srr_20180118_us_v.1.0.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:49:46.054Z",
+            "description": "[Pallas](https://attack.mitre.org/software/S0399) accesses the device contact list.(Citation: Lookout Dark Caracal Jan 2018)",
+            "relationship_type": "uses",
+            "source_ref": "malware--c41a8b7c-3e42-4eee-b87d-ad8a100ee878",
+            "target_ref": "attack-pattern--e0b9ecb8-a7d1-43c7-aa30-8e19c6a92c86",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

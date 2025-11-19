@@ -1,0 +1,44 @@
+{
+    "type": "bundle",
+    "id": "bundle--1317c538-3edf-48aa-b50c-35a9feff3a46",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--1361e324-b594-4c0e-a517-20cee32b8d7f",
+            "created": "2021-10-20T15:05:19.274Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0089",
+                    "external_id": "DC0089"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T15:14:37.816Z",
+            "name": "Instance Stop",
+            "description": "The deactivation or shutdown of a virtual machine instance within a cloud infrastructure. This action typically involves stopping a running instance, which halts its operation and releases certain associated resources, such as CPU and memory. Examples: \n\n- Google Cloud Platform (GCP): `instance.stop` events recorded in GCP Audit Logs indicate the deactivation of an instance.\n- Amazon Web Services (AWS): `StopInstances` actions in AWS CloudTrail indicate EC2 instances being stopped.\n- Microsoft Azure: `Microsoft.Compute/virtualMachines/deallocate` or `stop` events in Azure Activity Logs represent a virtual machine being stopped or deallocated.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "TerminateInstances"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "StopInstances"
+                }
+            ]
+        }
+    ]
+}

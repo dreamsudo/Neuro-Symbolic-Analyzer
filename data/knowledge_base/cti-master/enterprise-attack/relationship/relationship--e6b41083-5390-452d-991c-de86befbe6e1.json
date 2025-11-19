@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--38047fab-6a68-4b14-a132-a739b1ed4ce8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--e6b41083-5390-452d-991c-de86befbe6e1",
+            "created": "2020-02-21T17:31:33.869Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Metcalf 2015",
+                    "description": "Metcalf, S. (2015, January 19). Attackers Can Now Use Mimikatz to Implant Skeleton Key on Domain Controllers & BackDoor Your Active Directory Forest. Retrieved February 3, 2015.",
+                    "url": "http://adsecurity.org/?p=1275"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:15:01.417Z",
+            "description": "Ensure Domain Controller backups are properly secured.(Citation: Metcalf 2015)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--feff9142-e8c2-46f4-842b-bd6fb3d41157",
+            "target_ref": "attack-pattern--edf91964-b26e-4b4a-9600-ccacd7d7df24",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

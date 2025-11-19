@@ -1,0 +1,41 @@
+{
+    "type": "bundle",
+    "id": "bundle--a73c6894-5b1a-4e2a-b9c9-03cedd2a25ba",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f0488c32-f937-4eb9-8068-092795872582",
+            "created": "2020-10-20T17:59:21.292Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Cisco IOS Software Integrity Assurance - Image File Verification",
+                    "description": "Cisco. (n.d.). Cisco IOS Software Integrity Assurance - Cisco IOS Image File Verification. Retrieved October 19, 2020.",
+                    "url": "https://tools.cisco.com/security/center/resources/integrity_assurance.html#7"
+                },
+                {
+                    "source_name": "Cisco IOS Software Integrity Assurance - Image File Integrity",
+                    "description": "Cisco. (n.d.). Cisco IOS Software Integrity Assurance - Image File Integrity. Retrieved October 21, 2020.",
+                    "url": "https://tools.cisco.com/security/center/resources/integrity_assurance.html#30"
+                },
+                {
+                    "source_name": "Cisco IOS Software Integrity Assurance - Change Control",
+                    "description": "Cisco. (n.d.). Cisco IOS Software Integrity Assurance - Change Control. Retrieved October 21, 2020.",
+                    "url": "https://tools.cisco.com/security/center/resources/integrity_assurance.html#31"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:16:42.828Z",
+            "description": "Periodically check the integrity of the running configuration and system image to ensure they have not been modified. (Citation: Cisco IOS Software Integrity Assurance - Image File Verification) (Citation: Cisco IOS Software Integrity Assurance - Image File Integrity) (Citation: Cisco IOS Software Integrity Assurance - Change Control) ",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--cc2399fd-3cd3-4319-8d0a-fbd6420cdaf8",
+            "target_ref": "attack-pattern--28abec6c-4443-4b03-8206-07f2e264a6b4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

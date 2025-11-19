@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--716b6fdb-7548-4ad3-b803-8c9be553322a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--8bc0dbc4-f84b-448a-95f9-f6b0ae56f256",
+            "created": "2021-04-16T21:33:50.560Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Mandiant APT29 Microsoft 365 2022",
+                    "description": "Douglas Bienstock. (2022, August 18). You Can\u2019t Audit Me: APT29 Continues Targeting Microsoft 365. Retrieved February 23, 2023.",
+                    "url": "https://www.mandiant.com/resources/blog/apt29-continues-targeting-microsoft"
+                },
+                {
+                    "source_name": "NCSC APT29 July 2020",
+                    "description": "National Cyber Security Centre. (2020, July 16). Advisory: APT29 targets COVID-19 vaccine development. Retrieved September 29, 2020.",
+                    "url": "https://www.ncsc.gov.uk/files/Advisory-APT29-targets-COVID-19-vaccine-development-V1-1.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:30:29.346Z",
+            "description": "[APT29](https://attack.mitre.org/groups/G0016) has used compromised identities to access networks via VPNs and Citrix.(Citation: NCSC APT29 July 2020)(Citation: Mandiant APT29 Microsoft 365 2022)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--899ce53f-13a0-479b-a0e4-67d46e241542",
+            "target_ref": "attack-pattern--10d51417-ee35-4589-b1ff-b6df1c334e8d",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

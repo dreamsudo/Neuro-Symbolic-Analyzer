@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--d774e920-16b2-4964-bae3-495043f9f6fa",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--05f6442b-1ba8-4356-9e3a-17edc6236a10",
+            "created": "2021-03-24T17:06:09.897Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Microsoft Targeting Elections September 2020",
+                    "description": "Burt, T. (2020, September 10). New cyberattacks targeting U.S. elections. Retrieved March 24, 2021.",
+                    "url": "https://blogs.microsoft.com/on-the-issues/2020/09/10/cyberattacks-us-elections-trump-biden/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:32:48.472Z",
+            "description": "[APT28](https://attack.mitre.org/groups/G0007) has harvested user's login credentials.(Citation: Microsoft Targeting Elections September 2020)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+            "target_ref": "attack-pattern--bc76d0a4-db11-4551-9ac4-01a469cfb161",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

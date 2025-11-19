@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--9298a78f-62b9-4a53-8e1e-bc3cf6822842",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--8cdfc8e4-b657-4ae9-b9ee-9b6107fae796",
+            "created": "2017-05-31T21:33:27.046Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET Turla Lunar toolset May 2024",
+                    "description": "Jur\u010dacko, F. (2024, May 15). To the Moon and back(doors): Lunar landing in diplomatic missions. Retrieved June 26, 2024.",
+                    "url": "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/"
+                },
+                {
+                    "source_name": "Kaspersky Turla",
+                    "description": "Kaspersky Lab's Global Research and Analysis Team. (2014, August 7). The Epic Turla Operation: Solving some of the mysteries of Snake/Uroburos. Retrieved December 11, 2014.",
+                    "url": "https://securelist.com/the-epic-turla-operation/65545/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:30:43.934Z",
+            "description": "(Citation: Kaspersky Turla)(Citation: ESET Turla Lunar toolset May 2024)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--7a19ecb1-3c65-4de3-a230-993516aed6a6",
+            "target_ref": "tool--7fcbc4e8-1989-441f-9ac5-e7b6ff5806f1",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

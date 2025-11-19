@@ -1,0 +1,64 @@
+{
+    "type": "bundle",
+    "id": "bundle--728558a5-4e56-49a3-9474-681f57c5bb35",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--537ea573-8a1c-468c-956b-d16d2ed9d067",
+            "created": "2017-10-25T14:48:07.827Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1469",
+                    "external_id": "T1469"
+                },
+                {
+                    "source_name": "Honan-Hacking",
+                    "description": "Mat Honan. (2012, August 6). How Apple and Amazon Security Flaws Led to My Epic Hacking. Retrieved December 29, 2016.",
+                    "url": "https://www.wired.com/2012/08/apple-amazon-mat-honan-hacking/"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/ecosystem-threats/ECO-5.html",
+                    "external_id": "ECO-5"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/emm-threats/EMM-7.html",
+                    "external_id": "EMM-7"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:47.844Z",
+            "name": "Remotely Wipe Data Without Authorization",
+            "description": "An adversary who is able to obtain unauthorized access to or misuse authorized access to cloud services (e.g. Google's Android Device Manager or Apple iCloud's Find my iPhone) or to an EMM console could use that access to wipe enrolled devices (Citation: Honan-Hacking).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "remote-service-effects"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": true,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Android",
+                "iOS"
+            ],
+            "x_mitre_version": "1.0",
+            "x_mitre_tactic_type": [
+                "Without Adversary Device Access"
+            ]
+        }
+    ]
+}

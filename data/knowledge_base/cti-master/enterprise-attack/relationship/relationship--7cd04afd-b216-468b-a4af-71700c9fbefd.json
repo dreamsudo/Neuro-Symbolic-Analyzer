@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--ea7f4280-8f1d-4f78-a721-bb5ab7153839",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7cd04afd-b216-468b-a4af-71700c9fbefd",
+            "created": "2022-02-01T15:24:07.945Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET Twitter Ida Pro Nov 2021",
+                    "description": "Cherepanov, Anton. (2019, November 10). ESETresearch discovered a trojanized IDA Pro installer. Retrieved September 12, 2024.",
+                    "url": "https://x.com/ESETresearch/status/1458438155149922312"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:26:31.796Z",
+            "description": "[Lazarus Group](https://attack.mitre.org/groups/G0032) has used rundll32 to execute malicious payloads on a compromised host.(Citation: ESET Twitter Ida Pro Nov 2021)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+            "target_ref": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

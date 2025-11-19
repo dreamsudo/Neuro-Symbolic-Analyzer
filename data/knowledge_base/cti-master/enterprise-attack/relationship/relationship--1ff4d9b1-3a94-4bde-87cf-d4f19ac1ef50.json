@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--bed8e5e0-3d3d-4fc8-8704-2e6ff2ab039d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--1ff4d9b1-3a94-4bde-87cf-d4f19ac1ef50",
+            "created": "2022-07-18T15:56:47.978Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Korean FSI TA505 2020",
+                    "description": "Financial Security Institute. (2020, February 28). Profiling of TA505 Threat Group That Continues to Attack the Financial Sector. Retrieved July 14, 2022.",
+                    "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1382.do?page=1&column=&search=&searchSDate=&searchEDate=&bbsDataCategory="
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:01:26.998Z",
+            "description": "[FlawedAmmyy](https://attack.mitre.org/software/S0381) can collect keyboard events.(Citation: Korean FSI TA505 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--432555de-63bf-4f2a-a3fa-f720a4561078",
+            "target_ref": "attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

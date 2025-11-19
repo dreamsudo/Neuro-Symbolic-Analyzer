@@ -1,0 +1,25 @@
+{
+    "type": "bundle",
+    "id": "bundle--a051a6e7-b6f3-46a5-8373-bf6b647c9c31",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7657a4d4-1ba3-4b66-83f7-6db5eab14847",
+            "created": "2022-04-06T13:30:03.526Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:49:34.987Z",
+            "description": "Users should be taught that Device Administrator permissions are very dangerous, and very few applications need it.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--653492e3-27be-4a0e-b08c-938dd2b7e0e1",
+            "target_ref": "attack-pattern--e2c2249a-eb82-4614-8dd4-9c514dde65e2",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

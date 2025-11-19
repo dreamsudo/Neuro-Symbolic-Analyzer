@@ -1,0 +1,70 @@
+{
+    "type": "bundle",
+    "id": "bundle--4a1b8d09-a6dc-43f7-902c-bb9a4e9602f5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--322bad5a-1c49-4d23-ab79-76d641794afa",
+            "created": "2017-05-31T21:30:21.315Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1007",
+                    "external_id": "T1007"
+                },
+                {
+                    "source_name": "Aquasec Kinsing 2020",
+                    "description": "Gal Singer. (2020, April 3). Threat Alert: Kinsing Malware Attacks Targeting Container Environments. Retrieved May 22, 2025.",
+                    "url": "https://www.aquasec.com/blog/threat-alert-kinsing-malware-container-vulnerability/"
+                },
+                {
+                    "source_name": "Elastic Security Labs GOSAR 2024",
+                    "description": "Jia Yu Chan, Salim Bitam, Daniel Stepanic, and Seth Goodwin. (2024, December 12). Under the SADBRIDGE with GOSAR: QUASAR Gets a Golang Rewrite. Retrieved May 22, 2025.",
+                    "url": "https://www.elastic.co/security-labs/under-the-sadbridge-with-gosar"
+                },
+                {
+                    "source_name": "SentinelLabs macOS Malware 2021",
+                    "description": "Phil Stokes. (2021, February 16). 20 Common Tools & Techniques Used by macOS Threat Actors & Malware. Retrieved May 22, 2025.",
+                    "url": "https://www.sentinelone.com/labs/20-common-tools-techniques-used-by-macos-threat-actors-malware/"
+                },
+                {
+                    "source_name": "Splunk Linux Gormir 2024",
+                    "description": "Splunk Threat Research Team , Teoderick Contreras. (2024, July 15). Breaking Down Linux.Gomir: Understanding this Backdoor\u2019s TTPs. Retrieved May 22, 2025.",
+                    "url": "https://www.splunk.com/en_us/blog/security/breaking-down-linux-gomir-understanding-this-backdoors-ttps.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:36.812Z",
+            "name": "System Service Discovery",
+            "description": "Adversaries may try to gather information about registered local system services. Adversaries may obtain information about services using tools as well as OS utility commands such as <code>sc query</code>, <code>tasklist /svc</code>, <code>systemctl --type=service</code>, and <code>net start</code>. Adversaries may also gather information about schedule tasks via commands such as `schtasks` on Windows or `crontab -l` on Linux and macOS.(Citation: Elastic Security Labs GOSAR 2024)(Citation: SentinelLabs macOS Malware 2021)(Citation: Splunk Linux Gormir 2024)(Citation: Aquasec Kinsing 2020)\n\nAdversaries may use the information from [System Service Discovery](https://attack.mitre.org/techniques/T1007) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Harshal Tupsamudre, Qualys"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_version": "1.6"
+        }
+    ]
+}

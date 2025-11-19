@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--297b8e1e-5045-444f-ba6c-ce949665d3d3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--83e8bdc8-6fad-4b83-92de-2b66e3e9205e",
+            "created": "2021-03-08T13:37:31.311Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "CISA MAR-10288834-2.v1  TAINTEDSCRIBE MAY 2020",
+                    "description": "USG. (2020, May 12). MAR-10288834-2.v1 \u2013 North Korean Trojan: TAINTEDSCRIBE. Retrieved March 5, 2021.",
+                    "url": "https://us-cert.cisa.gov/ncas/analysis-reports/ar20-133b"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:57:12.805Z",
+            "description": "(Citation: CISA MAR-10288834-2.v1  TAINTEDSCRIBE MAY 2020)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+            "target_ref": "malware--7f4bbe05-1674-4087-8a16-8f1ad61b6152",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "type": "bundle",
+    "id": "bundle--d7ebddcc-4fb4-4243-a830-321e13b46e1d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--61f1d40e-f3d0-4cc6-aa2d-937b6204194f",
+            "created": "2021-10-20T15:05:19.272Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0033",
+                    "external_id": "DC0033"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Process Termination",
+            "description": "The exit or termination of a running process on a system. This can occur due to normal operations, user-initiated commands, or malicious actions such as process termination by malware to disable security controls.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack",
+                "mobile-attack",
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "Process",
+                    "channel": "None"
+                },
+                {
+                    "name": "WinEventLog:Sysmon",
+                    "channel": "EventCode=5"
+                },
+                {
+                    "name": "linux:syslog",
+                    "channel": "Unexpected termination of daemons or critical services not aligned with admin change tickets"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "process_termination: Unexpected termination of processes tied to vulnerable or high-value services"
+                },
+                {
+                    "name": "esxi:hostd",
+                    "channel": "Log entries indicating VM powered off or forcibly terminated"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Terminal process killed (killall Terminal) immediately after sudoers modification"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "exit_group"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "process.*exit.*code"
+                },
+                {
+                    "name": "linux:osquery",
+                    "channel": "unexpected termination of syslog or rsyslog processes"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "Process segfault or abnormal termination after invoking vulnerable syscall sequence"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "kill syscalls targeting logging/security processes"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Termination of syspolicyd or XProtect processes"
+                },
+                {
+                    "name": "docker:runtime",
+                    "channel": "Termination of monitoring sidecar or security container"
+                }
+            ]
+        }
+    ]
+}

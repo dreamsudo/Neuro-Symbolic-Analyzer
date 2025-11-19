@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--1a7439d9-1456-40d9-8ba6-cc4994027a66",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f5361de6-c729-4fe3-a37d-2d5ff95b31e2",
+            "created": "2022-03-15T20:02:43.855Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "KISA Operation Muzabi",
+                    "description": "KISA. (2021). Phishing Target Reconnaissance and Attack Resource Analysis Operation Muzabi. Retrieved March 8, 2024.",
+                    "url": "https://web.archive.org/web/20220328121326/https://boho.or.kr/filedownload.do?attach_file_seq=2695&attach_file_id=EpF2695.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:57:56.312Z",
+            "description": "[Kimsuky](https://attack.mitre.org/groups/G0094) has added accounts to specific groups with <code>net localgroup</code>.(Citation: KISA Operation Muzabi)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--0ec2f388-bf0f-4b5c-97b1-fc736d26c25f",
+            "target_ref": "attack-pattern--3e6831b2-bf4c-4ae6-b328-2e7c6633b291",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--82ef8af4-5d47-4377-8dff-e1561375702e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--faaecea3-e9a8-48a6-bed4-3f470b0adce6",
+            "created": "2021-09-30T15:45:56.576Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Group IB Ransomware September 2020",
+                    "description": "Group IB. (2020, September). LOCK LIKE  A PRO. Retrieved November 17, 2024.",
+                    "url": "https://web.archive.org/web/20220119114433/https://groupib.pathfactory.com/ransomware-reports/prolock_wp"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:59:20.106Z",
+            "description": "[QakBot](https://attack.mitre.org/software/S0650) has the ability to modify the Registry to add its binaries to the Windows Defender exclusion list.(Citation: Group IB Ransomware September 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--edc5e045-5401-42bb-ad92-52b5b2ee0de9",
+            "target_ref": "attack-pattern--ac08589e-ee59-4935-8667-d845e38fe579",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--0bd80cbc-9598-47a6-b8e1-b74b2a7bb507",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--36aad32e-5300-4db0-b5a2-8b7442123db1",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Symantec Orangeworm April 2018",
+                    "description": "Symantec Security Response Attack Investigation Team. (2018, April 23). New Orangeworm attack group targets the healthcare sector in the U.S., Europe, and Asia. Retrieved May 8, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:42:49.017Z",
+            "description": "(Citation: Symantec Orangeworm April 2018)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1",
+            "target_ref": "malware--c2417bab-3189-4d4d-9d60-96de2cdaf0ab",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

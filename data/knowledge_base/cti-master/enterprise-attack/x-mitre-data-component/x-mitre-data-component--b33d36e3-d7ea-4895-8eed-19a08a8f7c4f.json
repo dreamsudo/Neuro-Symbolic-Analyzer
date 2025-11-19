@@ -1,0 +1,76 @@
+{
+    "type": "bundle",
+    "id": "bundle--b61fa379-eee8-447f-94f1-97a2fe6e06f8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--b33d36e3-d7ea-4895-8eed-19a08a8f7c4f",
+            "created": "2021-10-20T15:05:19.274Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0070",
+                    "external_id": "DC0070"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Cloud Service Metadata",
+            "description": "Cloud service metadata refers to the contextual and descriptive information about cloud services, including their name, type, purpose, configuration, and activity around them. This metadata is essential for understanding the roles and functions of cloud services, their operational status, and their potential misuse. Examples: \n\n- Azure Service Metadata: Metadata describing a resource in Azure, such as an Azure Storage Account or a Virtual Machine.\n- AWS Cloud Service Metadata: Metadata for an AWS EC2 instance collected using the `DescribeInstances` API call.\n- Google Cloud Service Metadata: Metadata for a Google Compute Engine instance collected using `gcloud compute instances describe`.\n- Office 365 Metadata: Metadata about an Office 365 SharePoint site.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "GetInstanceIdentityDocument"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "rds:ExecuteStatement: Large data access via RDS or Aurora with unknown session context"
+                },
+                {
+                    "name": "saas:github",
+                    "channel": "repo.download, repo.clone, oauth.authorize, repo.getContent"
+                },
+                {
+                    "name": "AWS:CloudWatch",
+                    "channel": "unexpected IAM user or role assuming privileges for instance/snapshot operations"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "GetSecretValue"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "InvokeFunction"
+                },
+                {
+                    "name": "m365:sharepoint",
+                    "channel": "Multiple file download operations on a site by a privileged account in a short time window"
+                },
+                {
+                    "name": "saas:github",
+                    "channel": "CI/CD secret accessed or exported"
+                },
+                {
+                    "name": "m365:exchange",
+                    "channel": "Cmdlet - New-InboxRule"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "New-InboxRule, Set-InboxRule"
+                }
+            ]
+        }
+    ]
+}

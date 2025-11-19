@@ -1,0 +1,25 @@
+{
+    "type": "bundle",
+    "id": "bundle--838df1b8-266f-41ef-9c23-09d5613f5e13",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--1fea6d3f-b097-4e4e-b089-5abd6e2659e7",
+            "created": "2023-04-11T03:23:27.865Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:01:25.685Z",
+            "description": "Restrict Registry permissions to disallow the modification of sensitive Registry keys such as `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order`.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--a2c36a5d-4058-475e-8e77-fff75e50d3b9",
+            "target_ref": "attack-pattern--f4c1826f-a322-41cd-9557-562100848c84",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

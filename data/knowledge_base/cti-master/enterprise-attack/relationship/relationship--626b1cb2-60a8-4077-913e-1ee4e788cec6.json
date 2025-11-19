@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--4c5493d0-86fd-479a-9f13-2c6dbac4925a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--626b1cb2-60a8-4077-913e-1ee4e788cec6",
+            "created": "2019-01-29T21:33:34.689Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Unit 42 BadPatch Oct 2017",
+                    "description": "Bar, T., Conant, S. (2017, October 20). BadPatch. Retrieved November 13, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/10/unit42-badpatch/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:50:49.925Z",
+            "description": "[BadPatch](https://attack.mitre.org/software/S0337) has a keylogging capability.(Citation: Unit 42 BadPatch Oct 2017)",
+            "relationship_type": "uses",
+            "source_ref": "malware--9af05de0-bc09-4511-a350-5eb8b06185c1",
+            "target_ref": "attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

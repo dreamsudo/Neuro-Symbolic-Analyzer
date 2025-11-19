@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--b904dfdf-6cd9-469b-a806-c131c926c994",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--ecd83e69-2eb1-4c2d-a01f-e42ea8f807f9",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Github UACMe",
+                    "description": "UACME Project. (2016, June 16). UACMe. Retrieved July 26, 2016.",
+                    "url": "https://github.com/hfiref0x/UACME"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:16:07.831Z",
+            "description": "[UACMe](https://attack.mitre.org/software/S0116) contains many methods for bypassing Windows User Account Control on multiple versions of the operating system.(Citation: Github UACMe)",
+            "relationship_type": "uses",
+            "source_ref": "tool--102c3898-85e0-43ee-ae28-62a0a3ed9507",
+            "target_ref": "attack-pattern--120d5519-3098-4e1c-9191-2aa61232f073",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

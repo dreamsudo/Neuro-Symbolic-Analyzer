@@ -1,0 +1,52 @@
+{
+    "type": "bundle",
+    "id": "bundle--88b49d99-561d-43b4-a0cd-bf231f377bfa",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b42c23c9-99f4-4b1f-91e2-a945a119fe98",
+            "created": "2020-04-28T13:48:00.518Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Crowdstrike GTR2020 Mar 2020",
+                    "description": "Crowdstrike. (2020, March 2). 2020 Global Threat Report. Retrieved December 11, 2020.",
+                    "url": "https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf"
+                },
+                {
+                    "source_name": "apt41_dcsocytec_dec2022",
+                    "description": "DCSO CyTec Blog. (2022, December 24). APT41 \u2014 The spy who failed to encrypt me. Retrieved June 13, 2024.",
+                    "url": "https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1"
+                },
+                {
+                    "source_name": "FireEye APT41 March 2020",
+                    "description": "Glyer, C, et al. (2020, March). This Is Not a Test: APT41 Initiates Global Intrusion Campaign Using Multiple Exploits. Retrieved April 28, 2020.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html"
+                },
+                {
+                    "source_name": "Rostovcev APT41 2021",
+                    "description": "Nikita Rostovcev. (2022, August 18). APT41 World Tour 2021 on a tight schedule. Retrieved February 22, 2024.",
+                    "url": "https://www.group-ib.com/blog/apt41-world-tour-2021/"
+                },
+                {
+                    "source_name": "Group IB APT 41 June 2021",
+                    "description": "Rostovcev, N. (2021, June 10). Big airline heist APT41 likely behind a third-party attack on Air India. Retrieved August 26, 2021.",
+                    "url": "https://www.group-ib.com/blog/colunmtk-apt41/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:41:10.293Z",
+            "description": "[APT41](https://attack.mitre.org/groups/G0096) used [certutil](https://attack.mitre.org/software/S0160) to download additional files.(Citation: FireEye APT41 March 2020)(Citation: Crowdstrike GTR2020 Mar 2020)(Citation: Group IB APT 41 June 2021) [APT41](https://attack.mitre.org/groups/G0096) downloaded post-exploitation tools such as [Cobalt Strike](https://attack.mitre.org/software/S0154) via command shell following initial access.(Citation: Rostovcev APT41 2021) [APT41](https://attack.mitre.org/groups/G0096) has uploaded Procdump   and NATBypass to a staging directory and has used these tools in follow-on activities.(Citation: apt41_dcsocytec_dec2022)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--18854f55-ac7c-4634-bd9a-352dd07613b7",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

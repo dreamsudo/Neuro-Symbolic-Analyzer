@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--f34a8456-1487-48b9-a0ca-a30597b68c0a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--89bd934f-2d0b-487e-9235-138403b91267",
+            "created": "2020-05-18T21:01:51.142Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ESET LoudMiner June 2019",
+                    "description": "Malik, M. (2019, June 20). LoudMiner: Cross-platform mining in cracked VST software. Retrieved May 18, 2020.",
+                    "url": "https://www.welivesecurity.com/2019/06/20/loudminer-mining-cracked-vst-software/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:58:20.224Z",
+            "description": "[LoudMiner](https://attack.mitre.org/software/S0451) used a script to gather the IP address of the infected machine before sending to the C2.(Citation: ESET LoudMiner June 2019)",
+            "relationship_type": "uses",
+            "source_ref": "malware--f99f3dcc-683f-4936-8791-075ac5e58f10",
+            "target_ref": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

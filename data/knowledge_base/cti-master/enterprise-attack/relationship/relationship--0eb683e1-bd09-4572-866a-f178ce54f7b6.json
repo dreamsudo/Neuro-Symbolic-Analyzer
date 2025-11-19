@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--dbec4c37-1d99-4c50-acbd-a00b5c73542b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--0eb683e1-bd09-4572-866a-f178ce54f7b6",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Symantec Leafminer July 2018",
+                    "description": "Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:56:33.495Z",
+            "description": "[Leafminer](https://attack.mitre.org/groups/G0077) obfuscated scripts that were used on victim machines.(Citation: Symantec Leafminer July 2018)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--32bca8ff-d900-4877-aa65-d70baa041b74",
+            "target_ref": "attack-pattern--d511a6f6-4a33-41d5-bc95-c343875d1377",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

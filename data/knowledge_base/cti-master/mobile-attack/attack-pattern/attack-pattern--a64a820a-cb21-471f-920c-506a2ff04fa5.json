@@ -1,0 +1,68 @@
+{
+    "type": "bundle",
+    "id": "bundle--565b2c9e-428a-4f79-b643-b56e8603e23d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "modified": "2025-02-12T16:26:38.632Z",
+            "name": "SIM Card Swap",
+            "description": "Adversaries may gain access to mobile devices through transfers or swaps from victims\u2019 phone numbers to adversary-controlled SIM cards and mobile devices.(Citation: ATT SIM Swap Scams)(Citation: Verizon SIM Swapping) \n\nThe typical process is as follows:  \n\n1. Adversaries will first gather information about victims through [Phishing](https://attack.mitre.org/techniques/T1660), social engineering, data breaches, or other avenues. \n2. Adversaries will then impersonate victims as they contact mobile carriers to request for the SIM swaps. For example, adversaries would provide victims\u2019 name and address to mobile carriers; once authenticated, adversaries would request for victims\u2019 phone numbers to be transferred to adversary-controlled SIM cards.  \n3. Once completed, victims will lose mobile data, such as text messages and phone calls, on their mobile devices. In turn, adversaries will receive mobile data that was intended for the victims.  \n\nAdversaries may use the intercepted SMS messages to log into online accounts that use SMS-based authentication. Specifically, adversaries may use SMS-based authentication to log into banking and/or cryptocurrency accounts, then transfer funds to adversary-controlled wallets. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_contributors": [
+                "Karim Hasanen, @_karimhasanen",
+                "Jennifer Kim Roman"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_platforms": [
+                "Android",
+                "iOS"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_tactic_type": [
+                "Without Adversary Device Access"
+            ],
+            "type": "attack-pattern",
+            "id": "attack-pattern--a64a820a-cb21-471f-920c-506a2ff04fa5",
+            "created": "2017-10-25T14:48:20.329Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1451",
+                    "external_id": "T1451"
+                },
+                {
+                    "source_name": "ATT SIM Swap Scams",
+                    "description": "AT&T. (n.d.). UPDATE: Secure Your Number to Reduce SIM Swap Scams. Retrieved January 27, 2025.",
+                    "url": "https://www.research.att.com/sites/cyberaware/ni/blog/sim_swap.html"
+                },
+                {
+                    "source_name": "Verizon SIM Swapping",
+                    "description": "Verizon. (n.d.). SIM Swapping. Retrieved January 27, 2025.",
+                    "url": "https://www.verizon.com/about/account-security/sim-swapping"
+                },
+                {
+                    "source_name": "NIST Mobile Threat Catalogue",
+                    "url": "https://pages.nist.gov/mobile-threat-catalogue/stack-threats/STA-22.html",
+                    "external_id": "STA-22"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        }
+    ]
+}

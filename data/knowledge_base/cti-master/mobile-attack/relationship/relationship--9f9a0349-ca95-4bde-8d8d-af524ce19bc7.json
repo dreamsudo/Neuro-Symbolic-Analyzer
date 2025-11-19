@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--53e50630-b4b5-4bc6-a6e6-cd530e2618b1",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9f9a0349-ca95-4bde-8d8d-af524ce19bc7",
+            "created": "2022-04-15T16:00:43.483Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "SecureList DVMap June 2017",
+                    "description": "R. Unuchek. (2017, June 8). Dvmap: the first Android malware with code injection. Retrieved December 10, 2019.",
+                    "url": "https://securelist.com/dvmap-the-first-android-malware-with-code-injection/78648/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:50:30.267Z",
+            "description": "[Dvmap](https://attack.mitre.org/software/S0420) can turn off `VerifyApps`, and can grant Device Administrator permissions via commands only, rather than using the UI.(Citation: SecureList DVMap June 2017)",
+            "relationship_type": "uses",
+            "source_ref": "malware--22b596a6-d288-4409-8520-5f2846f85514",
+            "target_ref": "attack-pattern--2aa78dfd-cb6f-4c70-9408-137cfd96be49",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

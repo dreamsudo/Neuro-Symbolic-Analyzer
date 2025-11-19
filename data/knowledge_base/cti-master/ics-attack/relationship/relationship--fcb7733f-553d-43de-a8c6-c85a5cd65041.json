@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--ede2942b-5efd-422b-9a4f-07fe65818f0a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--fcb7733f-553d-43de-a8c6-c85a5cd65041",
+            "created": "2020-09-21T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:27:28.553Z",
+            "description": "Segment externally facing servers and services from the rest of the network with a DMZ or on separate hosting infrastructure.\n",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--1e7ccfc0-94c8-496e-8d27-032120892291",
+            "target_ref": "attack-pattern--32632a95-6856-47b9-9ab7-fea5cd7dce00",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

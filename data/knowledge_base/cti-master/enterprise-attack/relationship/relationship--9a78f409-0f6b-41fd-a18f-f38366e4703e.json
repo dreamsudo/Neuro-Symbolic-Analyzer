@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--18dd3cd8-3441-42e3-b5ea-9d8c1e16208c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9a78f409-0f6b-41fd-a18f-f38366e4703e",
+            "created": "2020-05-04T14:56:53.094Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Sood and Enbody",
+                    "description": "Aditya Sood and Richard Enbody. (2014, December 16). Targeted Cyber Attacks. Retrieved January 4, 2024.",
+                    "url": "https://www.techtarget.com/searchsecurity/feature/Targeted-Cyber-Attacks"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:34:26.700Z",
+            "description": "[Hikit](https://attack.mitre.org/software/S0009) installs a self-generated certificate to the local trust store as a root CA and Trusted Publisher.(Citation: Sood and Enbody)",
+            "relationship_type": "uses",
+            "source_ref": "malware--95047f03-4811-4300-922e-1ba937d53a61",
+            "target_ref": "attack-pattern--c615231b-f253-4f58-9d47-d5b4cbdb6839",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "type": "bundle",
+    "id": "bundle--ec1abd05-3cb9-4174-8ec8-15f7c1b4c293",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2978353c-a652-4d42-a5da-4b937b09c8cf",
+            "created": "2020-05-06T17:47:43.717Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "JPCert BlackTech Malware September 2019",
+                    "description": "Tomonaga, S.. (2019, September 18). Malware Used by BlackTech after Network Intrusion. Retrieved May 6, 2020.",
+                    "url": "https://blogs.jpcert.or.jp/en/2019/09/tscookie-loader.html"
+                },
+                {
+                    "source_name": "JPCert TSCookie March 2018",
+                    "description": "Tomonaga, S. (2018, March 6). Malware \u201cTSCookie\u201d. Retrieved May 6, 2020.",
+                    "url": "https://blogs.jpcert.or.jp/en/2018/03/malware-tscooki-7aa0.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:40:21.690Z",
+            "description": "[TSCookie](https://attack.mitre.org/software/S0436) can multiple protocols including HTTP and HTTPS in communication with command and control (C2) servers.(Citation: JPCert BlackTech Malware September 2019)(Citation: JPCert TSCookie March 2018)",
+            "relationship_type": "uses",
+            "source_ref": "malware--76ac7989-c5cc-42e2-93e3-d6c476f01ace",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

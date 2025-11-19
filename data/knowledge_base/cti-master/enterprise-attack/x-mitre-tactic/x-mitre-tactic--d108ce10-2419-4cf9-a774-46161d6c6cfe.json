@@ -1,0 +1,35 @@
+{
+    "type": "bundle",
+    "id": "bundle--119f33c1-2c2e-46ea-a1e9-fc0cfd049003",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "modified": "2024-09-05T18:27:09.070Z",
+            "name": "Collection",
+            "description": "The adversary is trying to gather data of interest to their goal.\n\nCollection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to either steal (exfiltrate) the data or to use the data to gain more information about the target environment. Common target sources include various drive types, browsers, audio, video, and email. Common collection methods include capturing screenshots and keyboard input.",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "1.1",
+            "x_mitre_shortname": "collection",
+            "type": "x-mitre-tactic",
+            "id": "x-mitre-tactic--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0009",
+                    "external_id": "TA0009"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--ed470c13-7e1c-4d59-951b-a1ec257c1b08",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7d9c5216-da63-4b8f-ade7-a1854e43bd3f",
+            "created": "2019-06-24T13:56:03.592Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:56:08.048Z",
+            "description": "Develop a robust cyber threat intelligence capability to determine what types and levels of threat may use software exploits and 0-days against a particular organization.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--874c0166-e407-45c2-a1d9-e4e3a6570fd8",
+            "target_ref": "attack-pattern--9db0cf3a-a3c9-4012-8268-123b9db6fd82",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

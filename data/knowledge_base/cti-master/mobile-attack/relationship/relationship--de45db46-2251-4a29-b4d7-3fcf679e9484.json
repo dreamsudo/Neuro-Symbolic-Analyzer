@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--3e037fe4-c0a0-4923-865d-7ac6fc1322e6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--de45db46-2251-4a29-b4d7-3fcf679e9484",
+            "created": "2019-09-04T15:38:56.877Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "CyberMerchants-FlexiSpy",
+                    "description": "Actis B. (2017, April 22). FlexSpy Application Analysis. Retrieved September 4, 2019.",
+                    "url": "http://www.cybermerchantsofdeath.com/blog/2017/04/22/FlexiSpy.html"
+                },
+                {
+                    "source_name": "FlexiSpy-Features",
+                    "description": "FlexiSpy. (n.d.). FlexiSpy Monitoring Features. Retrieved September 4, 2019.",
+                    "url": "https://www.flexispy.com/en/features-overview.htm"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:52:04.281Z",
+            "description": "[FlexiSpy](https://attack.mitre.org/software/S0408) can intercept SMS and MMS messages as well as monitor messages for keywords.(Citation: CyberMerchants-FlexiSpy)(Citation: FlexiSpy-Features)",
+            "relationship_type": "uses",
+            "source_ref": "tool--1622fd3d-fcfc-4d02-ac49-f2d786f79b81",
+            "target_ref": "attack-pattern--c6421411-ae61-42bb-9098-73fddb315002",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

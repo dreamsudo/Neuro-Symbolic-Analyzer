@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--5d629303-a198-46ee-a9b5-955e88345e95",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--a8ad10f7-be41-4fb7-805b-f3b227e56b26",
+            "created": "2021-12-06T15:34:29.963Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "US-CERT TA18-074A",
+                    "description": "US-CERT. (2018, March 16). Alert (TA18-074A): Russian Government Cyber Activity Targeting Energy and Other Critical Infrastructure Sectors. Retrieved June 6, 2018.",
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA18-074A"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:38:12.308Z",
+            "description": "[Dragonfly](https://attack.mitre.org/groups/G0035) has added newly created accounts to the administrators group to maintain elevated access.(Citation: US-CERT TA18-074A)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+            "target_ref": "attack-pattern--3e6831b2-bf4c-4ae6-b328-2e7c6633b291",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

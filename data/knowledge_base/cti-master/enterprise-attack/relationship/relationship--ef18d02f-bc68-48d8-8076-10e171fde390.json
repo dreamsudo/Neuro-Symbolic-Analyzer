@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--3ccd4fa9-7be8-4fa4-b196-c1f9adfb08af",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--ef18d02f-bc68-48d8-8076-10e171fde390",
+            "created": "2020-03-16T14:49:02.682Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Microsoft LSA",
+                    "description": "Microsoft. (2013, July 31). Configuring Additional LSA Protection. Retrieved February 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn408187.aspx"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:16:33.272Z",
+            "description": "Enabled features, such as Protected Process Light (PPL), for LSA.(Citation: Microsoft LSA)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--72dade3e-1cba-4182-b3b3-a77ca52f02a1",
+            "target_ref": "attack-pattern--f4c1826f-a322-41cd-9557-562100848c84",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

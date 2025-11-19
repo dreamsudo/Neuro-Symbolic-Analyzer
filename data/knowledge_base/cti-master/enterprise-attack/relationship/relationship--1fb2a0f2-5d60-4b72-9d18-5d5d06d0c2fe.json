@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--56126d3c-6022-4067-87e4-70729f758f2b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--1fb2a0f2-5d60-4b72-9d18-5d5d06d0c2fe",
+            "created": "2021-07-30T21:03:09.016Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Unit42 Clop April 2021",
+                    "description": "Santos, D. (2021, April 13). Threat Assessment: Clop Ransomware. Retrieved July 30, 2021.",
+                    "url": "https://unit42.paloaltonetworks.com/clop-ransomware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:38:35.928Z",
+            "description": "[Clop](https://attack.mitre.org/software/S0611) has used the <code>sleep</code> command to avoid sandbox detection.(Citation: Unit42 Clop April 2021)",
+            "relationship_type": "uses",
+            "source_ref": "malware--cad3ba95-8c89-4146-ab10-08daa813f9de",
+            "target_ref": "attack-pattern--4bed873f-0b7d-41d4-b93a-b6905d1f90b0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "type": "bundle",
+    "id": "bundle--3be6b45f-1c5a-4056-805e-a4eff26bce14",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f76be4ac-f342-4904-b50d-06e28b878011",
+            "created": "2022-04-15T13:42:41.186Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET Gamaredon Sept2024",
+                    "description": "Rusn\u00e1k, Z. (2024, September 26). Cyberespionage the Gamaredon way: Analysis of toolset used to spy on Ukraine in 2022 and 2023. Retrieved October 30, 2024.",
+                    "url": "https://web-assets.esetstatic.com/wls/en/papers/white-papers/cyberespionage-gamaredon-way.pdf"
+                },
+                {
+                    "source_name": "Symantec Shuckworm January 2022",
+                    "description": "Symantec. (2022, January 31). Shuckworm Continues Cyber-Espionage Attacks Against Ukraine. Retrieved February 17, 2022.",
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/shuckworm-gamaredon-espionage-ukraine"
+                },
+                {
+                    "source_name": "SymantecCarbonBlack_ShuckwormUSB_Apr2025",
+                    "description": "Threat Hunter Team, Symantec and Carbon Black. (2025, April 10). Shuckworm Targets Foreign Military Mission Based in Ukraine. Retrieved July 23, 2025.",
+                    "url": "https://www.security.com/threat-intelligence/shuckworm-ukraine-gammasteel"
+                },
+                {
+                    "source_name": "unit42_gamaredon_dec2022",
+                    "description": "Unit 42. (2022, December 20). Russia\u2019s Trident Ursa (aka Gamaredon APT) Cyber Conflict Operations Unwavering Since Invasion of Ukraine. Retrieved September 12, 2024.",
+                    "url": "https://unit42.paloaltonetworks.com/trident-ursa/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-08-21T19:12:40.949Z",
+            "description": "[Gamaredon Group](https://attack.mitre.org/groups/G0047) has used `mshta.exe` to execute malicious files.(Citation: Symantec Shuckworm January 2022)(Citation: unit42_gamaredon_dec2022)(Citation: ESET Gamaredon Sept2024)(Citation: SymantecCarbonBlack_ShuckwormUSB_Apr2025)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf",
+            "target_ref": "attack-pattern--840a987a-99bd-4a80-a5c9-0cb2baa6cade",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--e5697391-3b13-4bda-9959-bcb0fd4958d9",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2cf91706-674a-4ae0-8a4c-0d8d43eb6e1a",
+            "created": "2022-02-08T16:11:38.674Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Peirates GitHub",
+                    "description": "InGuardians. (2022, January 5). Peirates GitHub. Retrieved February 8, 2022.",
+                    "url": "https://github.com/inguardians/peirates"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:04:47.288Z",
+            "description": "[Peirates](https://attack.mitre.org/software/S0683) can dump the contents of AWS S3 buckets. It can also retrieve service account tokens from kOps buckets in Google Cloud Storage or S3.(Citation: Peirates GitHub)",
+            "relationship_type": "uses",
+            "source_ref": "tool--79dd477a-8226-4b3d-ad15-28623675f221",
+            "target_ref": "attack-pattern--3298ce88-1628-43b1-87d9-0b5336b193d7",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

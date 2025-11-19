@@ -1,0 +1,48 @@
+{
+    "type": "bundle",
+    "id": "bundle--91d319ac-1e42-4d9a-89b6-999d5edc5f4e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--91b3ed33-d1b5-4c4b-a896-76c55eb3cfd8",
+            "created": "2021-10-20T15:05:19.274Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0091",
+                    "external_id": "DC0091"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Container Enumeration",
+            "description": "\"Container Enumeration\" data component captures events and actions related to listing and identifying active or available containers within a containerized environment. This includes information about running, stopped, or configured containers, such as their names, IDs, statuses, or associated images. Monitoring this activity is crucial for detecting unauthorized discovery or reconnaissance efforts. Examples: \n\n- Docker Example: `docker ps`, `docker ps -a`\n- Kubernetes Example: `kubectl get pods`, `kubectl get deployments`\n- Cloud Container Services Example\n    - AWS ECS: API Call: ListTasks or ListContainers\n    - Azure Kubernetes Service: API Call: List pod or container instances.\n    - Google Kubernetes Engine (GKE): API Call: Retrieve deployments and their associated containers.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "docker:daemon",
+                    "channel": "docker ps, docker inspect, or docker images commands"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "DescribeCluster, ListClusters, ListNodegroups"
+                },
+                {
+                    "name": "containerd:runtime",
+                    "channel": "e.g., containerd, Docker events"
+                }
+            ]
+        }
+    ]
+}

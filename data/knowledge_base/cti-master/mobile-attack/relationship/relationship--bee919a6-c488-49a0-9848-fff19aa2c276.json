@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--3c8cd464-fe8e-49b5-8fa8-f0ec1dc6fd9b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--bee919a6-c488-49a0-9848-fff19aa2c276",
+            "created": "2021-09-24T14:47:34.449Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:30:27.315Z",
+            "description": "Mobile security products can often detect rooted devices.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--cf2cccb1-cab8-431a-8ecf-f7874d05f433",
+            "target_ref": "attack-pattern--ccde43e4-78f9-4f32-b401-c081e7db71ea",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

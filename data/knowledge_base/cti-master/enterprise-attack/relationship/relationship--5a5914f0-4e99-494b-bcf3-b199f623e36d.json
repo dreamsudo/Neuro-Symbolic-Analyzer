@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--be33c4c3-cdaf-48fb-9063-9f5f0a7b2f41",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--5a5914f0-4e99-494b-bcf3-b199f623e36d",
+            "created": "2022-03-26T03:47:59.085Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Mythc Documentation",
+                    "description": "Thomas, C. (n.d.). Mythc Documentation. Retrieved March 25, 2022.",
+                    "url": "https://docs.mythic-c2.net/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:49:20.113Z",
+            "description": "[Mythic](https://attack.mitre.org/software/S0699) can leverage a peer-to-peer C2 profile between agents.(Citation: Mythc Documentation)\t\t",
+            "relationship_type": "uses",
+            "source_ref": "tool--d505fc8b-2e64-46eb-96d6-9ef7ffca5b66",
+            "target_ref": "attack-pattern--f6dacc85-b37d-458e-b58d-74fc4bbf5755",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

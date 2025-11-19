@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--3f5f5898-632d-47a8-b2f4-511384ff62aa",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--48652244-02b0-4a80-82a9-b99fca669d85",
+            "created": "2021-10-15T13:14:38.292Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "BlackBerry CostaRicto November 2020",
+                    "description": "The BlackBerry Research and Intelligence Team. (2020, November 12). The CostaRicto Campaign: Cyber-Espionage Outsourced. Retrieved May 24, 2021.",
+                    "url": "https://blogs.blackberry.com/en/2020/11/the-costaricto-campaign-cyber-espionage-outsourced"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:46:06.203Z",
+            "description": "[CostaBricks](https://attack.mitre.org/software/S0614) has been used to load [SombRAT](https://attack.mitre.org/software/S0615) onto a compromised host.(Citation: BlackBerry CostaRicto November 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--5d342981-5194-41e7-b33f-8e91998d7d88",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

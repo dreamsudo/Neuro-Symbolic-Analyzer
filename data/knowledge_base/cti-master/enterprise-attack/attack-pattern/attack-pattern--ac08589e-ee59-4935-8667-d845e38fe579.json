@@ -1,0 +1,133 @@
+{
+    "type": "bundle",
+    "id": "bundle--be233693-6716-4bdf-8cf8-7840b62cb0a2",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--ac08589e-ee59-4935-8667-d845e38fe579",
+            "created": "2020-02-21T20:32:20.810Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1562/001",
+                    "external_id": "T1562.001"
+                },
+                {
+                    "source_name": "Analysis of FG-IR-22-369",
+                    "description": " Guillaume Lovet and Alex Kong. (2023, March 9). Analysis of FG-IR-22-369. Retrieved May 15, 2023.",
+                    "url": "https://www.fortinet.com/blog/psirt-blogs/fg-ir-22-369-psirt-analysis"
+                },
+                {
+                    "source_name": "Fortinet Zero-Day and Custom Malware Used by Suspected Chinese Actor in Espionage Operation",
+                    "description": "ALEXANDER MARVI, BRAD SLAYBAUGH, DAN EBREO, TUFAIL AHMED, MUHAMMAD UMAIR, TINA JOHNSON. (2023, March 16). Fortinet Zero-Day and Custom Malware Used by Suspected Chinese Actor in Espionage Operation. Retrieved May 15, 2023.",
+                    "url": "https://www.mandiant.com/resources/blog/fortinet-malware-ecosystem"
+                },
+                {
+                    "source_name": "BlackBerry WhisperGate 2022",
+                    "description": "BlackBerry Research and Intelligence Team. (2022, February 3). Threat Spotlight: WhisperGate Wiper Wreaks Havoc in Ukraine. Retrieved March 18, 2025.",
+                    "url": "https://blogs.blackberry.com/en/2022/02/threat-spotlight-whispergate-wiper-wreaks-havoc-in-ukraine"
+                },
+                {
+                    "source_name": "Cocomazzi FIN7 Reboot",
+                    "description": "Cocomazzi, Antonio. (2024, July 17). FIN7 Reboot | Cybercrime Gang Enhances Ops with New EDR Bypasses and Automated Attacks. Retrieved September 24, 2025.",
+                    "url": "https://www.sentinelone.com/labs/fin7-reboot-cybercrime-gang-enhances-ops-with-new-edr-bypasses-and-automated-attacks/"
+                },
+                {
+                    "source_name": "OutFlank System Calls",
+                    "description": "de Plaa, C. (2019, June 19). Red Team Tactics: Combining Direct System Calls and sRDI to bypass AV/EDR. Retrieved September 29, 2021.",
+                    "url": "https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/"
+                },
+                {
+                    "source_name": "disable_win_evt_logging",
+                    "description": "Heiligenstein, L. (n.d.). REP-25: Disable Windows Event Logging. Retrieved April 7, 2022.",
+                    "url": "https://ptylu.github.io/content/report/report.html?report=25"
+                },
+                {
+                    "source_name": "chasing_avaddon_ransomware",
+                    "description": "Hernandez, A. S. Tarter, P. Ocamp, E. J. (2022, January 19). One Source to Rule Them All: Chasing AVADDON Ransomware. Retrieved January 26, 2022.",
+                    "url": "https://www.mandiant.com/resources/chasing-avaddon-ransomware"
+                },
+                {
+                    "source_name": "doppelpaymer_crowdstrike",
+                    "description": "Hurley, S. (2021, December 7). Critical Hit: How DoppelPaymer Hunts and Kills Windows Processes. Retrieved January 26, 2022.",
+                    "url": "https://www.crowdstrike.com/blog/how-doppelpaymer-hunts-and-kills-windows-processes/"
+                },
+                {
+                    "source_name": "avoslocker_ransomware",
+                    "description": "Lakshmanan, R. (2022, May 2). AvosLocker Ransomware Variant Using New Trick to Disable Antivirus Protection. Retrieved May 17, 2022.",
+                    "url": "https://thehackernews.com/2022/05/avoslocker-ransomware-variant-using-new.html"
+                },
+                {
+                    "source_name": "dharma_ransomware",
+                    "description": "Loui, E. Scheuerman, K. et al. (2020, April 16). Targeted Dharma Ransomware Intrusions Exhibit Consistent Techniques. Retrieved January 26, 2022.",
+                    "url": "https://www.crowdstrike.com/blog/targeted-dharma-ransomware-intrusions-exhibit-consistent-techniques/"
+                },
+                {
+                    "source_name": "MDSec System Calls",
+                    "description": "MDSec Research. (2020, December). Bypassing User-Mode Hooks and Direct Invocation of System Calls for Red Teams. Retrieved September 29, 2021.",
+                    "url": "https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams/"
+                },
+                {
+                    "source_name": "SCADAfence_ransomware",
+                    "description": "Shaked, O. (2020, January 20). Anatomy of a Targeted Ransomware Attack. Retrieved June 18, 2022.",
+                    "url": "https://cdn.logic-control.com/docs/scadafence/Anatomy-Of-A-Targeted-Ransomware-Attack-WP.pdf"
+                },
+                {
+                    "source_name": "demystifying_ryuk",
+                    "description": "Tran, T. (2020, November 24). Demystifying Ransomware Attacks Against Microsoft Defender Solution. Retrieved January 26, 2022.",
+                    "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/demystifying-ransomware-attacks-against-microsoft-defender/ba-p/1928947"
+                },
+                {
+                    "source_name": "Google Cloud Threat Intelligence FIN13 2021",
+                    "description": "Van Ta, Jake Nicastro, Rufus Brown, and Nick Richard. (2021, December 7). FIN13: A Cybercriminal Threat Actor Focused on Mexico. Retrieved March 18, 2025.",
+                    "url": "https://cloud.google.com/blog/topics/threat-intelligence/fin13-cybercriminal-mexico/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:13.019Z",
+            "name": "Disable or Modify Tools",
+            "description": "Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities. This may take many forms, such as killing security software processes or services, modifying / deleting Registry keys or configuration files so that tools do not operate properly, or other methods to interfere with security tools scanning or reporting information. Adversaries may also disable updates to prevent the latest security patches from reaching tools on victim systems.(Citation: SCADAfence_ransomware)\n\nAdversaries may trigger a denial-of-service attack via legitimate system processes. It has been previously observed that the Windows Time Travel Debugging (TTD) monitor driver can be used to initiate a debugging session for a security tool (e.g., an EDR) and render the tool non-functional.  By hooking the debugger into the EDR process, all child processes from the EDR will be automatically suspended. The attacker can terminate any EDR helper processes (unprotected by Windows Protected Process Light) by abusing the Process Explorer driver. In combination this will halt any attempt to restart services and cause the tool to crash.(Citation: Cocomazzi FIN7 Reboot)\n\nAdversaries may also tamper with artifacts deployed and utilized by security tools. Security tools may make dynamic changes to system components in order to maintain visibility into specific events. For example, security products may load their own modules and/or modify those loaded by processes to facilitate data collection. Similar to [Indicator Blocking](https://attack.mitre.org/techniques/T1562/006), adversaries may unhook or otherwise modify these features added by tools (especially those that exist in userland or are otherwise potentially accessible to adversaries) to avoid detection.(Citation: OutFlank System Calls)(Citation: MDSec System Calls) For example, adversaries may abuse the Windows process mitigation policy to block certain endpoint detection and response (EDR) products from loading their user-mode code via DLLs. By spawning a process with the PROCESS_CREATION_MITIGATION_POLICY_BLOCK_NON_MICROSOFT_BINARIES_ALWAYS_ON attribute using API calls like UpdateProcThreadAttribute, adversaries may evade detection by endpoint security solutions that rely on DLLs that are not signed by Microsoft. Alternatively, they may add new directories to an EDR tool\u2019s exclusion list, enabling them to hide malicious files via [File/Path Exclusions](https://attack.mitre.org/techniques/T1564/012).(Citation: BlackBerry WhisperGate 2022)(Citation: Google Cloud Threat Intelligence FIN13 2021)\n\nAdversaries may also focus on specific applications such as Sysmon. For example, the \u201cStart\u201d and \u201cEnable\u201d values in <code>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\WMI\\Autologger\\EventLog-Microsoft-Windows-Sysmon-Operational</code> may be modified to tamper with and potentially disable Sysmon logging.(Citation: disable_win_evt_logging) \n\nOn network devices, adversaries may attempt to skip digital signature verification checks by altering startup configuration files and effectively disabling firmware verification that typically occurs at boot.(Citation: Fortinet Zero-Day and Custom Malware Used by Suspected Chinese Actor in Espionage Operation)(Citation: Analysis of FG-IR-22-369)\n\nIn cloud environments, tools disabled by adversaries may include cloud monitoring agents that report back to services such as AWS CloudWatch or Google Cloud Monitor.\n\nFurthermore, although defensive tools may have anti-tampering mechanisms, adversaries may abuse tools such as legitimate rootkit removal kits to impair and/or disable these tools.(Citation: chasing_avaddon_ransomware)(Citation: dharma_ransomware)(Citation: demystifying_ryuk)(Citation: doppelpaymer_crowdstrike) For example, adversaries have used tools such as GMER to find and shut down hidden processes and antivirus software on infected systems.(Citation: demystifying_ryuk)\n\nAdditionally, adversaries may exploit legitimate drivers from anti-virus software to gain access to kernel space (i.e. [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)), which may lead to bypassing anti-tampering features.(Citation: avoslocker_ransomware)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_contributors": [
+                "Gordon Long, LegioX/Zoom, asaurusrex",
+                "Ziv Karliner, @ziv_kr, Team Nautilus Aqua Security",
+                "Nathaniel Quist, Palo Alto Networks",
+                "Gal Singer, @galsinger29, Team Nautilus Aqua Security",
+                "Daniel Feichter, @VirtualAllocEx, Infosec Tirol",
+                "Cian Heasley",
+                "Alex Soler, AttackIQ",
+                "Sarathkumar Rajendran, Microsoft Defender365",
+                "Lucas Heiligenstein",
+                "Menachem Goldstein",
+                "Nay Myo Hlaing (Ethan), DBS Bank"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Containers",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Network Devices",
+                "Windows"
+            ],
+            "x_mitre_version": "1.7"
+        }
+    ]
+}

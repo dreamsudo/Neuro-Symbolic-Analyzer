@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--14a155c3-03c5-4475-9ed9-3fb7e8db2e8e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--eea8a891-7ebb-4589-9d36-6a801ff00818",
+            "created": "2022-02-01T16:00:17.327Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Kaspersky ThreatNeedle Feb 2021",
+                    "description": "Vyacheslav Kopeytsev and Seongsu Park. (2021, February 25). Lazarus targets defense industry with ThreatNeedle. Retrieved October 27, 2021.",
+                    "url": "https://securelist.com/lazarus-threatneedle/100803/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:56:18.843Z",
+            "description": "[Lazarus Group](https://attack.mitre.org/groups/G0032) has created new email accounts for spearphishing operations.(Citation: Kaspersky ThreatNeedle Feb 2021)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+            "target_ref": "attack-pattern--65013dd2-bc61-43e3-afb5-a14c4fa7437a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--7b7d50db-f903-4b53-9244-9c81967fe06e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--0839d954-ce47-4972-bea2-f4d9a76141af",
+            "created": "2022-10-12T14:33:52.820Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "DHS CISA AA22-055A MuddyWater February 2022",
+                    "description": "FBI, CISA, CNMF, NCSC-UK. (2022, February 24). Iranian Government-Sponsored Actors Conduct Cyber Operations Against Global Government and Commercial Networks. Retrieved September 27, 2022.",
+                    "url": "https://www.cisa.gov/uscert/ncas/alerts/aa22-055a"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:55:00.930Z",
+            "description": "[MuddyWater](https://attack.mitre.org/groups/G0069) maintains persistence on victim networks through side-loading dlls to trick legitimate programs into running malware.(Citation: DHS CISA AA22-055A MuddyWater February 2022)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--269e8108-68c6-4f99-b911-14b2e765dec2",
+            "target_ref": "attack-pattern--2fee9321-3e71-4cf4-af24-d4d40d355b34",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

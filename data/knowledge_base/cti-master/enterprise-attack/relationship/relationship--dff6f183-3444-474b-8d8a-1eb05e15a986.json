@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--e7865c05-eea7-4cb3-a5af-8a3d1a53746c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--dff6f183-3444-474b-8d8a-1eb05e15a986",
+            "created": "2020-03-13T11:12:18.712Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:13:55.669Z",
+            "description": "Limit privileges of user accounts and groups so that only authorized administrators can interact with service changes and service binary target path locations. Deny execution from user directories such as file download directories and temp directories where able.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--93e7968a-9074-4eac-8ae9-9f5200ec3317",
+            "target_ref": "attack-pattern--70d81154-b187-45f9-8ec5-295d01255979",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

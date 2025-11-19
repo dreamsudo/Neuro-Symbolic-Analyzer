@@ -1,0 +1,64 @@
+{
+    "type": "bundle",
+    "id": "bundle--36d43f3b-8b38-4e82-8e95-758d27437b7a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--6e3bd510-6b33-41a4-af80-2d80f3ee0071",
+            "created": "2020-01-24T15:01:32.917Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1218/008",
+                    "external_id": "T1218.008"
+                },
+                {
+                    "source_name": "Microsoft odbcconf.exe",
+                    "description": "Microsoft. (2017, January 18). ODBCCONF.EXE. Retrieved March 7, 2019.",
+                    "url": "https://docs.microsoft.com/en-us/sql/odbc/odbcconf-exe?view=sql-server-2017"
+                },
+                {
+                    "source_name": "LOLBAS Odbcconf",
+                    "description": "LOLBAS. (n.d.). Odbcconf.exe. Retrieved March 7, 2019.",
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Odbcconf/"
+                },
+                {
+                    "source_name": "TrendMicro Squiblydoo Aug 2017",
+                    "description": "Bermejo, L., Giagone, R., Wu, R., and Yarochkin, F. (2017, August 7). Backdoor-carrying Emails Set Sights on Russian-speaking Businesses. Retrieved March 7, 2019.",
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/backdoor-carrying-emails-set-sights-on-russian-speaking-businesses/"
+                },
+                {
+                    "source_name": "TrendMicro Cobalt Group Nov 2017",
+                    "description": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:55.622Z",
+            "name": "Odbcconf",
+            "description": "Adversaries may abuse odbcconf.exe to proxy execution of malicious payloads. Odbcconf.exe is a Windows utility that allows you to configure Open Database Connectivity (ODBC) drivers and data source names.(Citation: Microsoft odbcconf.exe) The Odbcconf.exe binary may be digitally signed by Microsoft.\n\nAdversaries may abuse odbcconf.exe to bypass application control solutions that do not account for its potential abuse. Similar to [Regsvr32](https://attack.mitre.org/techniques/T1218/010), odbcconf.exe has a <code>REGSVR</code> flag that can be misused to execute DLLs (ex: <code>odbcconf.exe /S /A &lbrace;REGSVR \"C:\\Users\\Public\\file.dll\"&rbrace;</code>). (Citation: LOLBAS Odbcconf)(Citation: TrendMicro Squiblydoo Aug 2017)(Citation: TrendMicro Cobalt Group Nov 2017) \n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_version": "2.1"
+        }
+    ]
+}

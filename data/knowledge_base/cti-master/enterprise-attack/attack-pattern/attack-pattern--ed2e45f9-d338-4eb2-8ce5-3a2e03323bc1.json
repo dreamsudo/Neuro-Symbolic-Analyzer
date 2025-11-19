@@ -1,0 +1,73 @@
+{
+    "type": "bundle",
+    "id": "bundle--0cfc63d2-774f-4777-aa58-cdf582287520",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--ed2e45f9-d338-4eb2-8ce5-3a2e03323bc1",
+            "created": "2020-06-09T15:33:13.563Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1578/001",
+                    "external_id": "T1578.001"
+                },
+                {
+                    "source_name": "AWS Cloud Trail Backup API",
+                    "description": "Amazon. (2020). Logging AWS Backup API Calls with AWS CloudTrail. Retrieved April 27, 2020.",
+                    "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/logging-using-cloudtrail.html"
+                },
+                {
+                    "source_name": "GCP - Creating and Starting a VM",
+                    "description": "Google. (2020, April 23). Creating and Starting a VM instance. Retrieved May 1, 2020.",
+                    "url": "https://cloud.google.com/compute/docs/instances/create-start-instance#api_2"
+                },
+                {
+                    "source_name": "Cloud Audit Logs",
+                    "description": "Google. (n.d.). Audit Logs. Retrieved June 1, 2020.",
+                    "url": "https://cloud.google.com/logging/docs/audit#admin-activity"
+                },
+                {
+                    "source_name": "Mandiant M-Trends 2020",
+                    "description": "Mandiant. (2020, February). M-Trends 2020. Retrieved November 17, 2024.",
+                    "url": "https://www.mandiant.com/sites/default/files/2021-09/mtrends-2020.pdf"
+                },
+                {
+                    "source_name": "Azure - Monitor Logs",
+                    "description": "Microsoft. (2019, June 4). Monitor at scale by using Azure Monitor. Retrieved May 1, 2020.",
+                    "url": "https://docs.microsoft.com/en-us/azure/backup/backup-azure-monitoring-use-azuremonitor"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:34.416Z",
+            "name": "Create Snapshot",
+            "description": "An adversary may create a snapshot or data backup within a cloud account to evade defenses. A snapshot is a point-in-time copy of an existing cloud compute component such as a virtual machine (VM), virtual hard drive, or volume. An adversary may leverage permissions to create a snapshot in order to bypass restrictions that prevent access to existing compute service infrastructure, unlike in [Revert Cloud Instance](https://attack.mitre.org/techniques/T1578/004) where an adversary may revert to a snapshot to evade detection and remove evidence of their presence.\n\nAn adversary may [Create Cloud Instance](https://attack.mitre.org/techniques/T1578/002), mount one or more created snapshots to that instance, and then apply a policy that allows the adversary access to the created instance, such as a firewall policy that allows them inbound and outbound SSH access.(Citation: Mandiant M-Trends 2020)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "IaaS"
+            ],
+            "x_mitre_version": "1.2"
+        }
+    ]
+}

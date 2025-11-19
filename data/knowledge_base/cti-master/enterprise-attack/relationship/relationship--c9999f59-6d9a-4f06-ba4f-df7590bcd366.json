@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--cb72bb4b-0eeb-468e-9b3a-2d61d665e598",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--c9999f59-6d9a-4f06-ba4f-df7590bcd366",
+            "created": "2024-07-30T18:10:36.024Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET Turla Lunar toolset May 2024",
+                    "description": "Jur\u010dacko, F. (2024, May 15). To the Moon and back(doors): Lunar landing in diplomatic missions. Retrieved June 26, 2024.",
+                    "url": "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:46:50.896Z",
+            "description": "(Citation: ESET Turla Lunar toolset May 2024)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--7a19ecb1-3c65-4de3-a230-993516aed6a6",
+            "target_ref": "malware--a5789a26-2b7b-4b2d-a25f-31182468d4bb",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

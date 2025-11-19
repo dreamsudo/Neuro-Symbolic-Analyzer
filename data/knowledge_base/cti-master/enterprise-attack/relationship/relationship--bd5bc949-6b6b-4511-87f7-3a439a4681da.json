@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--fa76bbc1-3fcf-4c93-ba34-b6a58e32c120",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--bd5bc949-6b6b-4511-87f7-3a439a4681da",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Group IB Cobalt Aug 2017",
+                    "description": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+                    "url": "https://www.group-ib.com/blog/cobalt"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:07:43.572Z",
+            "description": "[Cobalt Group](https://attack.mitre.org/groups/G0080) has used Registry Run keys for persistence. The group has also set a Startup path to launch the PowerShell shell command and download Cobalt Strike.(Citation: Group IB Cobalt Aug 2017)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--dc6fe6ee-04c2-49be-ba3d-f38d2463c02a",
+            "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

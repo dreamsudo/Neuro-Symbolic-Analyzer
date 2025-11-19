@@ -1,0 +1,53 @@
+{
+    "type": "bundle",
+    "id": "bundle--74694e48-dbc2-460b-be8d-118707743bf8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--faa34cf6-cf32-4dc9-bd6a-8f7a606ff65b",
+            "created": "2021-10-20T15:05:19.271Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0012",
+                    "external_id": "DC0012"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T15:14:38.292Z",
+            "name": "Scheduled Job Modification",
+            "description": "Changes made to an existing scheduled job, including modifications to its execution parameters, command payload, or execution timing.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack",
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "Scheduled Job",
+                    "channel": "None"
+                },
+                {
+                    "name": "auditd:CONFIG_CHANGE",
+                    "channel": "/var/log/audit/audit.log"
+                },
+                {
+                    "name": "m365:exchange",
+                    "channel": "Remove-InboxRule, Clear-Mailbox"
+                },
+                {
+                    "name": "WinEventLog:Security",
+                    "channel": "EventCode=4702"
+                }
+            ]
+        }
+    ]
+}

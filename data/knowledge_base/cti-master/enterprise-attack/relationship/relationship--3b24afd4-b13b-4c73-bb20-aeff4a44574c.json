@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--c5bbd753-caa9-45d3-9af9-ce009774a2ca",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--3b24afd4-b13b-4c73-bb20-aeff4a44574c",
+            "created": "2021-03-12T19:53:38.756Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Kaspersky Dtrack",
+                    "description": "Kaspersky Global Research and Analysis Team. (2019, September 23). DTrack: previously unknown spy-tool by Lazarus hits financial institutions and research centers. Retrieved January 20, 2021.",
+                    "url": "https://usa.kaspersky.com/about/press-releases/2019_dtrack-previously-unknown-spy-tool-hits-financial-institutions-and-research-centers"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:43:37.509Z",
+            "description": "(Citation: Kaspersky Dtrack)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+            "target_ref": "malware--f8774023-8021-4ece-9aca-383ac89d2759",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

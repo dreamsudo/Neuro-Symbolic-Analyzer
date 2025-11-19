@@ -1,0 +1,42 @@
+{
+    "type": "bundle",
+    "id": "bundle--9afe01f8-9a05-4aea-bdd5-e5268687c523",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--4d10ce98-d1c1-4e26-84c3-a309e7c30313",
+            "created": "2022-03-14T14:16:33.288Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Cisco Ukraine Wipers January 2022",
+                    "description": "Biasini, N. et al.. (2022, January 21). Ukraine Campaign Delivers Defacement and Wipers, in Continued Escalation. Retrieved March 14, 2022.",
+                    "url": "https://blog.talosintelligence.com/2022/01/ukraine-campaign-delivers-defacement.html"
+                },
+                {
+                    "source_name": "RecordedFuture WhisperGate Jan 2022",
+                    "description": "Insikt Group. (2020, January 28). WhisperGate Malware Corrupts Computers in Ukraine. Retrieved September 16, 2024.",
+                    "url": "https://www.recordedfuture.com/research/whispergate-malware-corrupts-computers-ukraine"
+                },
+                {
+                    "source_name": "Medium S2W WhisperGate January 2022",
+                    "description": "S2W. (2022, January 18). Analysis of Destructive Malware (WhisperGate) targeting Ukraine. Retrieved March 14, 2022.",
+                    "url": "https://medium.com/s2wblog/analysis-of-destructive-malware-whispergate-targeting-ukraine-9d5d158f19f3"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:13:32.016Z",
+            "description": "[WhisperGate](https://attack.mitre.org/software/S0689) can Base64 encode strings, store downloaded files in reverse byte order,  and use the Eazfuscator tool to obfuscate its third stage.(Citation: Cisco Ukraine Wipers January 2022)(Citation: Medium S2W WhisperGate January 2022)(Citation: RecordedFuture WhisperGate Jan 2022)",
+            "relationship_type": "uses",
+            "source_ref": "malware--49fee0b0-390e-4bde-97f8-97ed46bd19b7",
+            "target_ref": "attack-pattern--0d91b3c0-5e50-47c3-949a-2a796f04d144",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

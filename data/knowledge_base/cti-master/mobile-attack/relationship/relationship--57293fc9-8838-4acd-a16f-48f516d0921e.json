@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--7db68d4f-ad48-4143-96a8-91f83081b596",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--57293fc9-8838-4acd-a16f-48f516d0921e",
+            "created": "2020-04-08T15:51:25.122Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ThreatFabric Ginp",
+                    "description": "ThreatFabric. (2019, November). Ginp - A malware patchwork borrowing from Anubis. Retrieved April 8, 2020.",
+                    "url": "https://www.threatfabric.com/blogs/ginp_a_malware_patchwork_borrowing_from_anubis.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:48:48.694Z",
+            "description": "[Ginp](https://attack.mitre.org/software/S0423) hides its icon after installation.(Citation: ThreatFabric Ginp)",
+            "relationship_type": "uses",
+            "source_ref": "malware--6146be90-470c-4049-bb3a-9986b8ffb65b",
+            "target_ref": "attack-pattern--f05fc151-aa62-47e3-ae57-2d1b23d64bf6",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

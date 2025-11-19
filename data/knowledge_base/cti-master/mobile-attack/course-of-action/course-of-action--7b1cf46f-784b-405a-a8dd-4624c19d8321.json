@@ -1,0 +1,33 @@
+{
+    "type": "bundle",
+    "id": "bundle--e8bd4586-d779-4dea-8121-56dbc1821bfc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "id": "course-of-action--7b1cf46f-784b-405a-a8dd-4624c19d8321",
+            "created": "2017-10-25T14:48:52.270Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/mitigations/M1004",
+                    "external_id": "M1004"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-25T14:40:10.556Z",
+            "name": "System Partition Integrity",
+            "description": "Ensure that Android devices being used include and enable the Verified Boot capability, which cryptographically ensures the integrity of the system partition.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_version": "1.0",
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

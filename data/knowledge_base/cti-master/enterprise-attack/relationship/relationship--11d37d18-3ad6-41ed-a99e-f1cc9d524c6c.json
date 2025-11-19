@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--f213fd2b-f3f3-4ca8-89f3-c30c9f348bdf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--11d37d18-3ad6-41ed-a99e-f1cc9d524c6c",
+            "created": "2019-01-29T21:33:34.692Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Unit 42 BadPatch Oct 2017",
+                    "description": "Bar, T., Conant, S. (2017, October 20). BadPatch. Retrieved November 13, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/10/unit42-badpatch/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:35:27.068Z",
+            "description": "[BadPatch](https://attack.mitre.org/software/S0337) establishes a foothold by adding a link to the malware executable in the startup folder.(Citation: Unit 42 BadPatch Oct 2017)",
+            "relationship_type": "uses",
+            "source_ref": "malware--9af05de0-bc09-4511-a350-5eb8b06185c1",
+            "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

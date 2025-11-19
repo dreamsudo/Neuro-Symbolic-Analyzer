@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--1d5860a8-0c55-4af2-834f-db4f22f89bab",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--376c4c97-bec7-455d-ac44-88b7cbd8bd43",
+            "created": "2020-02-04T19:17:42.262Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:42:56.093Z",
+            "description": "Applying more restrictive permissions to files and directories could prevent adversaries from modifying the access control lists.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--987988f0-cf86-4680-a875-2f6456ab2448",
+            "target_ref": "attack-pattern--34e793de-0274-4982-9c1a-246ed1c19dee",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

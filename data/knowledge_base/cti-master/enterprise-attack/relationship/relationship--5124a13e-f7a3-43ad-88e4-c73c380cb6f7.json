@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--419a82b3-b32a-4f44-86c7-f9b9725b4c61",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--5124a13e-f7a3-43ad-88e4-c73c380cb6f7",
+            "created": "2022-03-04T18:32:33.650Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "AADInternals Documentation",
+                    "description": "Dr. Nestori Syynimaa. (2018, October 25). AADInternals. Retrieved February 18, 2022.",
+                    "url": "https://o365blog.com/aadinternals"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:14:42.913Z",
+            "description": "[AADInternals](https://attack.mitre.org/software/S0677) can register a device to Azure AD.(Citation: AADInternals Documentation)",
+            "relationship_type": "uses",
+            "source_ref": "tool--2c5281dd-b5fd-4531-8aea-c1bf8a0f8756",
+            "target_ref": "attack-pattern--7decb26c-715c-40cf-b7e0-026f7d7cc215",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

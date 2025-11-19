@@ -1,0 +1,60 @@
+{
+    "type": "bundle",
+    "id": "bundle--e22eaf9a-d0cd-45e1-bdd3-e2f2e283aa91",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "tool",
+            "id": "tool--1244e058-fa10-48cb-b484-0bcf671107ae",
+            "created": "2022-03-23T19:34:30.486Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/software/S0692",
+                    "external_id": "S0692"
+                },
+                {
+                    "source_name": "SILENTTRINITY",
+                    "description": "(Citation: GitHub SILENTTRINITY March 2022)"
+                },
+                {
+                    "source_name": "Security Affairs SILENTTRINITY July 2019",
+                    "description": "Paganini, P. (2019, July 7). Croatia government agencies targeted with news SilentTrinity malware. Retrieved March 23, 2022.",
+                    "url": "https://securityaffairs.co/wordpress/88021/apt/croatia-government-silenttrinity-malware.html"
+                },
+                {
+                    "source_name": "GitHub SILENTTRINITY March 2022",
+                    "description": "Salvati, M (2019, August 6). SILENTTRINITY. Retrieved March 23, 2022.",
+                    "url": "https://github.com/byt3bl33d3r/SILENTTRINITY"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-30T13:26:45.728Z",
+            "name": "SILENTTRINITY",
+            "description": "[SILENTTRINITY](https://attack.mitre.org/software/S0692) is an open source remote administration and post-exploitation framework primarily written in Python that includes stagers written in Powershell, C, and Boo. [SILENTTRINITY](https://attack.mitre.org/software/S0692) was used in a 2019 campaign against Croatian government agencies by unidentified cyber actors.(Citation: GitHub SILENTTRINITY March 2022)(Citation: Security Affairs SILENTTRINITY July 2019)",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "1.1",
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Daniel Acevedo, ARMADO"
+            ],
+            "x_mitre_aliases": [
+                "SILENTTRINITY"
+            ],
+            "labels": [
+                "tool"
+            ]
+        }
+    ]
+}

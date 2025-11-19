@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--933a9c4a-3964-46e3-a852-c0d8dd41d576",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--e6dd2026-0c65-4a42-a306-d525bb442ab3",
+            "created": "2021-03-16T14:45:10.473Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Dormann Dangers of VHD 2019",
+                    "description": "Dormann, W. (2019, September 4). The Dangers of VHD and VHDX Files. Retrieved March 16, 2021.",
+                    "url": "https://insights.sei.cmu.edu/cert/2019/09/the-dangers-of-vhd-and-vhdx-files.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:15:03.242Z",
+            "description": "Consider blocking container file types at web and/or email gateways. Consider unregistering container file extensions in Windows File Explorer.(Citation: Dormann Dangers of VHD 2019)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--47e0e9fe-96ce-4f65-8bb1-8be1feacb5db",
+            "target_ref": "attack-pattern--7e7c2fba-7cca-486c-9582-4c1bb2851961",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

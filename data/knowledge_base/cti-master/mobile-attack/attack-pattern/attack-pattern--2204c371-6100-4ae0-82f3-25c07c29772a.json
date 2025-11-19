@@ -1,0 +1,63 @@
+{
+    "type": "bundle",
+    "id": "bundle--c030091b-0ada-48d3-b691-73674f393ca3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--2204c371-6100-4ae0-82f3-25c07c29772a",
+            "created": "2017-10-25T14:48:08.613Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1453",
+                    "external_id": "T1453"
+                },
+                {
+                    "source_name": "Google_AndroidAcsOverview",
+                    "description": "Google. (n.d.). Android accessibility overview. Retrieved April 17, 2025.",
+                    "url": "https://support.google.com/accessibility/android/answer/6006564?hl=en&ref_topic=6007234&sjid=9936713164149272548-NA"
+                },
+                {
+                    "source_name": "SahinSRLabs_FluBot_Dec2021",
+                    "description": "\u015eahin, Erdo\u011fan Ya\u011f\u0131z. (2021, December 21). When your phone gets sick: FluBot abuses Accessibility features to steal data. Retrieved April 16, 2025.",
+                    "url": "https://www.srlabs.de/blog-post/flubot-abuses-accessibility-features-to-steal-data"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-27T17:12:01.143Z",
+            "name": "Abuse Accessibility Features",
+            "description": "Adversaries may abuse accessibility features in Android devices to steal sensitive data and to spread malware to other devices. Accessibility features in Android are designed to assist users with disabilities, performing a variety of tasks, such as using Action Blocks to control lightbulbs, and changing the device\u2019s user interface, such as changing the font size and adjusting contract or colors.(Citation: Google_AndroidAcsOverview) \n\nOne example of how adversaries abuse accessibility features is overlaying an HTML object mimicking a legitimate login screen. The user types their credentials in the overlay HTML object, which is then sent to the adversaries.(Citation: SahinSRLabs_FluBot_Dec2021)  \n\nAnother example is a malicious accessibility feature acting as a keylogger. The keylogger monitors changes on the EditText fields and sends it to the adversaries.(Citation: SahinSRLabs_FluBot_Dec2021) This method of attack is also described in [Keylogging](https://attack.mitre.org/techniques/T1417/001); whereas [Abuse Accessibility Features](https://attack.mitre.org/techniques/T1453) captures the overall abuse of accessibility features.  ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "collection"
+                },
+                {
+                    "kill_chain_name": "mitre-mobile-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_contributors": [
+                "Luk\u00e1\u0161 \u0160tefanko, ESET",
+                "Liran Ravich, CardinalOps"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Android"
+            ],
+            "x_mitre_version": "3.0"
+        }
+    ]
+}

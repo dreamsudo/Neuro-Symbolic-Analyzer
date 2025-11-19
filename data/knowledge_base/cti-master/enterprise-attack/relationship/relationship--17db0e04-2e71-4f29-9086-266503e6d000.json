@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--d3766de1-5a30-4456-83e3-ca17c482b243",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--17db0e04-2e71-4f29-9086-266503e6d000",
+            "created": "2021-04-12T12:44:34.219Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Talos PoetRAT October 2020",
+                    "description": "Mercer, W. Rascagneres, P. Ventura, V. (2020, October 6). PoetRAT: Malware targeting public and private sector in Azerbaijan evolves . Retrieved April 9, 2021.",
+                    "url": "https://blog.talosintelligence.com/2020/10/poetrat-update.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:59:15.551Z",
+            "description": "[PoetRAT](https://attack.mitre.org/software/S0428) has called cmd through a Word document macro.(Citation: Talos PoetRAT October 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--cc5497f7-a9e8-436f-94da-b2b4a9b9ad3c",
+            "target_ref": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

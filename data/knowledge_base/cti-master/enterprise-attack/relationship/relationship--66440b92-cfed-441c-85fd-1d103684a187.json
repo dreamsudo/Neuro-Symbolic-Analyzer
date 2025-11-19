@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--38c6f3a1-564b-4b91-b510-a64d3785bca6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--66440b92-cfed-441c-85fd-1d103684a187",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Github Koadic",
+                    "description": "Magius, J., et al. (2017, July 19). Koadic. Retrieved September 27, 2024.",
+                    "url": "https://github.com/offsecginger/koadic"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:20:16.466Z",
+            "description": "[Koadic](https://attack.mitre.org/software/S0250) can retrieve the current content of the user clipboard.(Citation: Github Koadic)",
+            "relationship_type": "uses",
+            "source_ref": "tool--c8655260-9f4b-44e3-85e1-6538a5f6e4f4",
+            "target_ref": "attack-pattern--30973a08-aed9-4edf-8604-9084ce1b5c4f",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--d5ab8b4c-918d-450f-bfaa-a0f1f29c06ed",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--81763def-b0ec-4938-832d-cffb382bb4a8",
+            "created": "2020-12-14T17:34:58.764Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Nicolas Falliere, Liam O Murchu, Eric Chien February 2011",
+                    "description": "Nicolas Falliere, Liam O Murchu, Eric Chien 2011, February W32.Stuxnet Dossier (Version 1.4) Retrieved November 17, 2024.",
+                    "url": "https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:27:42.903Z",
+            "description": "[Stuxnet](https://attack.mitre.org/software/S0603) uses HTTP to communicate with a command and control server. (Citation: Nicolas Falliere, Liam O Murchu, Eric Chien February 2011)",
+            "relationship_type": "uses",
+            "source_ref": "malware--088f1d6e-0783-47c6-9923-9c79b2af43d4",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

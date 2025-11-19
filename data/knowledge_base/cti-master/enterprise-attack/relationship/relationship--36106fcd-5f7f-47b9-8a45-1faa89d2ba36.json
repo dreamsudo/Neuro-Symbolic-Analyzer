@@ -1,0 +1,36 @@
+{
+    "type": "bundle",
+    "id": "bundle--4a7c8d50-5789-40cd-b0b1-314349a151d5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--36106fcd-5f7f-47b9-8a45-1faa89d2ba36",
+            "created": "2021-02-12T20:07:43.063Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Dragos EKANS",
+                    "description": "Dragos. (2020, February 3). EKANS Ransomware and ICS Operations. Retrieved February 9, 2021.",
+                    "url": "https://www.dragos.com/blog/industry-news/ekans-ransomware-and-ics-operations/"
+                },
+                {
+                    "source_name": "Palo Alto Unit 42 EKANS",
+                    "description": "Hinchliffe, A. Santos, D. (2020, June 26). Threat Assessment: EKANS Ransomware. Retrieved February 9, 2021.",
+                    "url": "https://unit42.paloaltonetworks.com/threat-assessment-ekans-ransomware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:42:41.559Z",
+            "description": "[EKANS](https://attack.mitre.org/software/S0605) uses standard encryption library functions to encrypt files.(Citation: Dragos EKANS)(Citation: Palo Alto Unit 42 EKANS)",
+            "relationship_type": "uses",
+            "source_ref": "malware--00e7d565-9883-4ee5-b642-8fd17fd6a3f5",
+            "target_ref": "attack-pattern--b80d107d-fa0d-4b60-9684-b0433e8bdba0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

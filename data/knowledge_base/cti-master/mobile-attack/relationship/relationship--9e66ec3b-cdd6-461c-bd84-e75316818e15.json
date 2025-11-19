@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--0df26b50-a37d-4eb6-b9d0-ed631ae0fc6c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9e66ec3b-cdd6-461c-bd84-e75316818e15",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "CrowdStrike-Android",
+                    "description": "CrowdStrike Global Intelligence Team. (2016). Use of Fancy Bear Android Malware in Tracking of Ukrainian FIeld Artillery Units. Retrieved February 6, 2017.",
+                    "url": "https://www.crowdstrike.com/wp-content/brochures/FancyBearTracksUkrainianArtillery.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:29:52.936Z",
+            "description": "[X-Agent for Android](https://attack.mitre.org/software/S0314) was believed to have been used to obtain locational data of Ukrainian artillery forces.(Citation: CrowdStrike-Android)",
+            "relationship_type": "uses",
+            "source_ref": "malware--56660521-6db4-4e5a-a927-464f22954b7c",
+            "target_ref": "attack-pattern--99e6295e-741b-4857-b6e5-64989eb039b4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

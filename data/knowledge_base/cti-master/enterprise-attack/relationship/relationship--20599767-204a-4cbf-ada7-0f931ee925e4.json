@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--a33928f1-7b9f-46bd-89ad-60e2c6fabf82",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--20599767-204a-4cbf-ada7-0f931ee925e4",
+            "created": "2020-05-05T19:37:33.769Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "QiAnXin APT-C-36 Feb2019",
+                    "description": "QiAnXin Threat Intelligence Center. (2019, February 18). APT-C-36: Continuous Attacks Targeting Colombian Government Institutions and Corporations. Retrieved May 5, 2020.",
+                    "url": "https://web.archive.org/web/20190625182633if_/https://ti.360.net/blog/articles/apt-c-36-continuous-attacks-targeting-colombian-government-institutions-and-corporations-en/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:38:44.774Z",
+            "description": "[APT-C-36](https://attack.mitre.org/groups/G0099) has prompted victims to accept macros in order to execute the subsequent payload.(Citation: QiAnXin APT-C-36 Feb2019)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c4d50cdf-87ce-407d-86d8-862883485842",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

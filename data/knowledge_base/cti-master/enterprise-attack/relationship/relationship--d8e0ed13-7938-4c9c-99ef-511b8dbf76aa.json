@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--c8bbd7ed-d8db-4269-874d-709585f45214",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--d8e0ed13-7938-4c9c-99ef-511b8dbf76aa",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Trend Micro Totbrick Oct 2016",
+                    "description": "Antazo, F. (2016, October 31). TSPY_TRICKLOAD.N. Retrieved September 14, 2018.",
+                    "url": "https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/tspy_trickload.n"
+                },
+                {
+                    "source_name": "Bitdefender Trickbot VNC module Whitepaper 2021",
+                    "description": "Radu Tudorica. (2021, July 12). A Fresh Look at Trickbot\u2019s Ever-Improving VNC Module. Retrieved September 28, 2021.",
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/399/Bitdefender-PR-Whitepaper-Trickbot-creat5515-en-EN.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:50:40.616Z",
+            "description": "[TrickBot](https://attack.mitre.org/software/S0266) downloads several additional files and saves them to the victim's machine.(Citation: Trend Micro Totbrick Oct 2016)(Citation: Bitdefender Trickbot VNC module Whitepaper 2021)",
+            "relationship_type": "uses",
+            "source_ref": "malware--00806466-754d-44ea-ad6f-0caf59cb8556",
+            "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

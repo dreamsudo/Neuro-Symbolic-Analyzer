@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--eff62297-e270-4cf1-b1cc-ad3778785d63",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9730ebe6-78b7-4dbf-93f4-add720033985",
+            "created": "2024-09-23T20:43:37.860Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET Gamaredon Sept2024",
+                    "description": "Rusn\u00e1k, Z. (2024, September 26). Cyberespionage the Gamaredon way: Analysis of toolset used to spy on Ukraine in 2022 and 2023. Retrieved October 30, 2024.",
+                    "url": "https://web-assets.esetstatic.com/wls/en/papers/white-papers/cyberespionage-gamaredon-way.pdf"
+                },
+                {
+                    "source_name": "unit42_gamaredon_dec2022",
+                    "description": "Unit 42. (2022, December 20). Russia\u2019s Trident Ursa (aka Gamaredon APT) Cyber Conflict Operations Unwavering Since Invasion of Ukraine. Retrieved September 12, 2024.",
+                    "url": "https://unit42.paloaltonetworks.com/trident-ursa/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-08-21T17:41:23.596Z",
+            "description": "[Gamaredon Group](https://attack.mitre.org/groups/G0047) has attempted to get users to click on a link pointing to a malicious HTML file leading to follow-on malicious content.(Citation: unit42_gamaredon_dec2022)(Citation: ESET Gamaredon Sept2024)  ",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf",
+            "target_ref": "attack-pattern--ef67e13e-5598-4adc-bdb2-998225874fa9",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

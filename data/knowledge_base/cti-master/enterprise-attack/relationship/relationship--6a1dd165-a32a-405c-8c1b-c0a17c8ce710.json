@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--0bd79e0e-9f8f-4b97-bb94-e786e91c78f8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--6a1dd165-a32a-405c-8c1b-c0a17c8ce710",
+            "created": "2020-03-28T01:43:52.886Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:52:17.303Z",
+            "description": "Network intrusion detection and prevention systems that can identify traffic patterns indicative of AiTM activity can be used to mitigate activity at the network level.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "target_ref": "attack-pattern--650c784b-7504-4df7-ab2c-4ea882384d1e",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

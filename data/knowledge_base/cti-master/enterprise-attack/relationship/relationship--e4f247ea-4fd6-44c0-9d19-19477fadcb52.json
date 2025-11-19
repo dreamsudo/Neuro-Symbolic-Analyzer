@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--d23b71f2-ccbf-437b-83a0-9c1a739e092c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--e4f247ea-4fd6-44c0-9d19-19477fadcb52",
+            "created": "2020-02-25T18:49:52.364Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:14:45.998Z",
+            "description": "Do not allow remote access via SSH as root or other privileged accounts.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--9bb9e696-bff8-4ae1-9454-961fc7d91d5f",
+            "target_ref": "attack-pattern--4d2a5b3e-340d-4600-9123-309dd63c9bf8",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

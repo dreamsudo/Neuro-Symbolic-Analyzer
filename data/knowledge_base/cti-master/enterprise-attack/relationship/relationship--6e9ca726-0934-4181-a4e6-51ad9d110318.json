@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--22994dbc-69fd-48ce-baf6-362022025260",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--6e9ca726-0934-4181-a4e6-51ad9d110318",
+            "created": "2021-06-30T19:51:48.038Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Bitdefender Naikon April 2021",
+                    "description": "Vrabie, V. (2021, April 23). NAIKON \u2013 Traces from a Military Cyber-Espionage Operation. Retrieved June 29, 2021.",
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/396/Bitdefender-PR-Whitepaper-NAIKON-creat5397-en-EN.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:53:11.047Z",
+            "description": "[Nebulae](https://attack.mitre.org/software/S0630) can enumerate processes on a target system.(Citation: Bitdefender Naikon April 2021)",
+            "relationship_type": "uses",
+            "source_ref": "malware--22b17791-45bf-45c0-9322-ff1a0af5cf2b",
+            "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

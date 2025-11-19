@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--cbcb6ad8-e7f6-490c-a700-975dd2ced032",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--76588f90-79b8-4a61-ae07-3321393e5707",
+            "created": "2020-03-02T18:49:28.111Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:54:41.315Z",
+            "description": "Network intrusion prevention systems and systems designed to scan and remove malicious email attachments or links can be used to block activity.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "target_ref": "attack-pattern--a62a8db3-f23a-4d8f-afd6-9dbc77e7813b",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

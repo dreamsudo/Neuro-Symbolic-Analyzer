@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--b08f5382-d661-4d0e-a362-e2c46d4f669a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--6514cf17-0e40-4858-bd3e-58c8fb70796a",
+            "created": "2022-03-15T19:56:31.049Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "KISA Operation Muzabi",
+                    "description": "KISA. (2021). Phishing Target Reconnaissance and Attack Resource Analysis Operation Muzabi. Retrieved March 8, 2024.",
+                    "url": "https://web.archive.org/web/20220328121326/https://boho.or.kr/filedownload.do?attach_file_seq=2695&attach_file_id=EpF2695.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:20:01.622Z",
+            "description": "[Kimsuky](https://attack.mitre.org/groups/G0094) has created social media accounts to monitor news and security trends as well as potential targets.(Citation: KISA Operation Muzabi)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--0ec2f388-bf0f-4b5c-97b1-fc736d26c25f",
+            "target_ref": "attack-pattern--b1ccd744-3f78-4a0e-9bb2-2002057f7928",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

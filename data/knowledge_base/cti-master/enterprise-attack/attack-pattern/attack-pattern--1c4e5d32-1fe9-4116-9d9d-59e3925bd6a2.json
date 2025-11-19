@@ -1,0 +1,73 @@
+{
+    "type": "bundle",
+    "id": "bundle--f0957d02-cbbe-4fa8-80fe-220d2c3da239",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "created": "2020-02-10T20:43:10.239Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005"
+                },
+                {
+                    "source_name": "Twitter ItsReallyNick Masquerading Update",
+                    "description": "Carr, N.. (2018, October 25). Nick Carr Status Update Masquerading. Retrieved September 12, 2024.",
+                    "url": "https://x.com/ItsReallyNick/status/1055321652777619457"
+                },
+                {
+                    "source_name": "Docker Images",
+                    "description": "Docker. (n.d.). Docker Images. Retrieved April 6, 2021.",
+                    "url": "https://docs.docker.com/engine/reference/commandline/images/"
+                },
+                {
+                    "source_name": "Elastic Masquerade Ball",
+                    "description": "Ewing, P. (2016, October 31). How to Hunt: The Masquerade Ball. Retrieved October 31, 2016.",
+                    "url": "https://www.elastic.co/blog/how-hunt-masquerade-ball"
+                },
+                {
+                    "source_name": "Aquasec Kubernetes Backdoor 2023",
+                    "description": "Michael Katchinskiy and Assaf Morag. (2023, April 21). First-Ever Attack Leveraging Kubernetes RBAC to Backdoor Clusters. Retrieved March 24, 2025.",
+                    "url": "https://www.aquasec.com/blog/leveraging-kubernetes-rbac-to-backdoor-clusters/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:28.950Z",
+            "name": "Match Legitimate Resource Name or Location",
+            "description": "Adversaries may match or approximate the name or location of legitimate files, Registry keys, or other resources when naming/placing them. This is done for the sake of evading defenses and observation. \n\nThis may be done by placing an executable in a commonly trusted directory (ex: under System32) or giving it the name of a legitimate, trusted program (ex: `svchost.exe`). Alternatively, a Windows Registry key may be given a close approximation to a key used by a legitimate program. In containerized environments, a threat actor may create a resource in a trusted namespace or one that matches the naming convention of a container pod or cluster.(Citation: Aquasec Kubernetes Backdoor 2023)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Yossi Weizman, Azure Defender Research Team",
+                "Vishwas Manral, McAfee"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Containers",
+                "ESXi",
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_version": "2.0"
+        }
+    ]
+}

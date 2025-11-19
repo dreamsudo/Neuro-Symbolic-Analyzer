@@ -1,0 +1,56 @@
+{
+    "type": "bundle",
+    "id": "bundle--d3940df6-91b6-4dbf-a4df-9828a57003bf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--45977f14-1bcc-4ec4-ac14-a30fd3a11f44",
+            "created": "2021-10-20T15:05:19.272Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0023",
+                    "external_id": "DC0023"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Cloud Storage Modification",
+            "description": "Cloud Storage Modification involves tracking changes made to cloud storage infrastructure, including updates to settings, permissions, or stored data. Examples include modifying object access control lists (ACLs), uploading new objects, or updating bucket policies. Examples: \n\nAWS S3: An object is uploaded or its ACL is modified.\n- Azure Blob Storage: A blob's metadata or permissions are updated.\n- Google Cloud Storage: An object's lifecycle policy is updated, or a bucket policy is changed.\n- OpenStack Swift: Modifications to container settings or uploading of new objects.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "PutBucketLifecycle, PutLifecycleConfiguration, SetBucketLifecycle, storage.buckets.update"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "PutObject (with SSE-C), UploadPart (SSE-C)"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "PutBucketPolicy"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "SharingSet"
+                },
+                {
+                    "name": "saas:googledrive",
+                    "channel": "drive.permission.add"
+                }
+            ]
+        }
+    ]
+}

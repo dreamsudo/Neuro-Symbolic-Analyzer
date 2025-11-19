@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--38a519ff-223b-432e-bd1b-fc5692c03afb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7393547f-0d33-4070-9569-733e15c72e73",
+            "created": "2020-05-05T18:47:47.313Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "QiAnXin APT-C-36 Feb2019",
+                    "description": "QiAnXin Threat Intelligence Center. (2019, February 18). APT-C-36: Continuous Attacks Targeting Colombian Government Institutions and Corporations. Retrieved May 5, 2020.",
+                    "url": "https://web.archive.org/web/20190625182633if_/https://ti.360.net/blog/articles/apt-c-36-continuous-attacks-targeting-colombian-government-institutions-and-corporations-en/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:54:08.418Z",
+            "description": "[Imminent Monitor](https://attack.mitre.org/software/S0434) has a dynamic debugging feature to set the file attribute to hidden.(Citation: QiAnXin APT-C-36 Feb2019)",
+            "relationship_type": "uses",
+            "source_ref": "tool--8f8cd191-902c-4e83-bf20-b57c8c4640e9",
+            "target_ref": "attack-pattern--ec8fc7e2-b356-455c-8db5-2e37be158e7d",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

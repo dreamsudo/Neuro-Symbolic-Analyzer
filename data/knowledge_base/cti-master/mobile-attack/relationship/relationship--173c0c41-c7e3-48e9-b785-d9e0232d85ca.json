@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--9ec39eca-341c-42a9-9bca-21e6d864b36d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--173c0c41-c7e3-48e9-b785-d9e0232d85ca",
+            "created": "2020-09-11T16:22:03.285Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Lookout ViperRAT",
+                    "description": "M. Flossman. (2017, February 16). ViperRAT: The mobile APT targeting the Israeli Defense Force that should be on your radar. Retrieved September 11, 2020.",
+                    "url": "https://blog.lookout.com/viperrat-mobile-apt"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:47:12.613Z",
+            "description": "[ViperRAT](https://attack.mitre.org/software/S0506) can collect the device\u2019s contact list.(Citation: Lookout ViperRAT)",
+            "relationship_type": "uses",
+            "source_ref": "malware--f666e17c-b290-43b3-8947-b96bd5148fbb",
+            "target_ref": "attack-pattern--e0b9ecb8-a7d1-43c7-aa30-8e19c6a92c86",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

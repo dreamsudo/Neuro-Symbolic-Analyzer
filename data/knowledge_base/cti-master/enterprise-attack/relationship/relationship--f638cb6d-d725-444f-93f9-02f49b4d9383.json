@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--0ef32797-17e8-4d8b-8d1a-1812ca87b551",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f638cb6d-d725-444f-93f9-02f49b4d9383",
+            "created": "2019-01-30T15:38:21.294Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Mandiant APT1 Appendix",
+                    "description": "Mandiant. (n.d.). Appendix C (Digital) - The Malware Arsenal. Retrieved July 18, 2016.",
+                    "url": "https://www.mandiant.com/sites/default/files/2021-09/mandiant-apt1-report.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:58:14.993Z",
+            "description": "[BISCUIT](https://attack.mitre.org/software/S0017) has a command to launch a command shell on the system.(Citation: Mandiant APT1 Appendix)",
+            "relationship_type": "uses",
+            "source_ref": "malware--b8eb28e4-48a6-40ae-951a-328714f75eda",
+            "target_ref": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

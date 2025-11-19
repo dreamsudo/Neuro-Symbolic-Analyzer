@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--5859d91b-3e80-432c-858b-628ca339d7cf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--d2c3b075-5299-42e5-95de-8248dc0da551",
+            "created": "2019-03-13T17:10:01.761Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT33 Guardrail",
+                    "description": "Ackerman, G., et al. (2018, December 21). OVERRULED: Containing a Potentially Destructive Adversary. Retrieved January 17, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/12/overruled-containing-a-potentially-destructive-adversary.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:11:41.707Z",
+            "description": "(Citation: FireEye APT33 Guardrail)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--fbd29c89-18ba-4c2d-b792-51c0adee049f",
+            "target_ref": "tool--cb69b20d-56d0-41ab-8440-4a4b251614d4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

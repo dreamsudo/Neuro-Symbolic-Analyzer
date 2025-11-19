@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--5a4bab09-a475-42e4-8d50-b767fdf7fb1e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b87f6c02-8f95-4e40-a848-b6e3c069d703",
+            "created": "2022-01-11T14:58:01.957Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Prevailion DarkWatchman 2021",
+                    "description": "Smith, S., Stafford, M. (2021, December 14). DarkWatchman: A new evolution in fileless techniques. Retrieved January 10, 2022.",
+                    "url": "https://web.archive.org/web/20220629230035/https://www.prevailion.com/darkwatchman-new-fileless-techniques/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:42:14.404Z",
+            "description": "[DarkWatchman](https://attack.mitre.org/software/S0673) has been delivered via spearphishing emails that contain a malicious zip file.(Citation: Prevailion DarkWatchman 2021)",
+            "relationship_type": "uses",
+            "source_ref": "malware--63686509-069b-4143-99ea-4e59cad6cb2a",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

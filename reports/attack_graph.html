@@ -1,0 +1,20 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Neurosymbolic Attack Graph</title>
+            <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+            <style type="text/css">#mynetwork { width: 100%; height: 600px; border: 1px solid lightgray; }</style>
+        </head>
+        <body>
+            <h2>Epistemological Permutations (Fuzzy Logic)</h2>
+            <div id="mynetwork"></div>
+            <script type="text/javascript">
+                var data = {"nodes": [{"id": "World_0", "label": "World 0\nT1078 (1.00)\nT1059 (1.00)\nT1566 (1.00)\nT1053 (1.00)\nT1036 (1.00)", "color": "#97c2fc", "shape": "box"}, {"id": "World_1", "label": "World 1\nT1078 (1.00)\nT1059 (1.00)\nT1566 (1.00)\nT1053 (1.00)\nT1036 (1.00)\nT1562 (1.00)\nT1486 (1.00)\nT1021 (1.00)", "color": "#97c2fc", "shape": "box"}, {"id": "World_2", "label": "World 2\nT1078 (1.00)\nT1059 (1.00)\nT1566 (1.00)\nT1053 (1.00)\nT1036 (1.00)\nT1562 (1.00)\nT1486 (1.00)\nT1021 (1.00)", "color": "#97c2fc", "shape": "box"}, {"id": "World_3", "label": "World 3\nT1078 (1.00)\nT1059 (1.00)\nT1566 (1.00)\nT1053 (1.00)\nT1036 (1.00)\nT1562 (1.00)\nT1486 (1.00)\nT1021 (1.00)", "color": "#97c2fc", "shape": "box"}, {"id": "World_4", "label": "World 4\nT1078 (1.00)\nT1059 (1.00)\nT1566 (1.00)\nT1053 (1.00)\nT1036 (1.00)\nT1562 (1.00)\nT1486 (1.00)\nT1021 (1.00)", "color": "#97c2fc", "shape": "box"}, {"id": "World_5", "label": "World 5\nT1078 (1.00)\nT1059 (1.00)\nT1566 (1.00)\nT1053 (1.00)\nT1036 (1.00)\nT1562 (1.00)\nT1486 (1.00)\nT1021 (1.00)", "color": "#97c2fc", "shape": "box"}], "edges": [{"from": "World_0", "to": "World_1", "arrows": "to", "label": "Transition"}, {"from": "World_1", "to": "World_2", "arrows": "to", "label": "Transition"}, {"from": "World_2", "to": "World_3", "arrows": "to", "label": "Transition"}, {"from": "World_3", "to": "World_4", "arrows": "to", "label": "Transition"}, {"from": "World_4", "to": "World_5", "arrows": "to", "label": "Transition"}]};
+                var container = document.getElementById('mynetwork');
+                var options = { layout: { hierarchical: { direction: "LR", sortMethod: "directed" } }, physics: false };
+                var network = new vis.Network(container, data, options);
+            </script>
+        </body>
+        </html>
+        

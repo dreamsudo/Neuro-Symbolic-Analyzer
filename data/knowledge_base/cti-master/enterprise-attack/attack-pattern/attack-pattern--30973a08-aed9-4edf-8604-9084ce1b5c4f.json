@@ -1,0 +1,72 @@
+{
+    "type": "bundle",
+    "id": "bundle--4662ec3b-8840-4940-b46a-101371d67b44",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--30973a08-aed9-4edf-8604-9084ce1b5c4f",
+            "created": "2017-05-31T21:31:25.967Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1115",
+                    "external_id": "T1115"
+                },
+                {
+                    "source_name": "CISA_AA21_200B",
+                    "description": "CISA. (2021, August 20). Alert (AA21-200B) Chinese State-Sponsored Cyber Operations: Observed TTPs. Retrieved June 21, 2022.",
+                    "url": "https://www.cisa.gov/uscert/ncas/alerts/aa21-200b"
+                },
+                {
+                    "source_name": "mining_ruby_reversinglabs",
+                    "description": "Maljic, T. (2020, April 16). Mining for malicious Ruby gems. Retrieved October 15, 2022.",
+                    "url": "https://blog.reversinglabs.com/blog/mining-for-malicious-ruby-gems"
+                },
+                {
+                    "source_name": "clip_win_server",
+                    "description": "Microsoft, JasonGerend, et al. (2023, February 3). clip. Retrieved June 21, 2022.",
+                    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/clip"
+                },
+                {
+                    "source_name": "MSDN Clipboard",
+                    "description": "Microsoft. (n.d.). About the Clipboard. Retrieved March 29, 2016.",
+                    "url": "https://msdn.microsoft.com/en-us/library/ms649012"
+                },
+                {
+                    "source_name": "Operating with EmPyre",
+                    "description": "rvrsh3ll. (2016, May 18). Operating with EmPyre. Retrieved July 12, 2017.",
+                    "url": "https://medium.com/rvrsh3ll/operating-with-empyre-ea764eda3363"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:36.079Z",
+            "name": "Clipboard Data",
+            "description": "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nFor example, on Windows adversaries can access clipboard data by using <code>clip.exe</code> or <code>Get-Clipboard</code>.(Citation: MSDN Clipboard)(Citation: clip_win_server)(Citation: CISA_AA21_200B) Additionally, adversaries may monitor then replace users\u2019 clipboard with their data (e.g., [Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1565/002)).(Citation: mining_ruby_reversinglabs)\n\nmacOS and Linux also have commands, such as <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_version": "1.2"
+        }
+    ]
+}

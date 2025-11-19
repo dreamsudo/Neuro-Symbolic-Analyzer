@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--2013fe69-5019-46d9-b735-3ef0bfe2029e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--871cce82-c9fe-47e3-bd03-94a29a295f90",
+            "created": "2020-02-20T18:39:33.165Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Microsoft LSA",
+                    "description": "Microsoft. (2013, July 31). Configuring Additional LSA Protection. Retrieved February 13, 2015.",
+                    "url": "https://technet.microsoft.com/en-us/library/dn408187.aspx"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:57:46.202Z",
+            "description": "On Windows 8.1 and Windows Server 2012 R2, enable Protected Process Light for LSA.(Citation: Microsoft LSA)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--72dade3e-1cba-4182-b3b3-a77ca52f02a1",
+            "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "type": "bundle",
+    "id": "bundle--db33a84e-485d-4122-9e5e-15fb90c4ec07",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "id": "course-of-action--52c7a1a9-3a78-4528-a44f-cd7b0fa3541a",
+            "created": "2019-06-06T21:16:18.709Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/mitigations/M0814",
+                    "external_id": "M0814"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:26:28.312Z",
+            "name": "Static Network Configuration",
+            "description": "Configure hosts and devices to use static network configurations when possible, protocols that require dynamic discovery/addressing (e.g., ARP, DHCP, DNS) can be used to manipulate network message forwarding and enable various AiTM attacks. This mitigation may not always be usable due to limited device features or challenges introduced with different network configurations.",
+            "labels": [
+                "IEC 62443-3-3:2013 - SR 7.7",
+                "IEC 62443-4-2:2019 - CR 7.7",
+                "NIST SP 800-53 Rev. 5 - CM-7"
+            ],
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack"
+            ],
+            "x_mitre_version": "1.1",
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

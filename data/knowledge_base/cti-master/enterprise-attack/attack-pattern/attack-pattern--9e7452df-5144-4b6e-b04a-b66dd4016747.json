@@ -1,0 +1,68 @@
+{
+    "type": "bundle",
+    "id": "bundle--7c202e0f-7e37-477d-a95d-2a4dcc206de5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--9e7452df-5144-4b6e-b04a-b66dd4016747",
+            "created": "2019-09-04T19:26:12.441Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1534",
+                    "external_id": "T1534"
+                },
+                {
+                    "source_name": "Trend Micro When Phishing Starts from the Inside 2017",
+                    "description": "Chris Taylor. (2017, October 5). When Phishing Starts from the Inside. Retrieved October 8, 2019.",
+                    "url": "https://blog.trendmicro.com/phishing-starts-inside/"
+                },
+                {
+                    "source_name": "Int SP - chat apps",
+                    "description": "Microsoft Threat Intelligence. (2023, August 2). Midnight Blizzard conducts targeted social engineering over Microsoft Teams. Retrieved February 16, 2024.",
+                    "url": "https://www.microsoft.com/en-us/security/blog/2023/08/02/midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams/"
+                },
+                {
+                    "source_name": "Trend Micro - Int SP",
+                    "description": "Trend Micro. (n.d.). Retrieved February 16, 2024.",
+                    "url": "https://www.trendmicro.com/en_us/research.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:09.394Z",
+            "name": "Internal Spearphishing",
+            "description": "After they already have access to accounts or systems within the environment, adversaries may use internal spearphishing to gain access to additional information or compromise other users within the same organization. Internal spearphishing is multi-staged campaign where a legitimate account is initially compromised either by controlling the user's device or by compromising the account credentials of the user. Adversaries may then attempt to take advantage of the trusted internal account to increase the likelihood of tricking more victims into falling for phish attempts, often incorporating [Impersonation](https://attack.mitre.org/techniques/T1656).(Citation: Trend Micro - Int SP)\n\nFor example, adversaries may leverage [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001) or [Spearphishing Link](https://attack.mitre.org/techniques/T1566/002) as part of internal spearphishing to deliver a payload or redirect to an external site to capture credentials through [Input Capture](https://attack.mitre.org/techniques/T1056) on sites that mimic login interfaces.\n\nAdversaries may also leverage internal chat apps, such as Microsoft Teams, to spread malicious content or engage users in attempts to capture sensitive information and/or credentials.(Citation: Int SP - chat apps)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "lateral-movement"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Tim MalcomVetter",
+                "Swetha Prabakaran, Microsoft Threat Intelligence Center (MSTIC)"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux",
+                "SaaS",
+                "Office Suite"
+            ],
+            "x_mitre_version": "1.4"
+        }
+    ]
+}

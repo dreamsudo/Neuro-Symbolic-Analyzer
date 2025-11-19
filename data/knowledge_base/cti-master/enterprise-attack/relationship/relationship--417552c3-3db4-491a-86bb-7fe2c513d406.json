@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--a7f392bf-97c7-4106-bd4d-a44872530654",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--417552c3-3db4-491a-86bb-7fe2c513d406",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "jRAT Symantec Aug 2018",
+                    "description": "Sharma, R. (2018, August 15). Revamped jRAT Uses New Anti-Parsing Techniques. Retrieved September 21, 2018.",
+                    "url": "https://www.symantec.com/blogs/threat-intelligence/jrat-new-anti-parsing-techniques"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:44:50.897Z",
+            "description": "[jRAT](https://attack.mitre.org/software/S0283) has a function to delete files from the victim\u2019s machine.(Citation: jRAT Symantec Aug 2018)",
+            "relationship_type": "uses",
+            "source_ref": "malware--efece7e8-e40b-49c2-9f84-c55c5c93d05c",
+            "target_ref": "attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

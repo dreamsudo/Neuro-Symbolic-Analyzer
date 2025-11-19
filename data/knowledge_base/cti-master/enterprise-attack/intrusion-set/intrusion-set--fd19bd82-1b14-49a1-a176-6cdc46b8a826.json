@@ -1,0 +1,70 @@
+{
+    "type": "bundle",
+    "id": "bundle--161c61f0-bc8b-4f0c-9c9a-2f6ba07f03b8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "intrusion-set",
+            "id": "intrusion-set--fd19bd82-1b14-49a1-a176-6cdc46b8a826",
+            "created": "2018-04-18T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/groups/G0061",
+                    "external_id": "G0061"
+                },
+                {
+                    "source_name": "FIN8",
+                    "description": "(Citation: FireEye Obfuscation June 2017)"
+                },
+                {
+                    "source_name": "Syssphinx",
+                    "description": "(Citation: Symantec FIN8 Jul 2023)"
+                },
+                {
+                    "source_name": "FireEye Obfuscation June 2017",
+                    "description": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+                    "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+                },
+                {
+                    "source_name": "Bitdefender Sardonic Aug 2021",
+                    "description": "Budaca, E., et al. (2021, August 25). FIN8 Threat Actor Goes Agile with New Sardonic Backdoor. Retrieved August 9, 2023.",
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/401/Bitdefender-PR-Whitepaper-FIN8-creat5619-en-EN.pdf"
+                },
+                {
+                    "source_name": "FireEye Fin8 May 2016",
+                    "description": "Kizhakkinan, D., et al. (2016, May 11). Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks. Retrieved February 12, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2016/05/windows-zero-day-payment-cards.html"
+                },
+                {
+                    "source_name": "Symantec FIN8 Jul 2023",
+                    "description": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T20:37:35.846Z",
+            "name": "FIN8",
+            "description": "[FIN8](https://attack.mitre.org/groups/G0061) is a financially motivated threat group that has been active since at least January 2016, and known for targeting organizations in the hospitality, retail, entertainment, insurance, technology, chemical, and financial sectors. In June 2021, security researchers detected [FIN8](https://attack.mitre.org/groups/G0061) switching from targeting point-of-sale (POS) devices to distributing a number of ransomware variants.(Citation: FireEye Obfuscation June 2017)(Citation: FireEye Fin8 May 2016)(Citation: Bitdefender Sardonic Aug 2021)(Citation: Symantec FIN8 Jul 2023)",
+            "aliases": [
+                "FIN8",
+                "Syssphinx"
+            ],
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Daniyal Naeem, BT Security",
+                "Serhii Melnyk, Trustwave SpiderLabs"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--12148c85-7725-48e0-a16e-ca43bf07d412",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--fc0baea6-7e98-4cc3-9462-7eee9564cad0",
+            "created": "2022-04-12T17:58:20.508Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "KISA Operation Muzabi",
+                    "description": "KISA. (2021). Phishing Target Reconnaissance and Attack Resource Analysis Operation Muzabi. Retrieved March 8, 2024.",
+                    "url": "https://web.archive.org/web/20220328121326/https://boho.or.kr/filedownload.do?attach_file_seq=2695&attach_file_id=EpF2695.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:59:40.410Z",
+            "description": "[Kimsuky](https://attack.mitre.org/groups/G0094) has used tools such as the MailFetch mail crawler to collect victim emails (excluding spam) from online services via IMAP.(Citation: KISA Operation Muzabi)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--0ec2f388-bf0f-4b5c-97b1-fc736d26c25f",
+            "target_ref": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

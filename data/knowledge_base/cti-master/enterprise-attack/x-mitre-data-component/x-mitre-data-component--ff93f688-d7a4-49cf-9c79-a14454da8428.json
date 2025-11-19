@@ -1,0 +1,115 @@
+{
+    "type": "bundle",
+    "id": "bundle--5b18e160-1afe-44e0-9f1b-5090b04628b7",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--ff93f688-d7a4-49cf-9c79-a14454da8428",
+            "created": "2021-10-20T15:05:19.271Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0007",
+                    "external_id": "DC0007"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Web Credential Usage",
+            "description": "An attempt by a user to gain access to a network or computing resource by providing web credentials (ex: Windows EID 1202)",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "SessionToken used without preceding MFA or login event"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "SessionId reused from different device/browser fingerprint"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "AssumeRoleWithSAML"
+                },
+                {
+                    "name": "saas:access",
+                    "channel": "SAML token accepted without preceding login challenge"
+                },
+                {
+                    "name": "m365:exchange",
+                    "channel": "Mailbox access using SAML token without corresponding MFA event"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "GetSessionToken, AssumeRoleWithWebIdentity"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "New session initiated using cookies without normal MFA or password validation"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "Session activity without correlated login event"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "AssumeRole, GetFederationToken, GetSessionToken"
+                },
+                {
+                    "name": "azure:signinlogs",
+                    "channel": "TokenIssued, RefreshTokenUsed"
+                },
+                {
+                    "name": "saas:googleworkspace",
+                    "channel": "OAuthTokenGranted, APIRequest"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "OAuthTokenIssued, FileAccessed, MailItemsAccessed"
+                },
+                {
+                    "name": "kubernetes:apiserver",
+                    "channel": "serviceAccount token used in API requests not tied to workload identity"
+                },
+                {
+                    "name": "NSM:Connections",
+                    "channel": "Pre-authentication keys generated or token signing anomalies"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Web sessions initiated with newly forged tokens"
+                },
+                {
+                    "name": "saas:auth",
+                    "channel": "API requests made with tokens not associated with expected user logins"
+                },
+                {
+                    "name": "azure:signinlogs",
+                    "channel": "TokenIssuanceStart, TokenIssuanceSuccess"
+                },
+                {
+                    "name": "saas:googleworkspace",
+                    "channel": "access_token issued"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "TokenIssued, FileAccessed"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "GetCallerIdentity"
+                }
+            ]
+        }
+    ]
+}

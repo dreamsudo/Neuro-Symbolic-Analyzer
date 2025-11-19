@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--814d3960-800a-4451-9f3b-0f52e2b51850",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--e3af086e-a601-460b-92c4-7dfdf0d88caf",
+            "created": "2024-07-01T18:41:12.467Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET Turla Lunar toolset May 2024",
+                    "description": "Jur\u010dacko, F. (2024, May 15). To the Moon and back(doors): Lunar landing in diplomatic missions. Retrieved June 26, 2024.",
+                    "url": "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:53:25.755Z",
+            "description": "[LunarWeb](https://attack.mitre.org/software/S1141) can use Base64 encoding to obfuscate C2 commands.(Citation: ESET Turla Lunar toolset May 2024)",
+            "relationship_type": "uses",
+            "source_ref": "malware--e1284931-3f85-4262-a641-9ae8bb0576a0",
+            "target_ref": "attack-pattern--04fd5427-79c7-44ea-ae13-11b24778ff1c",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

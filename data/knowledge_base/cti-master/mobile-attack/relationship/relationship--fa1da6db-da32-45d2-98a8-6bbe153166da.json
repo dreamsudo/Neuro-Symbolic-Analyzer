@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--8a7d14b8-eb6f-488e-98d9-7d8fa1855741",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--fa1da6db-da32-45d2-98a8-6bbe153166da",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Lookout-EnterpriseApps",
+                    "description": "Lookout. (2016, May 25). 5 active mobile threats spoofing enterprise apps. Retrieved December 19, 2016.",
+                    "url": "https://blog.lookout.com/blog/2016/05/25/spoofed-apps/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:31:21.449Z",
+            "description": "[AndroRAT](https://attack.mitre.org/software/S0292) tracks the device location.(Citation: Lookout-EnterpriseApps)",
+            "relationship_type": "uses",
+            "source_ref": "malware--a3dad2be-ce62-4440-953b-00fbce7aba93",
+            "target_ref": "attack-pattern--99e6295e-741b-4857-b6e5-64989eb039b4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

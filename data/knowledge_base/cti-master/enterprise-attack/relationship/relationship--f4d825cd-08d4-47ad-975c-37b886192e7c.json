@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--f5664554-8a4f-4335-94aa-30ca2d961762",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f4d825cd-08d4-47ad-975c-37b886192e7c",
+            "created": "2019-01-29T21:27:25.205Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "FireEye APT38 Oct 2018",
+                    "description": "FireEye. (2018, October 03). APT38: Un-usual Suspects. Retrieved November 17, 2024.",
+                    "url": "https://www.mandiant.com/sites/default/files/2021-09/rpt-apt38-2018-web_v5-1.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:57:51.205Z",
+            "description": "[APT38](https://attack.mitre.org/groups/G0082) leveraged Sysmon to understand the processes, services in the organization.(Citation: FireEye APT38 Oct 2018)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--00f67a77-86a4-4adf-be26-1a54fc713340",
+            "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

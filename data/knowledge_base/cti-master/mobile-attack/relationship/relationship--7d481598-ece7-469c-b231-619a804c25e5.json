@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--c9a43391-67f5-4c0a-ac23-d4497af52393",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7d481598-ece7-469c-b231-619a804c25e5",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Lookout-Pegasus",
+                    "description": "Lookout. (2016). Technical Analysis of Pegasus Spyware. Retrieved December 12, 2016.",
+                    "url": "https://info.lookout.com/rs/051-ESQ-475/images/lookout-pegasus-technical-analysis.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:49:44.545Z",
+            "description": "[Pegasus for iOS](https://attack.mitre.org/software/S0289) captures SMS messages that the victim sends or receives.(Citation: Lookout-Pegasus)",
+            "relationship_type": "uses",
+            "source_ref": "malware--33d9d91d-aad9-49d5-a516-220ce101ac8a",
+            "target_ref": "attack-pattern--c6421411-ae61-42bb-9098-73fddb315002",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

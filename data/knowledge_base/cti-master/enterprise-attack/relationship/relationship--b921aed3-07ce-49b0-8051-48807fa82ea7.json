@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--c83682fd-6c47-402c-a94f-c78ae3853114",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b921aed3-07ce-49b0-8051-48807fa82ea7",
+            "created": "2020-02-18T15:54:51.207Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:06:59.469Z",
+            "description": "Use user training as a way to bring awareness and raise suspicion for potentially malicious events and dialog boxes (ex: Office documents prompting for credentials).",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--2a4f6c11-a4a7-4cb9-b0ef-6ae1bb3a718a",
+            "target_ref": "attack-pattern--a2029942-0a85-4947-b23c-ca434698171d",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

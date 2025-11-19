@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--28e56ac2-31ce-4c70-ba90-849b315319ae",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b363cbbb-679c-47e0-8ad0-af98ebf51e60",
+            "created": "2020-09-21T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:26:36.332Z",
+            "description": "Utilize strong cryptographic techniques and protocols to prevent eavesdropping on network communications.\n",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--7f153c28-e5f1-4764-88fb-eea1d9b0ad4a",
+            "target_ref": "attack-pattern--2877063e-1851-48d2-bcc6-bc1d2733157e",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

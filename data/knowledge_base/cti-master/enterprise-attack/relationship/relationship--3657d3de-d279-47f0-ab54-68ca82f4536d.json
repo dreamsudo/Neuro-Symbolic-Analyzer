@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--7842459e-13d8-469b-a5e0-589a7444652f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--3657d3de-d279-47f0-ab54-68ca82f4536d",
+            "created": "2019-04-23T13:43:22.921Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "GitHub PoshC2",
+                    "description": "Nettitude. (2018, July 23). Python Server for PoshC2. Retrieved April 23, 2019.",
+                    "url": "https://github.com/nettitude/PoshC2_Python"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:42:44.432Z",
+            "description": "[PoshC2](https://attack.mitre.org/software/S0378) can utilize multiple methods to bypass UAC.(Citation: GitHub PoshC2)",
+            "relationship_type": "uses",
+            "source_ref": "tool--4b57c098-f043-4da2-83ef-7588a6d426bc",
+            "target_ref": "attack-pattern--120d5519-3098-4e1c-9191-2aa61232f073",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--85886007-5081-42bb-8927-8e23c2166439",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--66a73f1e-dfb8-4509-be62-787c9a14c221",
+            "created": "2021-02-10T19:57:38.177Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ESET Ebury Oct 2017",
+                    "description": "Vachon, F. (2017, October 30). Windigo Still not Windigone: An Ebury Update . Retrieved February 10, 2021.",
+                    "url": "https://www.welivesecurity.com/2017/10/30/windigo-ebury-update-2/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:51:36.465Z",
+            "description": "(Citation: ESET Ebury Oct 2017)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+            "target_ref": "malware--d6b3fcd0-1c86-4350-96f0-965ed02fcc51",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

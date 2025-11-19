@@ -1,0 +1,125 @@
+{
+    "type": "bundle",
+    "id": "bundle--d7c16bbc-9aec-4fe6-b437-82ed77a5c2df",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--3d6e6b3b-4aa8-40e1-8c47-91db0f313d9f",
+            "created": "2021-10-20T15:05:19.273Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0042",
+                    "external_id": "DC0042"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Drive Creation",
+            "description": "The activity of assigning a new drive letter or creating a mount point for a data storage device, such as a USB, network share, or external hard drive, enabling access to its content on a host system. Examples: \n\n- USB Drive Insertion: A USB drive is plugged in and automatically assigned the letter `E:\\` on a Windows machine.\n- Network Drive Mapping: A network share `\\\\server\\share` is mapped to the drive `Z:\\`.\n- Virtual Drive Creation: A virtual disk is mounted on `/mnt/virtualdrive` using an ISO image or a virtual hard disk (VHD).\n- Cloud Storage Mounting: Google Drive is mounted as `G:\\` on a Windows machine using a cloud sync tool.\n- External Storage Integration: An external HDD or SSD is connected and assigned `/mnt/external` on a Linux system..",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack",
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "Drive",
+                    "channel": "None"
+                },
+                {
+                    "name": "WinEventLog:System",
+                    "channel": "Kernel-PnP 410/400 device install, disk added"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "mknod,open,openat"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "mounted|appeared|DA: disk* attached"
+                },
+                {
+                    "name": "WinEventLog:System",
+                    "channel": "EventCode=1006"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "Removable media mount notification"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "com.apple.diskarbitration"
+                },
+                {
+                    "name": "WinEventLog:System",
+                    "channel": "EventCode=1006, 10001"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "device event logs"
+                },
+                {
+                    "name": "linux:osquery",
+                    "channel": "mount_events"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Volume Mount + File Read"
+                },
+                {
+                    "name": "WinEventLog:System",
+                    "channel": "EventCode=2003"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "udev events or drive enumeration involving TinyPilot paths or device classes"
+                },
+                {
+                    "name": "linux:syslog",
+                    "channel": "Device attach logs containing TinyPilot/PiKVM identifiers"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Hardware enumeration events via IOKit or USBMuxd showing TinyPilot or unknown keyboard/mouse"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "Kernel Device Events - USB Block Devices"
+                },
+                {
+                    "name": "maos:osquery",
+                    "channel": "mount_events"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Volume Mount + Process Trace + File Read"
+                },
+                {
+                    "name": "journald:systemd",
+                    "channel": "udisks2 or udevd logs"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "log stream --predicate 'eventMessage contains \"USBMSC\"'"
+                },
+                {
+                    "name": "linux:syslog",
+                    "channel": "New HID device enumeration with type 'keyboard' followed by immediate input injection"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "New IOUSB keyboard/HID device enumerated with suspicious attributes"
+                }
+            ]
+        }
+    ]
+}

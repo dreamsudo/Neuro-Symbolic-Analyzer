@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--b164d8f4-1f74-4d92-be8d-616e357d79aa",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2e6e8722-d09d-402e-9ea8-ccf8412339d0",
+            "created": "2019-10-10T22:00:27.892Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "FireEye APT19",
+                    "description": "Ahl, I. (2017, June 06). Privileges and Credentials: Phished at the Request of Counsel. Retrieved May 17, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/phished-at-the-request-of-counsel.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:05:08.872Z",
+            "description": "[APT19](https://attack.mitre.org/groups/G0073) used <code>-W Hidden</code> to conceal [PowerShell](https://attack.mitre.org/techniques/T1059/001) windows by setting the WindowStyle parameter to hidden. (Citation: FireEye APT19)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--fe8796a4-2a02-41a0-9d27-7aa1e995feb6",
+            "target_ref": "attack-pattern--cbb66055-0325-4111-aca0-40547b6ad5b0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

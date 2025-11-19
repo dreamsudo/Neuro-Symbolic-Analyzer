@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--c8fab176-cb29-43b3-8f92-25b6b6df20e3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9767394f-960b-47d4-8123-cfcc5d6ab66a",
+            "created": "2020-08-10T13:59:38.621Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:00:57.297Z",
+            "description": "Consider removing verclsid.exe if it is not necessary within a given environment.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--eb88d97c-32f1-40be-80f0-d61a4b0b4b31",
+            "target_ref": "attack-pattern--808e6329-ca91-4b87-ac2d-8eadc5f8f327",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

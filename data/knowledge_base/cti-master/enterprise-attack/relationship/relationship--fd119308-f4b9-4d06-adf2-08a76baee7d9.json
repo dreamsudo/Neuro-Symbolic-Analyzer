@@ -1,0 +1,36 @@
+{
+    "type": "bundle",
+    "id": "bundle--1e8ce44f-8aed-41ca-94d5-ee34cadbbebd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--fd119308-f4b9-4d06-adf2-08a76baee7d9",
+            "created": "2020-05-18T19:04:38.065Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Reaqta MuddyWater November 2017",
+                    "description": "Reaqta. (2017, November 22). A dive into MuddyWater APT targeting Middle-East. Retrieved May 18, 2020.",
+                    "url": "https://reaqta.com/2017/11/muddywater-apt-targeting-middle-east/"
+                },
+                {
+                    "source_name": "TrendMicro POWERSTATS V3 June 2019",
+                    "description": "Lunghi, D. and Horejsi, J.. (2019, June 10). MuddyWater Resurfaces, Uses Multi-Stage Backdoor POWERSTATS V3 and New Post-Exploitation Tools. Retrieved May 14, 2020.",
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/muddywater-resurfaces-uses-multi-stage-backdoor-powerstats-v3-and-new-post-exploitation-tools/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:18:52.136Z",
+            "description": "(Citation: Reaqta MuddyWater November 2017)(Citation: TrendMicro POWERSTATS V3 June 2019)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--269e8108-68c6-4f99-b911-14b2e765dec2",
+            "target_ref": "tool--c8655260-9f4b-44e3-85e1-6538a5f6e4f4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "type": "bundle",
+    "id": "bundle--c25b3d1a-f80a-4d3b-9497-3da79beed2eb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f95fec2e-f5cf-49c9-8e0b-1c6c5fd15d8f",
+            "created": "2019-10-18T14:50:57.494Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:52:39.023Z",
+            "description": "Security updates often contain patches for vulnerabilities.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--bcecd036-f40e-4916-9f8e-fd0ccf0ece8d",
+            "target_ref": "attack-pattern--667e5707-3843-4da8-bd34-88b922526f0d",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

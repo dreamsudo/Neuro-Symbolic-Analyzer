@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--476c7358-e1a7-44e5-a238-e1c21ad46036",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "id": "course-of-action--de0bc375-50e1-4e26-a342-a8ff8c9d3037",
+            "created": "2019-06-06T16:47:30.700Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/mitigations/M0916",
+                    "external_id": "M0916"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:26:33.110Z",
+            "name": "Vulnerability Scanning",
+            "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.",
+            "labels": [
+                "NIST SP 800-53 Rev. 5 - RA-5"
+            ],
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack"
+            ],
+            "x_mitre_version": "1.0",
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

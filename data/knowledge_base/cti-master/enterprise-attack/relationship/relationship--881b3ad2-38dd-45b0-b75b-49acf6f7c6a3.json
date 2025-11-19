@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--bd886240-7033-4a01-a77e-b8a2f6b3d6df",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--881b3ad2-38dd-45b0-b75b-49acf6f7c6a3",
+            "created": "2020-06-23T18:12:47.888Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Trend Micro Tick November 2019",
+                    "description": "Chen, J. et al. (2019, November). Operation ENDTRADE: TICK\u2019s Multi-Stage Backdoors for Attacking Industries and Stealing Classified Data. Retrieved June 9, 2020.",
+                    "url": "https://documents.trendmicro.com/assets/pdf/Operation-ENDTRADE-TICK-s-Multi-Stage-Backdoors-for-Attacking-Industries-and-Stealing-Classified-Data.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:29:29.573Z",
+            "description": "[BRONZE BUTLER](https://attack.mitre.org/groups/G0060) has used legitimate applications to side-load malicious DLLs.(Citation: Trend Micro Tick November 2019)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--93f52415-0fe4-4d3d-896c-fc9b8e88ab90",
+            "target_ref": "attack-pattern--2fee9321-3e71-4cf4-af24-d4d40d355b34",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

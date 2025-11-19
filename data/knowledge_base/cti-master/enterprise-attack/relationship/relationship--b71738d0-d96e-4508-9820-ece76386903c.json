@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--925eb9fa-82f8-4dff-9934-bd2cbc55d1bd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b71738d0-d96e-4508-9820-ece76386903c",
+            "created": "2019-06-14T16:45:34.002Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "PWC KeyBoys Feb 2017",
+                    "description": "Parys, B. (2017, February 11). The KeyBoys are back in town. Retrieved June 13, 2019.",
+                    "url": "https://web.archive.org/web/20211129064701/https://www.pwc.co.uk/issues/cyber-security-services/research/the-keyboys-are-back-in-town.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:41:53.126Z",
+            "description": "[KeyBoy](https://attack.mitre.org/software/S0387) uses the Dynamic Data Exchange (DDE) protocol to download remote payloads.(Citation: PWC KeyBoys Feb 2017)",
+            "relationship_type": "uses",
+            "source_ref": "malware--5dd649c0-bca4-488b-bd85-b180474ec62e",
+            "target_ref": "attack-pattern--232a7e42-cd6e-4902-8fe9-2960f529dd4d",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

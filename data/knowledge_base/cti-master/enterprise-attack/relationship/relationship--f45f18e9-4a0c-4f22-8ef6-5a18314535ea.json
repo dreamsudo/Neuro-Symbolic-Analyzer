@@ -1,0 +1,41 @@
+{
+    "type": "bundle",
+    "id": "bundle--5983ca26-0bbd-461d-8050-d80517417640",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f45f18e9-4a0c-4f22-8ef6-5a18314535ea",
+            "created": "2020-05-26T18:03:17.256Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Medium Metamorfo Apr 2020",
+                    "description": "Erlich, C. (2020, April 3). The Avast Abuser: Metamorfo Banking Malware Hides By Abusing Avast Executable. Retrieved May 26, 2020.",
+                    "url": "https://medium.com/@chenerlich/the-avast-abuser-metamorfo-banking-malware-hides-by-abusing-avast-executable-ac9b8b392767"
+                },
+                {
+                    "source_name": "Fortinet Metamorfo Feb 2020",
+                    "description": "Zhang, X. (2020, February 4). Another Metamorfo Variant Targeting Customers of Financial Institutions in More Countries. Retrieved July 30, 2020.",
+                    "url": "https://www.fortinet.com/blog/threat-research/another-metamorfo-variant-targeting-customers-of-financial-institutions"
+                },
+                {
+                    "source_name": "FireEye Metamorfo Apr 2018",
+                    "description": "Sierra, E., Iglesias, G.. (2018, April 24). Metamorfo Campaigns Targeting Brazilian Users. Retrieved July 30, 2020.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/04/metamorfo-campaign-targeting-brazilian-users.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:17:21.463Z",
+            "description": "[Metamorfo](https://attack.mitre.org/software/S0455) has searched the Program Files directories for specific folders and has searched for strings related to its mutexes.(Citation: Medium Metamorfo Apr 2020)(Citation: Fortinet Metamorfo Feb 2020)(Citation: FireEye Metamorfo Apr 2018) ",
+            "relationship_type": "uses",
+            "source_ref": "malware--81c57a96-fc8c-4f91-af8e-63e24c2927c2",
+            "target_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

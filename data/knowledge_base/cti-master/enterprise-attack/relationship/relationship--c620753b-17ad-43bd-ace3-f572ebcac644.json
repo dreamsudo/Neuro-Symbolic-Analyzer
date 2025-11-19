@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--e6585a3e-7dee-43da-9b2e-679ab16fbf47",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--c620753b-17ad-43bd-ace3-f572ebcac644",
+            "created": "2022-04-18T13:42:37.506Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "AADInternals Documentation",
+                    "description": "Dr. Nestori Syynimaa. (2018, October 25). AADInternals. Retrieved February 18, 2022.",
+                    "url": "https://o365blog.com/aadinternals"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:45:54.818Z",
+            "description": "[AADInternals](https://attack.mitre.org/software/S0677) can steal users\u2019 access tokens via phishing emails containing malicious links.(Citation: AADInternals Documentation)",
+            "relationship_type": "uses",
+            "source_ref": "tool--2c5281dd-b5fd-4531-8aea-c1bf8a0f8756",
+            "target_ref": "attack-pattern--890c9858-598c-401d-a4d5-c67ebcdd703a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "type": "bundle",
+    "id": "bundle--a8fc3848-4ae7-4f90-bf23-21c6360f6b45",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2488fee3-78ad-4ea6-b111-2d0c372b36d2",
+            "created": "2021-04-14T14:10:02.579Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:02:43.241Z",
+            "description": "Regularly update web browsers, password managers, and all related software to the latest versions. Keeping software up-to-date reduces the risk of vulnerabilities being exploited by attackers to extract stored credentials or session cookies.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--e5d930e9-775a-40ad-9bdb-b941d8dfe86b",
+            "target_ref": "attack-pattern--315f51f0-6b03-4c1e-bfb2-84740afb8e21",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

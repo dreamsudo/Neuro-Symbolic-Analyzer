@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--cd1bd2f5-67c0-4c5a-b027-22b1e7768f3c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f8c2b8e1-7439-48df-a8c3-6796fd4bb142",
+            "created": "2023-03-02T18:59:11.281Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Microsoft BlackCat Jun 2022",
+                    "description": "Microsoft Defender Threat Intelligence. (2022, June 13). The many lives of BlackCat ransomware. Retrieved December 20, 2022.",
+                    "url": "https://www.microsoft.com/en-us/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:58:52.387Z",
+            "description": "[BlackCat](https://attack.mitre.org/software/S1068) can utilize `net use` commands to discover the user name on a compromised host.(Citation: Microsoft BlackCat Jun 2022)",
+            "relationship_type": "uses",
+            "source_ref": "malware--50c44c34-3abb-48ae-9433-a2337de5b0bc",
+            "target_ref": "attack-pattern--03d7999c-1f4c-42cc-8373-e7690d318104",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--30bbb2f7-b6d6-4aa6-9b99-0b2f68af2f3f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--5de6bf53-0a02-439b-a8d0-248fa9640a36",
+            "created": "2020-09-21T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "IEC February 2019",
+                    "description": "IEC 2019, February Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components Retrieved. 2020/09/25 ",
+                    "url": "https://webstore.iec.ch/publication/34421"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:25:36.340Z",
+            "description": "Audit the integrity of PLC system and application code functionality, such as the manipulation of standard function blocks (e.g., Organizational Blocks) that manage the execution of application logic programs. (Citation: IEC February 2019)\n",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--bcf91ebc-f316-4e19-b2f6-444e9940c697",
+            "target_ref": "attack-pattern--3b6b9246-43f8-4c69-ad7a-2b11cfe0a0d9",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

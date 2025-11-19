@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--00d4979b-852e-49ed-8f5d-b1d7fca090cf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--ff53be5e-2a57-4a9e-a0c1-cc075c1331c4",
+            "created": "2019-04-16T17:43:42.921Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "FireEye APT33 Guardrail",
+                    "description": "Ackerman, G., et al. (2018, December 21). OVERRULED: Containing a Potentially Destructive Adversary. Retrieved January 17, 2019.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/12/overruled-containing-a-potentially-destructive-adversary.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:19:17.242Z",
+            "description": "[POWERTON](https://attack.mitre.org/software/S0371) can use WMI for persistence.(Citation: FireEye APT33 Guardrail)",
+            "relationship_type": "uses",
+            "source_ref": "malware--e85cae1a-bce3-4ac4-b36b-b00acac0567b",
+            "target_ref": "attack-pattern--910906dd-8c0a-475a-9cc1-5e029e2fad58",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--316cd032-581b-4700-a7a8-359d9bcb4793",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f347b4fe-d829-427d-851a-fff3393441db",
+            "created": "2021-04-12T07:57:26.506Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Joe Slowik August 2019",
+                    "description": "Joe Slowik 2019, August 15 CRASHOVERRIDE: Reassessing the 2016 Ukraine Electric Power Event as a Protection-Focused Attack Retrieved. 2019/10/22 ",
+                    "url": "https://dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T23:05:28.180Z",
+            "description": "[Industroyer](https://attack.mitre.org/software/S0604) contained a module which leveraged a vulnerability in the Siemens SIPROTEC relays (CVE-2015-5374) to create a Denial of Service against automated protective relays. (Citation: Joe Slowik August 2019)",
+            "relationship_type": "uses",
+            "source_ref": "malware--e401d4fe-f0c9-44f0-98e6-f93487678808",
+            "target_ref": "attack-pattern--2bb4d762-bf4a-4bc3-9318-15cc6a354163",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

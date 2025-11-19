@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--abf26cd0-4538-4058-bed4-33c2a0e336c6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--92c83d10-7e4f-4d4a-9766-b2162ee72cb1",
+            "created": "2024-03-13T20:36:08.673Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "SCILabs Malteiro 2021",
+                    "description": "SCILabs. (2021, December 23). Cyber Threat Profile Malteiro. Retrieved March 13, 2024.",
+                    "url": "https://blog.scilabs.mx/en/cyber-threat-profile-malteiro/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:32:20.168Z",
+            "description": "[Malteiro](https://attack.mitre.org/groups/G1026) has sent spearphishing emails containing malicious .zip files.(Citation: SCILabs Malteiro 2021)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bf668120-e9a6-4017-a014-bfc0f5232656",
+            "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "type": "bundle",
+    "id": "bundle--a45d4ad8-f2e0-4447-b3e2-8805269726bb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "intrusion-set",
+            "id": "intrusion-set--4283ae19-69c7-4347-a35e-b56f08eb660b",
+            "created": "2021-03-24T15:48:17.731Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/groups/G0128",
+                    "external_id": "G0128"
+                },
+                {
+                    "source_name": "APT31",
+                    "description": "(Citation: Check Point APT31 February 2021)"
+                },
+                {
+                    "source_name": "Violet Typhoon",
+                    "description": "(Citation: Microsoft Threat Actor Naming July 2023)"
+                },
+                {
+                    "source_name": "Microsoft Targeting Elections September 2020",
+                    "description": "Burt, T. (2020, September 10). New cyberattacks targeting U.S. elections. Retrieved March 24, 2021.",
+                    "url": "https://blogs.microsoft.com/on-the-issues/2020/09/10/cyberattacks-us-elections-trump-biden/"
+                },
+                {
+                    "source_name": "Check Point APT31 February 2021",
+                    "description": "Itkin, E. and Cohen, I. (2021, February 22). The Story of Jian \u2013 How APT31 Stole and Used an Unknown Equation Group 0-Day. Retrieved March 24, 2021.",
+                    "url": "https://research.checkpoint.com/2021/the-story-of-jian/"
+                },
+                {
+                    "source_name": "Microsoft Threat Actor Naming July 2023",
+                    "description": "Microsoft . (2023, July 12). How Microsoft names threat actors. Retrieved November 17, 2023.",
+                    "url": "https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming?view=o365-worldwide"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-15T20:39:25.843Z",
+            "name": "ZIRCONIUM",
+            "description": "[ZIRCONIUM](https://attack.mitre.org/groups/G0128) is a threat group operating out of China, active since at least 2017, that has targeted individuals associated with the 2020 US presidential election and prominent leaders in the international affairs community.(Citation: Microsoft Targeting Elections September 2020)(Citation: Check Point APT31 February 2021)",
+            "aliases": [
+                "ZIRCONIUM",
+                "APT31",
+                "Violet Typhoon"
+            ],
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_version": "2.3",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ]
+        }
+    ]
+}

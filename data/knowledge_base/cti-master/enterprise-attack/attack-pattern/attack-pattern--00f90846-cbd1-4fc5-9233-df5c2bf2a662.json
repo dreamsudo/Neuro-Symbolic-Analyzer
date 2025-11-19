@@ -1,0 +1,76 @@
+{
+    "type": "bundle",
+    "id": "bundle--4696740c-823a-4b3a-be1d-f933c8a3b0b6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--00f90846-cbd1-4fc5-9233-df5c2bf2a662",
+            "created": "2020-02-20T21:01:25.428Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1560/001",
+                    "external_id": "T1560.001"
+                },
+                {
+                    "source_name": "WinRAR Homepage",
+                    "description": "A. Roshal. (2020). RARLAB. Retrieved February 20, 2020.",
+                    "url": "https://www.rarlab.com/"
+                },
+                {
+                    "source_name": "WinZip Homepage",
+                    "description": "Corel Corporation. (2020). WinZip. Retrieved February 20, 2020.",
+                    "url": "https://www.winzip.com/win/en/"
+                },
+                {
+                    "source_name": "7zip Homepage",
+                    "description": "I. Pavlov. (2019). 7-Zip. Retrieved February 20, 2020.",
+                    "url": "https://www.7-zip.org/"
+                },
+                {
+                    "source_name": "diantz.exe_lolbas",
+                    "description": "Living Off The Land Binaries, Scripts and Libraries (LOLBAS). (n.d.). Diantz.exe. Retrieved October 25, 2021.",
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Diantz/"
+                },
+                {
+                    "source_name": "Wikipedia File Header Signatures",
+                    "description": "Wikipedia. (2016, March 31). List of file signatures. Retrieved April 22, 2016.",
+                    "url": "https://en.wikipedia.org/wiki/List_of_file_signatures"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:19.477Z",
+            "name": "Archive via Utility",
+            "description": "Adversaries may use utilities to compress and/or encrypt collected data prior to exfiltration. Many utilities include functionalities to compress, encrypt, or otherwise package data into a format that is easier/more secure to transport.\n\nAdversaries may abuse various utilities to compress or encrypt data before exfiltration. Some third party utilities may be preinstalled, such as <code>tar</code> on Linux and macOS or <code>zip</code> on Windows systems. \n\nOn Windows, <code>diantz</code> or <code> makecab</code> may be used to package collected files into a cabinet (.cab) file. <code>diantz</code> may also be used to download and compress files from remote locations (i.e. [Remote Data Staging](https://attack.mitre.org/techniques/T1074/002)).(Citation: diantz.exe_lolbas) <code>xcopy</code> on Windows can copy files and directories with a variety of options. Additionally, adversaries may use [certutil](https://attack.mitre.org/software/S0160) to Base64 encode collected data before exfiltration. \n\nAdversaries may use also third party utilities, such as 7-Zip, WinRAR, and WinZip, to perform similar activities.(Citation: 7zip Homepage)(Citation: WinRAR Homepage)(Citation: WinZip Homepage)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Mayan Arora aka Mayan Mohan",
+                "Mark Wee"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_version": "1.3"
+        }
+    ]
+}

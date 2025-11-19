@@ -1,0 +1,34 @@
+{
+    "type": "bundle",
+    "id": "bundle--a169cc53-48c8-4e66-8d99-517795329baf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-tactic",
+            "id": "x-mitre-tactic--ddf70682-f3ce-479c-a9a4-7eadf9bfead7",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0103",
+                    "external_id": "TA0103"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-25T14:39:30.353Z",
+            "name": "Evasion",
+            "description": "The adversary is trying to avoid security defenses.\n\nEvasion consists of techniques that adversaries use to avoid technical defenses throughout their campaign. Techniques used for evasion include removal of indicators of compromise, spoofing communications, and exploiting software vulnerabilities. Adversaries may also leverage and abuse trusted devices and processes to hide their activity, possibly by masquerading as master devices or native software. Methods of defense evasion for this purpose are often more passive in nature.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack"
+            ],
+            "x_mitre_version": "1.0",
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_shortname": "evasion"
+        }
+    ]
+}

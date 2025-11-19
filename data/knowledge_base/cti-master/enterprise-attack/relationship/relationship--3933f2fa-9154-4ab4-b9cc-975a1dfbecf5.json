@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--11034b59-f7ed-4e72-a913-3b6c765d5776",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--3933f2fa-9154-4ab4-b9cc-975a1dfbecf5",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "US-CERT TYPEFRAME June 2018",
+                    "description": "US-CERT. (2018, June 14). MAR-10135536-12 \u2013 North Korean Trojan: TYPEFRAME. Retrieved July 13, 2018.",
+                    "url": "https://www.us-cert.gov/ncas/analysis-reports/AR18-165A"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:43:16.457Z",
+            "description": "(Citation: US-CERT TYPEFRAME June 2018)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+            "target_ref": "malware--7ba0fc46-197d-466d-8b9f-f1c64d5d81e5",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

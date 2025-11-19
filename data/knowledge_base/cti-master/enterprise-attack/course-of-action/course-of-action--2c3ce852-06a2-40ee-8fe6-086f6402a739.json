@@ -1,0 +1,33 @@
+{
+    "type": "bundle",
+    "id": "bundle--163c72c2-d0b1-4a77-bf85-b9c49e4666b2",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "id": "course-of-action--2c3ce852-06a2-40ee-8fe6-086f6402a739",
+            "created": "2018-10-17T00:14:20.652Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/mitigations/T1062",
+                    "external_id": "T1062"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-18T17:59:47.647Z",
+            "name": "Hypervisor Mitigation",
+            "description": "Prevent adversary access to privileged accounts necessary to install a hypervisor.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": true,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "1.0",
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

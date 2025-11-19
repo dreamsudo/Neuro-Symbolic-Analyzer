@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--85ffc8d4-01b0-4a77-b21c-728baad90c31",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2ea4f604-c23b-4d67-8648-f2c170378e78",
+            "created": "2024-07-01T15:44:07.898Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "apt41_dcsocytec_dec2022",
+                    "description": "DCSO CyTec Blog. (2022, December 24). APT41 \u2014 The spy who failed to encrypt me. Retrieved June 13, 2024.",
+                    "url": "https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:05:11.096Z",
+            "description": "[APT41](https://attack.mitre.org/groups/G0096) has used MiPing to discover active systems in the victim network.(Citation: apt41_dcsocytec_dec2022) ",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--18854f55-ac7c-4634-bd9a-352dd07613b7",
+            "target_ref": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--657cb8f4-75f9-44a4-8d79-78e3a8b0866c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--dd417d31-d129-44ac-8a9f-b14b79235dfa",
+            "created": "2019-01-29T20:05:36.519Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Cofense NanoCore Mar 2018",
+                    "description": "Patel, K. (2018, March 02). The NanoCore RAT Has Resurfaced From the Sewers. Retrieved September 25, 2024.",
+                    "url": "https://web.archive.org/web/20240522112705/https://cofense.com/blog/nanocore-rat-resurfaced-sewers/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:51:46.759Z",
+            "description": "[NanoCore](https://attack.mitre.org/software/S0336) creates a RunOnce key in the Registry to execute its VBS scripts each time the user logs on to the machine.(Citation: Cofense NanoCore Mar 2018)",
+            "relationship_type": "uses",
+            "source_ref": "malware--b4d80f8b-d2b9-4448-8844-4bef777ed676",
+            "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

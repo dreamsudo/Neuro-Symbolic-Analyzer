@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--fcb53d00-1b11-416f-bf04-49c9c376e34d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--4abb6550-b362-4f8a-80e4-1d6f094a1e37",
+            "created": "2021-09-21T15:45:10.179Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ESET BackdoorDiplomacy Jun 2021",
+                    "description": "Adam Burgher. (2021, June 10). BackdoorDiplomacy: Upgrading from Quarian to Turian. Retrieved September 1, 2021",
+                    "url": "https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:46:35.643Z",
+            "description": "[Turian](https://attack.mitre.org/software/S0647) can retrieve usernames.(Citation: ESET BackdoorDiplomacy Jun 2021)",
+            "relationship_type": "uses",
+            "source_ref": "malware--350f12cf-fd3b-4dad-b323-14b943090df4",
+            "target_ref": "attack-pattern--03d7999c-1f4c-42cc-8373-e7690d318104",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

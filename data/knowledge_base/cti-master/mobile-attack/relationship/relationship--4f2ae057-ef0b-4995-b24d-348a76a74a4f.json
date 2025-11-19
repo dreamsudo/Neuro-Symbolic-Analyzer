@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--989fd6f9-74db-4a80-ada4-fe75481d6068",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--4f2ae057-ef0b-4995-b24d-348a76a74a4f",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Lookout-Pegasus",
+                    "description": "Lookout. (2016). Technical Analysis of Pegasus Spyware. Retrieved December 12, 2016.",
+                    "url": "https://info.lookout.com/rs/051-ESQ-475/images/lookout-pegasus-technical-analysis.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:48:35.364Z",
+            "description": "[Pegasus for iOS](https://attack.mitre.org/software/S0289) uses SMS for command and control.(Citation: Lookout-Pegasus)",
+            "relationship_type": "uses",
+            "source_ref": "malware--33d9d91d-aad9-49d5-a516-220ce101ac8a",
+            "target_ref": "attack-pattern--ec4c4baa-026f-43e8-8f56-58c36f3162dd",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

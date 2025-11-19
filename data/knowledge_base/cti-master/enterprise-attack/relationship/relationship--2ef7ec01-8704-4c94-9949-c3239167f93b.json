@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--a8939c37-15df-4247-af20-98fd5acf44d2",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2ef7ec01-8704-4c94-9949-c3239167f93b",
+            "created": "2021-10-13T17:31:53.827Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Group IB Ransomware September 2020",
+                    "description": "Group IB. (2020, September). LOCK LIKE  A PRO. Retrieved November 17, 2024.",
+                    "url": "https://web.archive.org/web/20220119114433/https://groupib.pathfactory.com/ransomware-reports/prolock_wp"
+                },
+                {
+                    "source_name": "Trend Micro Black Basta October 2022",
+                    "description": "Kenefick, I. et al. (2022, October 12). Black Basta Ransomware Gang Infiltrates Networks via QAKBOT, Brute Ratel, and Cobalt Strike. Retrieved February 6, 2023.",
+                    "url": "https://www.trendmicro.com/en_us/research/22/j/black-basta-infiltrates-networks-via-qakbot-brute-ratel-and-coba.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:05:15.721Z",
+            "description": "The [QakBot](https://attack.mitre.org/software/S0650) payload has been disguised as a PNG file and hidden within LNK files using a Microsoft File Explorer icon.(Citation: Group IB Ransomware September 2020)(Citation: Trend Micro Black Basta October 2022)",
+            "relationship_type": "uses",
+            "source_ref": "malware--edc5e045-5401-42bb-ad92-52b5b2ee0de9",
+            "target_ref": "attack-pattern--208884f1-7b83-4473-ac22-4e1cf6c41471",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--6a7f6231-c644-4b30-8d88-7acac5ed4559",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--58c0fe4b-612d-4fc6-973f-16914b0f4b72",
+            "created": "2020-11-24T17:55:12.900Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Talos GPlayed",
+                    "description": "V. Ventura. (2018, October 11).  GPlayed Trojan - .Net playing with Google Market . Retrieved November 24, 2020.",
+                    "url": "https://blog.talosintelligence.com/2018/10/gplayedtrojan.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:28:51.462Z",
+            "description": "[GPlayed](https://attack.mitre.org/software/S0536) can collect the device\u2019s IMEI, phone number, and country.(Citation: Talos GPlayed)",
+            "relationship_type": "uses",
+            "source_ref": "malware--a993495c-9813-4372-b9ec-d168c7f7ec0a",
+            "target_ref": "attack-pattern--d4536441-1bcc-49fa-80ae-a596ed3f7ffd",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--fbce4c05-2ce3-4658-b7f8-f38cc127baef",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--94040d2e-3f60-423c-8a93-a83b61cafe7d",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Lookout-Pegasus",
+                    "description": "Lookout. (2016). Technical Analysis of Pegasus Spyware. Retrieved December 12, 2016.",
+                    "url": "https://info.lookout.com/rs/051-ESQ-475/images/lookout-pegasus-technical-analysis.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:29:43.927Z",
+            "description": "[Pegasus for iOS](https://attack.mitre.org/software/S0289) update and sends the location of the phone.(Citation: Lookout-Pegasus)",
+            "relationship_type": "uses",
+            "source_ref": "malware--33d9d91d-aad9-49d5-a516-220ce101ac8a",
+            "target_ref": "attack-pattern--99e6295e-741b-4857-b6e5-64989eb039b4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

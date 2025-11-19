@@ -1,0 +1,16 @@
+{
+  "assets": {
+    "Workstation": 10,
+    "Server": 50,
+    "DomainController": 100,
+    "Database": 80,
+    "Printer": 5
+  },
+  "actions": {
+    "exploit": 1.5,
+    "lateral_move": 2.0,
+    "exfiltrate": 5.0,
+    "encrypt": 10.0,
+    "phishing": 1.0
+  }
+}

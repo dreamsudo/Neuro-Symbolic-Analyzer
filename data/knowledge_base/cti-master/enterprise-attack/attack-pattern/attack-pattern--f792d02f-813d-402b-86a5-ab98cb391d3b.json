@@ -1,0 +1,63 @@
+{
+    "type": "bundle",
+    "id": "bundle--9f3cc914-6684-45e6-8881-2613a6a09003",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--f792d02f-813d-402b-86a5-ab98cb391d3b",
+            "created": "2017-05-31T21:31:27.510Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": true,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1118",
+                    "external_id": "T1118"
+                },
+                {
+                    "source_name": "MSDN InstallUtil",
+                    "description": "Microsoft. (n.d.). Installutil.exe (Installer Tool). Retrieved July 1, 2016.",
+                    "url": "https://msdn.microsoft.com/en-us/library/50614e95.aspx"
+                },
+                {
+                    "source_name": "LOLBAS Installutil",
+                    "description": "LOLBAS. (n.d.). Installutil.exe. Retrieved July 31, 2019.",
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Installutil/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:37.916Z",
+            "name": "InstallUtil",
+            "description": "InstallUtil is a command-line utility that allows for installation and uninstallation of resources by executing specific installer components specified in .NET binaries. (Citation: MSDN InstallUtil) InstallUtil is located in the .NET directories on a Windows system: <code>C:\\Windows\\Microsoft.NET\\Framework\\v<version>\\InstallUtil.exe</code> and <code>C:\\Windows\\Microsoft.NET\\Framework64\\v<version>\\InstallUtil.exe</code>. InstallUtil.exe is digitally signed by Microsoft.\n\nAdversaries may use InstallUtil to proxy execution of code through a trusted Windows utility. InstallUtil may also be used to bypass process whitelisting through use of attributes within the binary that execute the class decorated with the attribute <code>[System.ComponentModel.RunInstaller(true)]</code>. (Citation: LOLBAS Installutil)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Casey Smith",
+                "Travis Smith, Tripwire"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_version": "1.3"
+        }
+    ]
+}

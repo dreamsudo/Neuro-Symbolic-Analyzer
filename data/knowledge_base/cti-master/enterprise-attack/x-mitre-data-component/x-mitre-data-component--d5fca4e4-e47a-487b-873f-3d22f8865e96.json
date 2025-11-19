@@ -1,0 +1,112 @@
+{
+    "type": "bundle",
+    "id": "bundle--3c6f233c-5e1b-44d3-a000-b3909bb10114",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--d5fca4e4-e47a-487b-873f-3d22f8865e96",
+            "created": "2021-10-20T15:05:19.272Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0020",
+                    "external_id": "DC0020"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Process Modification",
+            "description": "Changes made to a running process, such as writing data into memory, modifying execution behavior, or injecting code into an existing process. Adversaries frequently modify processes to execute malicious payloads, evade detection, or gain escalated privileges.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "rename, chmod"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "mprotect"
+                },
+                {
+                    "name": "macos:endpointsecurity",
+                    "channel": "ES_EVENT_MMAP"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "kill syscalls targeting auditd process"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "memory mapping"
+                },
+                {
+                    "name": "WinEventLog:Sysmon",
+                    "channel": "EventCode=8"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "Memory Mappings"
+                },
+                {
+                    "name": "ebpf:tracepoints",
+                    "channel": "Runtime memory overwrite of argv[] memory region"
+                },
+                {
+                    "name": "etw:Microsoft-Windows-Kernel-Process",
+                    "channel": "Memory Modification / Unmapped module load or suspicious RWX allocations in the process space of a browser process"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Anomalous dyld dynamic library loads or RWX memory mappings in browser process"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "open, rename"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "SYSCALL ptrace/mprotect"
+                },
+                {
+                    "name": "macos:endpointsecurity",
+                    "channel": "ES_EVENT_TYPE_NOTIFY_MMAP"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "process, library load, memory operations"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "rename"
+                },
+                {
+                    "name": "linux:osquery",
+                    "channel": "Detection of bitwise operations or custom encryption functions in memory traces"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "Abnormal memory operations (XOR/bitwise loops) during archive generation"
+                },
+                {
+                    "name": "auditd:memprotect",
+                    "channel": "change from PROT_READ|PROT_WRITE to PROT_EXEC"
+                },
+                {
+                    "name": "linux:procfs",
+                    "channel": "/proc/[pid]/maps, /proc/[pid]/mem"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "type": "bundle",
+    "id": "bundle--bc53ebe6-cf0e-4941-a9ee-ee27bd6e8ea3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--45dcbc83-4abc-4de1-b643-e528d1e9df09",
+            "created": "2017-10-25T14:48:24.069Z",
+            "revoked": true,
+            "external_references": [
+                {
+                    "source_name": "mitre-mobile-attack",
+                    "url": "https://attack.mitre.org/techniques/T1460",
+                    "external_id": "T1460"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:43.592Z",
+            "name": "Biometric Spoofing",
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_version": "1.0"
+        }
+    ]
+}

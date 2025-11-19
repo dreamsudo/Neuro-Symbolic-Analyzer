@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--d152ff0e-9709-4d0f-a078-9afdeac77186",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--0e9edc13-7af7-43c4-8ec2-636b1f8cb7f1",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Lookout-BrainTest",
+                    "description": "Chris Dehghanpoor. (2016, January 6). Brain Test re-emerges: 13 apps found in Google Play  Read more: Brain Test re-emerges: 13 apps found in Google Play. Retrieved December 21, 2016.",
+                    "url": "https://blog.lookout.com/blog/2016/01/06/brain-test-re-emerges/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:46:59.320Z",
+            "description": "[BrainTest](https://attack.mitre.org/software/S0293) uses root privileges (if available) to copy an additional Android app package (APK) to /system/priv-app to maintain persistence even after a factory reset.(Citation: Lookout-BrainTest)",
+            "relationship_type": "uses",
+            "source_ref": "malware--e13d084c-382f-40fd-aa9a-98d69e20301e",
+            "target_ref": "attack-pattern--4f14e30b-8b57-4a7b-9093-2c0778ea99cf",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

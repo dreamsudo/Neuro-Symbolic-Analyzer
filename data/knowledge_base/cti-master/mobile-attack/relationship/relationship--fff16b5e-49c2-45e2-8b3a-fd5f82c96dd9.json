@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--e6286b1d-64a5-41fb-aa4b-c5a4f5f17ae3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--fff16b5e-49c2-45e2-8b3a-fd5f82c96dd9",
+            "created": "2020-04-08T15:51:25.149Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ThreatFabric Ginp",
+                    "description": "ThreatFabric. (2019, November). Ginp - A malware patchwork borrowing from Anubis. Retrieved April 8, 2020.",
+                    "url": "https://www.threatfabric.com/blogs/ginp_a_malware_patchwork_borrowing_from_anubis.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:52:48.285Z",
+            "description": "[Ginp](https://attack.mitre.org/software/S0423) can download the device\u2019s contact list.(Citation: ThreatFabric Ginp)",
+            "relationship_type": "uses",
+            "source_ref": "malware--6146be90-470c-4049-bb3a-9986b8ffb65b",
+            "target_ref": "attack-pattern--e0b9ecb8-a7d1-43c7-aa30-8e19c6a92c86",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

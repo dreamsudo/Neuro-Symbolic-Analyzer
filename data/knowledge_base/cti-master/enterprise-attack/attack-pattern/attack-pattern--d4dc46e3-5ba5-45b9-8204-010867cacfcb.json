@@ -1,0 +1,73 @@
+{
+    "type": "bundle",
+    "id": "bundle--25b1a23d-59dd-4d87-aa78-944f12f4c485",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--d4dc46e3-5ba5-45b9-8204-010867cacfcb",
+            "created": "2021-05-20T12:20:42.219Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1027/006",
+                    "external_id": "T1027.006"
+                },
+                {
+                    "source_name": "Outlflank HTML Smuggling 2018",
+                    "description": "Hegt, S. (2018, August 14). HTML smuggling explained. Retrieved May 20, 2021.",
+                    "url": "https://outflank.nl/blog/2018/08/14/html-smuggling-explained/"
+                },
+                {
+                    "source_name": "MSTIC NOBELIUM May 2021",
+                    "description": "Microsoft Threat Intelligence Center (MSTIC). (2021, May 27). New sophisticated email-based attack from NOBELIUM. Retrieved May 28, 2021.",
+                    "url": "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
+                },
+                {
+                    "source_name": "HTML Smuggling Menlo Security 2020",
+                    "description": "Subramanian, K. (2020, August 18). New HTML Smuggling Attack Alert: Duri. Retrieved May 20, 2021.",
+                    "url": "https://www.menlosecurity.com/blog/new-attack-alert-duri"
+                },
+                {
+                    "source_name": "nccgroup Smuggling HTA 2017",
+                    "description": "Warren, R. (2017, August 8). Smuggling HTA files in Internet Explorer/Edge. Retrieved September 12, 2024.",
+                    "url": "https://www.nccgroup.com/us/research-blog/smuggling-hta-files-in-internet-exploreredge/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:49:27.501Z",
+            "name": "HTML Smuggling",
+            "description": "Adversaries may smuggle data and files past content filters by hiding malicious payloads inside of seemingly benign HTML files. HTML documents can store large binary objects known as JavaScript Blobs (immutable data that represents raw bytes) that can later be constructed into file-like objects. Data may also be stored in Data URLs, which enable embedding media type or MIME files inline of HTML documents. HTML5 also introduced a download attribute that may be used to initiate file downloads.(Citation: HTML Smuggling Menlo Security 2020)(Citation: Outlflank HTML Smuggling 2018)\n\nAdversaries may deliver payloads to victims that bypass security controls through HTML Smuggling by abusing JavaScript Blobs and/or HTML5 download attributes. Security controls such as web content filters may not identify smuggled malicious files inside of HTML/JS files, as the content may be based on typically benign MIME types such as <code>text/plain</code> and/or <code>text/html</code>. Malicious files or data can be obfuscated and hidden inside of HTML files through Data URLs and/or JavaScript Blobs and can be deobfuscated when they reach the victim (i.e. [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140)), potentially bypassing content filters.\n\nFor example, JavaScript Blobs can be abused to dynamically generate malicious files in the victim machine and may be dropped to disk by abusing JavaScript functions such as <code>msSaveBlob</code>.(Citation: HTML Smuggling Menlo Security 2020)(Citation: MSTIC NOBELIUM May 2021)(Citation: Outlflank HTML Smuggling 2018)(Citation: nccgroup Smuggling HTA 2017)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Stan Hegt, Outflank",
+                "Jonathan Boucher, @crash_wave, Bank of Canada",
+                "Krishnan Subramanian, @krish203",
+                "Vinay Pidathala"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows",
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_version": "1.3"
+        }
+    ]
+}

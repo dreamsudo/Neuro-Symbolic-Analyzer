@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--e3a9a29a-9e6a-4a94-82ae-a60d5eb3b722",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--aca1a51b-89a5-45e9-bce5-14b5a0a4c0f1",
+            "created": "2020-05-26T17:14:42.968Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Symantec Whitefly March 2019",
+                    "description": "Symantec. (2019, March 6). Whitefly: Espionage Group has Singapore in Its Sights. Retrieved May 26, 2020.",
+                    "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/whitefly-espionage-singapore"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:04:53.091Z",
+            "description": "[Whitefly](https://attack.mitre.org/groups/G0107) has named the malicious DLL the same name as DLLs belonging to legitimate software from various security vendors.(Citation: Symantec Whitefly March 2019)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--b74f909f-8e52-4b69-b770-162bf59a1b4e",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

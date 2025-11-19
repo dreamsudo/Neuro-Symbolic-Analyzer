@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--6c1c1bb4-a364-41d8-98bd-17e49f237fe1",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b0f5bd5a-4e44-48f6-8a26-ebb3b5ef685b",
+            "created": "2024-08-27T18:52:17.831Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Lumen Versa 2024",
+                    "description": "Black Lotus Labs. (2024, August 27). Taking The Crossroads: The Versa Director Zero-Day Exploitaiton. Retrieved August 27, 2024.",
+                    "url": "https://blog.lumen.com/taking-the-crossroads-the-versa-director-zero-day-exploitation/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:40:22.298Z",
+            "description": "[Versa Director Zero Day Exploitation](https://attack.mitre.org/campaigns/C0039) established HTTPS communications from adversary-controlled SOHO devices over port 443 with compromised Versa Director servers.(Citation: Lumen Versa 2024)",
+            "relationship_type": "uses",
+            "source_ref": "campaign--af0ec65a-caa9-40ef-b1c7-21b71fbf3a10",
+            "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

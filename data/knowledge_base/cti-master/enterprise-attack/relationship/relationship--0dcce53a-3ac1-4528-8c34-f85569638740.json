@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--fc9b0bfa-9e74-42e3-9ea6-96a2f0124f4a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--0dcce53a-3ac1-4528-8c34-f85569638740",
+            "created": "2022-02-01T16:00:17.348Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Kaspersky ThreatNeedle Feb 2021",
+                    "description": "Vyacheslav Kopeytsev and Seongsu Park. (2021, February 25). Lazarus targets defense industry with ThreatNeedle. Retrieved October 27, 2021.",
+                    "url": "https://securelist.com/lazarus-threatneedle/100803/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:56:21.569Z",
+            "description": "[Lazarus Group](https://attack.mitre.org/groups/G0032) has compromised servers to stage malicious tools.(Citation: Kaspersky ThreatNeedle Feb 2021)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+            "target_ref": "attack-pattern--e196b5c5-8118-4a1c-ab8a-936586ce3db5",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

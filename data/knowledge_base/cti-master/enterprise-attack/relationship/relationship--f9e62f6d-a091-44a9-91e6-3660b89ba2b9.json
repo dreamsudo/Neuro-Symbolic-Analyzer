@@ -1,0 +1,42 @@
+{
+    "type": "bundle",
+    "id": "bundle--fc74b1fa-6e7d-47be-82da-bab4fd409feb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--f9e62f6d-a091-44a9-91e6-3660b89ba2b9",
+            "created": "2019-07-19T14:37:37.517Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Unit 42 Palo Alto Ransomware in Public Clouds 2022",
+                    "description": "Jay Chen. (2022, May 16). A Look Into Public Clouds From the Ransomware Actor's Perspective. Retrieved March 21, 2023.",
+                    "url": "https://unit42.paloaltonetworks.com/ransomware-in-public-clouds/"
+                },
+                {
+                    "source_name": "Crowdstrike Hypervisor Jackpotting Pt 2 2021",
+                    "description": "Michael Dawson. (2021, August 30). Hypervisor Jackpotting, Part 2: eCrime Actors Increase Targeting of ESXi Servers with Ransomware. Retrieved March 26, 2025.",
+                    "url": "https://www.crowdstrike.com/en-us/blog/hypervisor-jackpotting-ecrime-actors-increase-targeting-of-esxi-servers/"
+                },
+                {
+                    "source_name": "Ready.gov IT DRP",
+                    "description": "Ready.gov. (n.d.). IT Disaster Recovery Plan. Retrieved March 15, 2019.",
+                    "url": "https://www.ready.gov/business/implementation/IT"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:59:06.819Z",
+            "description": "Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data.(Citation: Ready.gov IT DRP) Ensure backups are stored off system and is protected from common methods adversaries may use to gain access and destroy the backups to prevent recovery. In cloud environments, enable versioning on storage objects where possible, and copy backups to other accounts or regions to isolate them from the original copies.(Citation: Unit 42 Palo Alto Ransomware in Public Clouds 2022) On ESXi servers, ensure that disk images and snapshots of virtual machines are regularly taken, with copies stored off system.(Citation: Crowdstrike Hypervisor Jackpotting Pt 2 2021)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--3efe43d1-6f3f-4fcb-ab39-4a730971f70b",
+            "target_ref": "attack-pattern--f5d8eed6-48a9-4cdf-a3d7-d1ffa99c3d2a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

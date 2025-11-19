@@ -1,0 +1,41 @@
+{
+    "type": "bundle",
+    "id": "bundle--dd982eb1-b230-40f9-b78b-da302f4a60c5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--9cc5bd19-ab08-4eb7-886b-ce55fde60421",
+            "created": "2021-02-25T00:50:55.423Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "CarbonBlack Conti July 2020",
+                    "description": "Baskin, B. (2020, July 8). TAU Threat Discovery: Conti Ransomware. Retrieved February 17, 2021.",
+                    "url": "https://www.carbonblack.com/blog/tau-threat-discovery-conti-ransomware/"
+                },
+                {
+                    "source_name": "Cybereason Conti Jan 2021",
+                    "description": "Rochberger, L. (2021, January 12). Cybereason vs. Conti Ransomware. Retrieved February 17, 2021.",
+                    "url": "https://www.cybereason.com/blog/cybereason-vs.-conti-ransomware"
+                },
+                {
+                    "source_name": "CrowdStrike Wizard Spider October 2020",
+                    "description": "Podlosky, A., Hanel, A. et al. (2020, October 16). WIZARD SPIDER Update: Resilient, Reactive and Resolute. Retrieved June 15, 2021.",
+                    "url": "https://www.crowdstrike.com/blog/wizard-spider-adversary-update/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:02:01.246Z",
+            "description": "[Conti](https://attack.mitre.org/software/S0575) can use compiler-based obfuscation for its code, encrypt DLLs, and hide Windows API calls.(Citation: CarbonBlack Conti July 2020)(Citation: Cybereason Conti Jan 2021)(Citation: CrowdStrike Wizard Spider October 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--4dea7d8e-af94-4bfb-afe4-7ff54f59308b",
+            "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

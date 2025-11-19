@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--0cfce3c4-ec18-4a30-8154-d2627cf34e32",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2e53dad4-17cc-4fe6-a3b9-d622075d78f7",
+            "created": "2020-11-13T20:31:37.017Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "ESET Grandoreiro April 2020",
+                    "description": "ESET. (2020, April 28). Grandoreiro: How engorged can an EXE get?. Retrieved November 13, 2020.",
+                    "url": "https://www.welivesecurity.com/2020/04/28/grandoreiro-how-engorged-can-exe-get/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:05:07.822Z",
+            "description": "[Grandoreiro](https://attack.mitre.org/software/S0531) can modify the Registry to store its configuration at `HKCU\\Software\\` under frequently changing names including <code>%USERNAME%</code> and <code>ToolTech-RM</code>.(Citation: ESET Grandoreiro April 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--958b5d06-8bb0-4c5b-a2e7-0130fe654ac7",
+            "target_ref": "attack-pattern--57340c81-c025-4189-8fa0-fc7ede51bae4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

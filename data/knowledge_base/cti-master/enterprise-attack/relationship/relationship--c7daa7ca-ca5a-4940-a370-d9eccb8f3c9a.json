@@ -1,0 +1,41 @@
+{
+    "type": "bundle",
+    "id": "bundle--3b7a30ed-9fa1-43d7-be11-1f93f9af10b0",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--c7daa7ca-ca5a-4940-a370-d9eccb8f3c9a",
+            "created": "2021-05-10T23:19:38.717Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Mcafee Clop Aug 2019",
+                    "description": "Mundo, A. (2019, August 1). Clop Ransomware. Retrieved May 10, 2021.",
+                    "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/clop-ransomware/"
+                },
+                {
+                    "source_name": "Unit42 Clop April 2021",
+                    "description": "Santos, D. (2021, April 13). Threat Assessment: Clop Ransomware. Retrieved July 30, 2021.",
+                    "url": "https://unit42.paloaltonetworks.com/clop-ransomware/"
+                },
+                {
+                    "source_name": "Cybereason Clop Dec 2020",
+                    "description": "Cybereason Nocturnus. (2020, December 23). Cybereason vs. Clop Ransomware. Retrieved May 11, 2021.",
+                    "url": "https://www.cybereason.com/blog/cybereason-vs.-clop-ransomware"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:09:40.377Z",
+            "description": "[Clop](https://attack.mitre.org/software/S0611) can encrypt files using AES, RSA, and RC4 and will add the \".clop\" extension to encrypted files.(Citation: Mcafee Clop Aug 2019)(Citation: Unit42 Clop April 2021)(Citation: Cybereason Clop Dec 2020) ",
+            "relationship_type": "uses",
+            "source_ref": "malware--cad3ba95-8c89-4146-ab10-08daa813f9de",
+            "target_ref": "attack-pattern--b80d107d-fa0d-4b60-9684-b0433e8bdba0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

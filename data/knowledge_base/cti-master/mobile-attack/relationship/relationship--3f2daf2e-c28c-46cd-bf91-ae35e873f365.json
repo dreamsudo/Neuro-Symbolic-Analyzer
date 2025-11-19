@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--5957ee6a-5018-4def-9d15-001b13c5197d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--3f2daf2e-c28c-46cd-bf91-ae35e873f365",
+            "created": "2019-09-04T14:28:15.950Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Lookout-Monokle",
+                    "description": "Bauer A., Kumar A., Hebeisen C., et al. (2019, July). Monokle: The Mobile Surveillance Tooling of the Special Technology Center. Retrieved September 4, 2019.",
+                    "url": "https://www.lookout.com/documents/threat-reports/lookout-discovers-monokle-threat-report.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:48:11.268Z",
+            "description": "[Monokle](https://attack.mitre.org/software/S0407) can delete arbitrary files on the device, and can also uninstall itself and clean up staging files.(Citation: Lookout-Monokle)",
+            "relationship_type": "uses",
+            "source_ref": "malware--6a7aaab1-3e0a-48bb-ba66-bbf7665c0a65",
+            "target_ref": "attack-pattern--ab7400b7-3476-4776-9545-ef3fa373de63",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

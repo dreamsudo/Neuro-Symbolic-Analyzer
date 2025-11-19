@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--ffe3ac2a-c749-4b79-b354-b7945058a99c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--2f6db008-885e-4fdf-b5f5-97132c9e96b1",
+            "created": "2024-09-23T20:23:12.469Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Sandfly BPFDoor 2022",
+                    "description": "The Sandfly Security Team. (2022, May 11). BPFDoor - An Evasive Linux Backdoor Technical Analysis. Retrieved September 29, 2023.",
+                    "url": "https://sandflysecurity.com/blog/bpfdoor-an-evasive-linux-backdoor-technical-analysis/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:05:24.118Z",
+            "description": "[BPFDoor](https://attack.mitre.org/software/S1161) overwrites the `argv[0]` value used by the Linux `/proc` filesystem to determine the command line and command name to display for each process. [BPFDoor](https://attack.mitre.org/software/S1161) selects a name from 10 hardcoded names that resemble Linux system daemons, such as; `/sbin/udevd -d`, `dbus-daemon --system`, `avahi-daemon: chroot helper`, `/sbin/auditd -n`, and `/usr/lib/systemd/systemd-journald`.(Citation: Sandfly BPFDoor 2022)",
+            "relationship_type": "uses",
+            "source_ref": "malware--8d1f89fd-4dde-40ab-80e0-a7b80249162e",
+            "target_ref": "attack-pattern--514dc7b3-0b80-4382-80a9-2e2d294f5019",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

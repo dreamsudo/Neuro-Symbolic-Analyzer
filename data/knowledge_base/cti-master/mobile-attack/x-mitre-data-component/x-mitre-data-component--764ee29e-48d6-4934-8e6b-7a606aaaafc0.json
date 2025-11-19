@@ -1,0 +1,40 @@
+{
+    "type": "bundle",
+    "id": "bundle--c2c68a03-5022-49d1-a673-352352da7fd6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--764ee29e-48d6-4934-8e6b-7a606aaaafc0",
+            "created": "2023-03-13T19:59:42.141Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0113",
+                    "external_id": "DC0113"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T15:10:28.402Z",
+            "name": "Network Communication",
+            "description": "Network requests made by an application or domains contacted",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "mobile-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "Application Vetting",
+                    "channel": "None"
+                }
+            ]
+        }
+    ]
+}

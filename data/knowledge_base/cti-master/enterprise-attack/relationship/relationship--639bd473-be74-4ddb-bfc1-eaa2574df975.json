@@ -1,0 +1,41 @@
+{
+    "type": "bundle",
+    "id": "bundle--8cefc6c9-7531-4333-af7b-c25f95d4de8d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--639bd473-be74-4ddb-bfc1-eaa2574df975",
+            "created": "2020-08-04T15:35:30.384Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "G Data Sodinokibi June 2019",
+                    "description": "Han, Karsten. (2019, June 4). Strange Bits: Sodinokibi Spam, CinaRAT, and Fake G DATA. Retrieved August 4, 2020.",
+                    "url": "https://www.gdatasoftware.com/blog/2019/06/31724-strange-bits-sodinokibi-spam-cinarat-and-fake-g-data"
+                },
+                {
+                    "source_name": "McAfee REvil October 2019",
+                    "description": "Saavedra-Morales, J, et al. (2019, October 20). McAfee ATR Analyzes Sodinokibi aka REvil Ransomware-as-a-Service \u2013 Crescendo. Retrieved August 5, 2020.",
+                    "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/mcafee-atr-analyzes-sodinokibi-aka-revil-ransomware-as-a-service-crescendo/"
+                },
+                {
+                    "source_name": "Picus Sodinokibi January 2020",
+                    "description": "Ozarslan, S. (2020, January 15). A Brief History of Sodinokibi. Retrieved August 5, 2020.",
+                    "url": "https://www.picussecurity.com/blog/a-brief-history-and-further-technical-analysis-of-sodinokibi-ransomware"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:51:04.619Z",
+            "description": "[REvil](https://attack.mitre.org/software/S0496) has been executed via malicious MS Word e-mail attachments.(Citation: G Data Sodinokibi June 2019)(Citation: McAfee REvil October 2019)(Citation: Picus Sodinokibi January 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--ac61f1f9-7bb1-465e-9b8a-c2ce8e88baf5",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

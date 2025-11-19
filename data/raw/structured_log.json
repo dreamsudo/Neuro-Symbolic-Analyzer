@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2023-11-15T10:00:00Z",
+    "event_id": 4624,
+    "host": "HR-WKSTN-04",
+    "message": "Successful logon detected. Potential Valid Accounts (T1078) usage."
+  },
+  {
+    "timestamp": "2023-11-15T10:05:00Z",
+    "event_id": 1,
+    "host": "HR-WKSTN-04",
+    "message": "Process creation: powershell.exe -enc <payload>. Detected Command and Scripting Interpreter (T1059)."
+  }
+]

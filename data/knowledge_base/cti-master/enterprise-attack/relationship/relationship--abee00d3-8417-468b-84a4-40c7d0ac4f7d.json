@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--8bd3b0df-3e08-470a-a521-bb0761b395a1",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--abee00d3-8417-468b-84a4-40c7d0ac4f7d",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Cylance Dust Storm",
+                    "description": "Gross, J. (2016, February 23). Operation Dust Storm. Retrieved December 22, 2021.",
+                    "url": "https://s7d2.scene7.com/is/content/cylance/prod/cylance-web/en-us/resources/knowledge-center/resource-library/reports/Op_Dust_Storm_Report.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:04:43.661Z",
+            "description": "[S-Type](https://attack.mitre.org/software/S0085) runs the command <code>net start</code> on a victim.(Citation: Cylance Dust Storm)",
+            "relationship_type": "uses",
+            "source_ref": "malware--66b1dcde-17a0-4c7b-95fa-b08d430c2131",
+            "target_ref": "attack-pattern--322bad5a-1c49-4d23-ab79-76d641794afa",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

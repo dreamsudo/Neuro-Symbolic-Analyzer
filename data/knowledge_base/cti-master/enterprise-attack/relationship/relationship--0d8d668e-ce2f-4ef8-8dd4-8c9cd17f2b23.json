@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--a1f3a5b3-673a-43a0-aaab-362b24106333",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--0d8d668e-ce2f-4ef8-8dd4-8c9cd17f2b23",
+            "created": "2020-07-15T20:23:36.388Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Prevx Carberp March 2011",
+                    "description": "Giuliani, M., Allievi, A. (2011, February 28). Carberp - a modular information stealing trojan. Retrieved September 12, 2024.",
+                    "url": "https://web.archive.org/web/20231227000328/http://pxnow.prevx.com/content/blog/carberp-a_modular_information_stealing_trojan.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:56:17.627Z",
+            "description": "[Carberp](https://attack.mitre.org/software/S0484)'s passw.plug plugin can gather account information from multiple instant messaging, email, and social media services, as well as FTP, VNC, and VPN clients.(Citation: Prevx Carberp March 2011)",
+            "relationship_type": "uses",
+            "source_ref": "malware--bbcd7a02-ef24-4171-ac94-a93540173b94",
+            "target_ref": "attack-pattern--3fc9b85a-2862-4363-a64d-d692e3ffbee0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

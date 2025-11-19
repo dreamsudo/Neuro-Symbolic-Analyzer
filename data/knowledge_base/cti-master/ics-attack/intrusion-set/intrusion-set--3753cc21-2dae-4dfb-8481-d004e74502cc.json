@@ -1,0 +1,137 @@
+{
+    "type": "bundle",
+    "id": "bundle--7e8be987-6c15-488d-8145-94b0c5f6a856",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "intrusion-set",
+            "id": "intrusion-set--3753cc21-2dae-4dfb-8481-d004e74502cc",
+            "created": "2017-05-31T21:32:09.460Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/groups/G0046",
+                    "external_id": "G0046"
+                },
+                {
+                    "source_name": "Carbon Spider",
+                    "description": "(Citation: CrowdStrike Carbon Spider August 2021)"
+                },
+                {
+                    "source_name": "FIN7",
+                    "description": "(Citation: FireEye FIN7 March 2017) (Citation: FireEye FIN7 April 2017) (Citation: Morphisec FIN7 June 2017) (Citation: FireEye FIN7 Shim Databases) (Citation: FireEye FIN7 Aug 2018)"
+                },
+                {
+                    "source_name": "ELBRUS",
+                    "description": "(Citation: Microsoft Ransomware as a Service)"
+                },
+                {
+                    "source_name": "Sangria Tempest",
+                    "description": "(Citation: Microsoft Threat Actor Naming July 2023)"
+                },
+                {
+                    "source_name": "GOLD NIAGARA",
+                    "description": "(Citation: Secureworks GOLD NIAGARA Threat Profile)"
+                },
+                {
+                    "source_name": "Mandiant FIN7 Apr 2022",
+                    "description": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+                    "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+                },
+                {
+                    "source_name": "FireEye CARBANAK June 2017",
+                    "description": "Bennett, J., Vengerik, B. (2017, June 12). Behind the CARBANAK Backdoor. Retrieved June 11, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/06/behind-the-carbanak-backdoor.html"
+                },
+                {
+                    "source_name": "BiZone Lizar May 2021",
+                    "description": "BI.ZONE Cyber Threats Research Team. (2021, May 13). From pentest to APT attack: cybercriminal group FIN7 disguises its malware as an ethical hacker\u2019s toolkit. Retrieved February 2, 2022.",
+                    "url": "https://bi-zone.medium.com/from-pentest-to-apt-attack-cybercriminal-group-fin7-disguises-its-malware-as-an-ethical-hackers-c23c9a75e319"
+                },
+                {
+                    "source_name": "FireEye FIN7 April 2017",
+                    "description": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+                },
+                {
+                    "source_name": "FireEye FIN7 Aug 2018",
+                    "description": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+                },
+                {
+                    "source_name": "Secureworks GOLD NIAGARA Threat Profile",
+                    "description": "CTU. (n.d.). GOLD NIAGARA. Retrieved September 21, 2021.",
+                    "url": "https://www.secureworks.com/research/threat-profiles/gold-niagara"
+                },
+                {
+                    "source_name": "FireEye FIN7 Shim Databases",
+                    "description": "Erickson, J., McWhirt, M., Palombo, D. (2017, May 3). To SDB, Or Not To SDB: FIN7 Leveraging Shim Databases for Persistence. Retrieved July 18, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html"
+                },
+                {
+                    "source_name": "Morphisec FIN7 June 2017",
+                    "description": "Gorelik, M.. (2017, June 9). FIN7 Takes Another Bite at the Restaurant Industry. Retrieved July 13, 2017.",
+                    "url": "http://blog.morphisec.com/fin7-attacks-restaurant-industry"
+                },
+                {
+                    "source_name": "ITG14",
+                    "description": "ITG14 shares campaign overlap with [FIN7](https://attack.mitre.org/groups/G0046).(Citation: IBM Ransomware Trends September 2020)"
+                },
+                {
+                    "source_name": "CrowdStrike Carbon Spider August 2021",
+                    "description": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+                    "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+                },
+                {
+                    "source_name": "Microsoft Threat Actor Naming July 2023",
+                    "description": "Microsoft . (2023, July 12). How Microsoft names threat actors. Retrieved November 17, 2023.",
+                    "url": "https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming?view=o365-worldwide"
+                },
+                {
+                    "source_name": "Microsoft Ransomware as a Service",
+                    "description": "Microsoft. (2022, May 9). Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself. Retrieved March 10, 2023.",
+                    "url": "https://www.microsoft.com/en-us/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/"
+                },
+                {
+                    "source_name": "FireEye FIN7 March 2017",
+                    "description": "Miller, S., et al. (2017, March 7). FIN7 Spear Phishing Campaign Targets Personnel Involved in SEC Filings. Retrieved March 8, 2017.",
+                    "url": "https://web.archive.org/web/20180808125108/https:/www.fireeye.com/blog/threat-research/2017/03/fin7_spear_phishing.html"
+                },
+                {
+                    "source_name": "IBM Ransomware Trends September 2020",
+                    "description": "Singleton, C. and Kiefer, C. (2020, September 28). Ransomware 2020: Attack Trends Affecting Organizations Worldwide. Retrieved September 20, 2021.",
+                    "url": "https://securityintelligence.com/posts/ransomware-2020-attack-trends-new-techniques-affecting-organizations-worldwide/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T03:18:58.136Z",
+            "name": "FIN7",
+            "description": "[FIN7](https://attack.mitre.org/groups/G0046) is a financially-motivated threat group that has been active since 2013. [FIN7](https://attack.mitre.org/groups/G0046) has targeted the retail, restaurant, hospitality, software, consulting, financial services, medical equipment, cloud services, media, food and beverage, transportation, pharmaceutical, and utilities industries in the United States. A portion of [FIN7](https://attack.mitre.org/groups/G0046) was operated out of a front company called Combi Security and often used point-of-sale malware for targeting efforts. Since 2020, [FIN7](https://attack.mitre.org/groups/G0046) shifted operations to big game hunting (BGH), including use of [REvil](https://attack.mitre.org/software/S0496) ransomware and their own Ransomware-as-a-Service (RaaS), Darkside. FIN7 may be linked to the [Carbanak](https://attack.mitre.org/groups/G0008) Group, but multiple threat groups have been observed using [Carbanak](https://attack.mitre.org/software/S0030), leading these groups to be tracked separately.(Citation: FireEye FIN7 March 2017)(Citation: FireEye FIN7 April 2017)(Citation: FireEye CARBANAK June 2017)(Citation: FireEye FIN7 Aug 2018)(Citation: CrowdStrike Carbon Spider August 2021)(Citation: Mandiant FIN7 Apr 2022)(Citation: BiZone Lizar May 2021)",
+            "aliases": [
+                "FIN7",
+                "GOLD NIAGARA",
+                "ITG14",
+                "Carbon Spider",
+                "ELBRUS",
+                "Sangria Tempest"
+            ],
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_version": "4.1",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_contributors": [
+                "Edward Millington",
+                "Eric Loui, CrowdStrike Intelligence",
+                "Serhii Melnyk, Trustwave SpiderLabs"
+            ],
+            "x_mitre_domains": [
+                "enterprise-attack",
+                "ics-attack"
+            ]
+        }
+    ]
+}

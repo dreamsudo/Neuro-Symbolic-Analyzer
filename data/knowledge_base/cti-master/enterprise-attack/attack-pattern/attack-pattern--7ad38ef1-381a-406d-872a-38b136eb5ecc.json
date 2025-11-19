@@ -1,0 +1,50 @@
+{
+    "type": "bundle",
+    "id": "bundle--0d67311a-f217-48df-bd37-273b3e30dce9",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--7ad38ef1-381a-406d-872a-38b136eb5ecc",
+            "created": "2020-02-14T13:09:51.004Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1213/001",
+                    "external_id": "T1213.001"
+                },
+                {
+                    "source_name": "Atlassian Confluence Logging",
+                    "description": "Atlassian. (2018, January 9). How to Enable User Access Logging. Retrieved April 4, 2018.",
+                    "url": "https://confluence.atlassian.com/confkb/how-to-enable-user-access-logging-182943.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:59.776Z",
+            "name": "Confluence",
+            "description": "\nAdversaries may leverage Confluence repositories to mine valuable information. Often found in development environments alongside Atlassian JIRA, Confluence is generally used to store development-related documentation, however, in general may contain more diverse categories of useful information, such as:\n\n* Policies, procedures, and standards\n* Physical / logical network diagrams\n* System architecture diagrams\n* Technical system documentation\n* Testing / development credentials (i.e., [Unsecured Credentials](https://attack.mitre.org/techniques/T1552))\n* Work / project schedules\n* Source code snippets\n* Links to network shares and other internal resources\n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "collection"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "SaaS"
+            ],
+            "x_mitre_version": "1.1"
+        }
+    ]
+}

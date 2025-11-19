@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--5581e055-37cd-4498-9d67-2861daa99efe",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--720c211e-2219-496d-8a34-c3f37dfbe5bf",
+            "created": "2017-05-31T21:33:27.041Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ESET Sednit Part 3",
+                    "description": "ESET. (2016, October). En Route with Sednit - Part 3: A Mysterious Downloader. Retrieved November 21, 2016.",
+                    "url": "http://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part3.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:53:50.368Z",
+            "description": "(Citation: ESET Sednit Part 3)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+            "target_ref": "malware--e669bb87-f773-4c7b-bfcc-a9ffebfdd8d4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

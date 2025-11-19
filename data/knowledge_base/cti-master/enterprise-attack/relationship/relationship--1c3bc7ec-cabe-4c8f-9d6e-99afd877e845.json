@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--1a7aacef-40db-4619-a698-7f18698ced14",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--1c3bc7ec-cabe-4c8f-9d6e-99afd877e845",
+            "created": "2020-05-26T21:02:38.507Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "TrendMicro Netwalker May 2020",
+                    "description": "Victor, K.. (2020, May 18). Netwalker Fileless Ransomware Injected via Reflective Loading . Retrieved May 26, 2020.",
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/netwalker-fileless-ransomware-injected-via-reflective-loading/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:37:49.857Z",
+            "description": "[Netwalker](https://attack.mitre.org/software/S0457) can determine the system architecture it is running on to choose which version of the DLL to use.(Citation: TrendMicro Netwalker May 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--754effde-613c-4244-a83e-fb659b2a4d06",
+            "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

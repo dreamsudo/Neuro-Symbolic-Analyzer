@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--c2e0c9b2-536c-4c94-9fa8-87257363169f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--4ad83f33-c64a-4ad6-ab6f-0548c9dde257",
+            "created": "2020-10-29T17:48:27.469Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Threat Fabric Exobot",
+                    "description": "Threat Fabric. (2017, February). Exobot - Android banking Trojan on the rise. Retrieved October 29, 2020.",
+                    "url": "https://www.threatfabric.com/blogs/exobot_android_banking_trojan_on_the_rise.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:28:37.596Z",
+            "description": "[Exobot](https://attack.mitre.org/software/S0522) can forward SMS messages.(Citation: Threat Fabric Exobot)",
+            "relationship_type": "uses",
+            "source_ref": "malware--c91cec55-634c-4670-ba10-2dc7ceb28e98",
+            "target_ref": "attack-pattern--b327a9c0-e709-495c-aa6e-00b042136e2b",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

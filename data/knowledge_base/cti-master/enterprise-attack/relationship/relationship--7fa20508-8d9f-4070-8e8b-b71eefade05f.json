@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--2a05132a-8b70-4199-8386-1ec91f8c73fb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7fa20508-8d9f-4070-8e8b-b71eefade05f",
+            "created": "2021-03-30T17:20:05.920Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:56:28.423Z",
+            "description": "Network prevention intrusion systems and systems designed to scan and remove malicious downloads can be used to block activity.",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--12241367-a8b7-49b4-b86e-2236901ba50c",
+            "target_ref": "attack-pattern--b0c74ef9-c61e-4986-88cb-78da98a355ec",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--3bd61df8-c753-4b6b-9ae0-3a88a313091b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--a78cac98-60e1-406a-8486-fcaf04a644e3",
+            "created": "2020-10-19T23:49:08.663Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "US-CERT TA17-156A SNMP Abuse 2017",
+                    "description": "US-CERT. (2017, June 5). Reducing the Risk of SNMP Abuse. Retrieved October 19, 2020.",
+                    "url": "https://us-cert.cisa.gov/ncas/alerts/TA17-156A"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:37:57.040Z",
+            "description": "Apply extended ACLs to block unauthorized protocols outside the trusted network.(Citation: US-CERT TA17-156A SNMP Abuse 2017)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--20f6a9df-37c4-4e20-9e47-025983b1b39d",
+            "target_ref": "attack-pattern--0ad7bc5c-235a-4048-944b-3b286676cb74",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

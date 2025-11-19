@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--815cffb9-5824-4eee-8503-c0683ecaa8a5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--c597beea-3bcd-45ee-a400-5b615f9ae621",
+            "created": "2020-05-08T18:56:22.967Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Unit 42 Inception November 2018",
+                    "description": "Lancaster, T. (2018, November 5). Inception Attackers Target Europe with Year-old Office Vulnerability. Retrieved May 8, 2020.",
+                    "url": "https://unit42.paloaltonetworks.com/unit42-inception-attackers-target-europe-year-old-office-vulnerability/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T16:09:17.883Z",
+            "description": "[Inception](https://attack.mitre.org/groups/G0100) has used decoy documents to load malicious remote payloads via HTTP.(Citation: Unit 42 Inception November 2018)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--ead23196-d7b6-4ce6-a124-4ab4b67d81bd",
+            "target_ref": "attack-pattern--dc31fe1e-d722-49da-8f5f-92c7b5aff534",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

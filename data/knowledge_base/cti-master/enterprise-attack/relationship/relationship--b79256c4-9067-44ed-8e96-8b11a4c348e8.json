@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--710f8d9c-0f66-4178-be44-cc6819170ccb",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--b79256c4-9067-44ed-8e96-8b11a4c348e8",
+            "created": "2023-07-28T18:22:56.873Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Mandiant FIN13 Aug 2022",
+                    "description": "Ta, V., et al. (2022, August 8). FIN13: A Cybercriminal Threat Actor Focused on Mexico. Retrieved February 9, 2023.",
+                    "url": "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:42:00.392Z",
+            "description": "[FIN13](https://attack.mitre.org/groups/G1016) has searched for infrastructure that can provide remote access to an environment for targeting efforts.(Citation: Mandiant FIN13 Aug 2022)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--fd66436e-4d33-450e-ac4c-f7810f1c85f4",
+            "target_ref": "attack-pattern--34ab90a3-05f6-4259-8f21-621081fdaba5",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

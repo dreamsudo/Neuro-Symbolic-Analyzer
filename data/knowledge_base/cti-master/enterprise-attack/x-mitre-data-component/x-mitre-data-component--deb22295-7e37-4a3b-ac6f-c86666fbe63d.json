@@ -1,0 +1,80 @@
+{
+    "type": "bundle",
+    "id": "bundle--63bcbc15-8627-4e85-805c-c03dd98ed1e0",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--deb22295-7e37-4a3b-ac6f-c86666fbe63d",
+            "created": "2021-10-20T15:05:19.271Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0014",
+                    "external_id": "DC0014"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "User Account Creation",
+            "description": "The initial establishment of a new user, service, or machine account within an operating system, cloud environment, or identity management system.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "WinEventLog:Security",
+                    "channel": "EventCode=4720"
+                },
+                {
+                    "name": "azure:audit",
+                    "channel": "Add user"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "CreateUser"
+                },
+                {
+                    "name": "saas:zoom",
+                    "channel": "New user created"
+                },
+                {
+                    "name": "saas:slack",
+                    "channel": "admin.user.create"
+                },
+                {
+                    "name": "m365:unified",
+                    "channel": "Add user"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "adduser"
+                },
+                {
+                    "name": "docker:daemon",
+                    "channel": "ExecCreate + usermod or useradd"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "useradd or adduser executed"
+                },
+                {
+                    "name": "networkdevice:syslog",
+                    "channel": "username <user> privilege <level>"
+                },
+                {
+                    "name": "saas:okta",
+                    "channel": "user.lifecycle.create"
+                }
+            ]
+        }
+    ]
+}

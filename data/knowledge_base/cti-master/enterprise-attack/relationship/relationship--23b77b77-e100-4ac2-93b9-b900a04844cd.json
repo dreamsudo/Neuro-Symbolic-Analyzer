@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--affabe44-b3ee-4ba5-a1c3-6e3d4dfd4388",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--23b77b77-e100-4ac2-93b9-b900a04844cd",
+            "created": "2019-04-17T13:46:38.708Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Securelist Brazilian Banking Malware July 2020",
+                    "description": "GReAT. (2020, July 14). The Tetrade: Brazilian banking malware goes global. Retrieved November 9, 2020.",
+                    "url": "https://securelist.com/the-tetrade-brazilian-banking-malware/97779/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:02:30.968Z",
+            "description": "[Astaroth](https://attack.mitre.org/software/S0373) has used an XOR-based algorithm to encrypt payloads twice with different keys.(Citation: Securelist Brazilian Banking Malware July 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--edb24a93-1f7a-4bbf-a738-1397a14662c6",
+            "target_ref": "attack-pattern--0d91b3c0-5e50-47c3-949a-2a796f04d144",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

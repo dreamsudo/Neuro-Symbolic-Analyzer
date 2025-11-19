@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--47225ded-c1e8-4736-ba65-7e48fe935d7c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--45376fe9-2a43-4e09-942e-82be661ed572",
+            "created": "2021-04-12T17:55:07.750Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Talos Cobalt Strike September 2020",
+                    "description": "Mavis, N. (2020, September 21). The Art and Science of Detecting Cobalt Strike. Retrieved September 12, 2024.",
+                    "url": "https://web.archive.org/web/20210219195905/https://talos-intelligence-site.s3.amazonaws.com/production/document_files/files/000/095/031/original/Talos_Cobalt_Strike.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:11:28.553Z",
+            "description": "[Cobalt Strike](https://attack.mitre.org/software/S0154) can modify Registry values within <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\<Excel Version>\\Excel\\Security\\AccessVBOM\\</code> to enable the execution of additional code.(Citation: Talos Cobalt Strike September 2020)",
+            "relationship_type": "uses",
+            "source_ref": "malware--a7881f21-e978-4fe4-af56-92c9416a2616",
+            "target_ref": "attack-pattern--57340c81-c025-4189-8fa0-fc7ede51bae4",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

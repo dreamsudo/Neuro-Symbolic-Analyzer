@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--45680970-7704-4b6d-b0e3-b7d488463ef9",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--e9404ebb-fce5-4596-b0f1-7f8a61578b32",
+            "created": "2019-01-29T19:09:26.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "PaloAlto UBoatRAT Nov 2017",
+                    "description": "Hayashi, K. (2017, November 28). UBoatRAT Navigates East Asia. Retrieved January 12, 2018.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:54:52.839Z",
+            "description": "[UBoatRAT](https://attack.mitre.org/software/S0333) encrypts instructions in its C2 network payloads using a simple XOR cipher.(Citation: PaloAlto UBoatRAT Nov 2017)",
+            "relationship_type": "uses",
+            "source_ref": "malware--518bb5f1-91f4-4ff2-b09d-5a94e1ebe95f",
+            "target_ref": "attack-pattern--24bfaeba-cb0d-4525-b3dc-507c77ecec41",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

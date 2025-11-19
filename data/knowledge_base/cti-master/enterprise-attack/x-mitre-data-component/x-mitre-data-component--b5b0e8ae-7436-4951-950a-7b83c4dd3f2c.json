@@ -1,0 +1,56 @@
+{
+    "type": "bundle",
+    "id": "bundle--3170ac3b-0c91-40b3-ad39-db096b8cc926",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--b5b0e8ae-7436-4951-950a-7b83c4dd3f2c",
+            "created": "2021-10-20T15:05:19.274Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0076",
+                    "external_id": "DC0076"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Instance Creation",
+            "description": "The initial provisioning and construction of a virtual machine (VM) or compute instance within a cloud infrastructure environment. This activity involves defining and allocating resources such as CPU, memory, storage, and networking to spin up a new compute instance. Examples:\n\n- AWS: creating an EC2 instance using RunInstances API calls.\n- Azure, creating a VM through the Azure Resource Manager (ARM).\n- GCP, an `instance.insert` action recorded.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "azure:activity",
+                    "channel": "Microsoft.Compute/virtualMachines/write: imageReference publisher NOT IN allowlist OR plan is new/unknown"
+                },
+                {
+                    "name": "gcp:audit",
+                    "channel": "compute.instances.insert: sourceImage not in approved projects OR has external image link"
+                },
+                {
+                    "name": "azure:activity",
+                    "channel": "MICROSOFT.COMPUTE/VIRTUALMACHINES/WRITE"
+                },
+                {
+                    "name": "gcp:audit",
+                    "channel": "compute.instances.insert"
+                },
+                {
+                    "name": "AWS:CloudTrail",
+                    "channel": "RunInstances,CreateImage"
+                }
+            ]
+        }
+    ]
+}

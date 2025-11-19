@@ -1,0 +1,125 @@
+{
+    "type": "bundle",
+    "id": "bundle--dd38a46e-b1c5-4c69-b340-4e09aed6bab8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--e905dad2-00d6-477c-97e8-800427abd0e8",
+            "created": "2021-10-20T15:05:19.273Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0040",
+                    "external_id": "DC0040"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "File Deletion",
+            "description": "Refers to events where files are removed from a system or storage device. These events can indicate legitimate housekeeping activities or malicious actions such as attackers attempting to cover their tracks. Monitoring file deletions helps organizations identify unauthorized or suspicious activities.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack",
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "File",
+                    "channel": "None"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "unlink/unlinkat on service binaries or data targets"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "file deletion"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "file_events"
+                },
+                {
+                    "name": "esxi:shell",
+                    "channel": "shell history"
+                },
+                {
+                    "name": "WinEventLog:Sysmon",
+                    "channel": "EventCode=23"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "PATH"
+                },
+                {
+                    "name": "esxi:shell",
+                    "channel": "/var/log/shell.log"
+                },
+                {
+                    "name": "esxi:hostd",
+                    "channel": "delete action"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "unlink, unlinkat, openat, write"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "exec rm -rf|dd if=/dev|srm|file unlink"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "unlink, unlinkat, rmdir"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "unlink, rename, open"
+                },
+                {
+                    "name": "linux:Sysmon",
+                    "channel": "EventCode=23"
+                },
+                {
+                    "name": "fs:fsusage",
+                    "channel": "unlink, fs_delete"
+                },
+                {
+                    "name": "docker:daemon",
+                    "channel": "container file operations"
+                },
+                {
+                    "name": "esxi:hostd",
+                    "channel": "rm, clearlogs, logrotate"
+                },
+                {
+                    "name": "esxi:hostd",
+                    "channel": "Datastore file operations"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "CREATE, DELETE, WRITE: Stored data manipulation attempts by unauthorized processes"
+                },
+                {
+                    "name": "auditd:SYSCALL",
+                    "channel": "unlink/unlinkat"
+                },
+                {
+                    "name": "WinEventLog:Microsoft-Windows-Backup",
+                    "channel": "Windows Backup Catalog deletion or catalog corruption"
+                },
+                {
+                    "name": "auditd:CONFIG_CHANGE",
+                    "channel": "/etc/fstab, /etc/systemd/*"
+                }
+            ]
+        }
+    ]
+}

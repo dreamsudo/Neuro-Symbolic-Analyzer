@@ -1,0 +1,37 @@
+{
+  "app_name": "Neurosymbolic AI",
+  "version": "7.1.0",
+  "paths": {
+    "raw_data": "data/raw",
+    "knowledge_base": "data/knowledge_base",
+    "models": "data/models",
+    "logs": "logs",
+    "reports": "reports",
+    "database": "data/db/neurosymbolic.db"
+  },
+  "ai_engine": {
+    "enabled": true,
+    "provider": "local",
+    "model_type": "llm", 
+    "model_name": "tinyllama",
+    "llm_path": "data/models/tinyllama-1.1b-chat.Q4_K_M.gguf",
+    "confidence_threshold": 0.75
+  },
+  "database": {
+    "download_enabled": true,
+    "mitre_url": "https://github.com/mitre/cti/archive/refs/heads/master.zip",
+    "local_folder_name": "cti-master",
+    "use_cache": true,
+    "use_sqlite_graph": true
+  },
+  "reasoning": {
+    "max_simulation_depth": 5,
+    "fuzzy_threshold": 0.6,
+    "enable_defender_simulation": true
+  },
+  "siem": {
+    "enabled": false,
+    "poll_interval": 60,
+    "source": "mock_api"
+  }
+}

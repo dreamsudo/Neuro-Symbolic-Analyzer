@@ -1,0 +1,83 @@
+{
+    "type": "bundle",
+    "id": "bundle--393ce4fa-5611-4d1c-8ad9-8cffa6963b34",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--06c00069-771a-4d57-8ef5-d3718c1a8771",
+            "created": "2020-06-26T04:01:09.648Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1556/003",
+                    "external_id": "T1556.003"
+                },
+                {
+                    "source_name": "Apple PAM",
+                    "description": "Apple. (2011, May 11). PAM - Pluggable Authentication Modules. Retrieved June 25, 2020.",
+                    "url": "https://opensource.apple.com/source/dovecot/dovecot-239/dovecot/doc/wiki/PasswordDatabase.PAM.txt"
+                },
+                {
+                    "source_name": "Man Pam_Unix",
+                    "description": "die.net. (n.d.). pam_unix(8) - Linux man page. Retrieved June 25, 2020.",
+                    "url": "https://linux.die.net/man/8/pam_unix"
+                },
+                {
+                    "source_name": "PAM Creds",
+                    "description": "Fern\u00e1ndez, J. M. (2018, June 27). Exfiltrating credentials via PAM backdoors & DNS requests. Retrieved November 17, 2024.",
+                    "url": "https://web.archive.org/web/20240303094335/https://x-c3ll.github.io/posts/PAM-backdoor-DNS/"
+                },
+                {
+                    "source_name": "Red Hat PAM",
+                    "description": "Red Hat. (n.d.). CHAPTER 2. USING PLUGGABLE AUTHENTICATION MODULES (PAM). Retrieved June 25, 2020.",
+                    "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/managing_smart_cards/pluggable_authentication_modules"
+                },
+                {
+                    "source_name": "PAM Backdoor",
+                    "description": "zephrax. (2018, August 3). linux-pam-backdoor. Retrieved June 25, 2020.",
+                    "url": "https://github.com/zephrax/linux-pam-backdoor"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-24T17:48:21.118Z",
+            "name": "Pluggable Authentication Modules",
+            "description": "Adversaries may modify pluggable authentication modules (PAM) to access user credentials or enable otherwise unwarranted access to accounts. PAM is a modular system of configuration files, libraries, and executable files which guide authentication for many services. The most common authentication module is <code>pam_unix.so</code>, which retrieves, sets, and verifies account authentication information in <code>/etc/passwd</code> and <code>/etc/shadow</code>.(Citation: Apple PAM)(Citation: Man Pam_Unix)(Citation: Red Hat PAM)\n\nAdversaries may modify components of the PAM system to create backdoors. PAM components, such as <code>pam_unix.so</code>, can be patched to accept arbitrary adversary supplied values as legitimate credentials.(Citation: PAM Backdoor)\n\nMalicious modifications to the PAM system may also be abused to steal credentials. Adversaries may infect PAM resources with code to harvest user credentials, since the values exchanged with PAM components may be plain-text since PAM does not store passwords.(Citation: PAM Creds)(Citation: Apple PAM)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Scott Knight, @sdotknight, VMware Carbon Black",
+                "George Allen, VMware Carbon Black"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS"
+            ],
+            "x_mitre_version": "2.1"
+        }
+    ]
+}

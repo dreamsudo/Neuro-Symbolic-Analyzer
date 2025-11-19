@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--9c5b606a-fdfc-453b-a8c2-d4d93571721e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--3bc57dac-c8b3-4d6d-8f4c-3e7d515cdf87",
+            "created": "2020-01-30T14:24:35.600Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Github UACMe",
+                    "description": "UACME Project. (2016, June 16). UACMe. Retrieved July 26, 2016.",
+                    "url": "https://github.com/hfiref0x/UACME"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:43:44.292Z",
+            "description": "Check for common UAC bypass weaknesses on Windows systems to be aware of the risk posture and address issues where appropriate.(Citation: Github UACMe)",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--cc2399fd-3cd3-4319-8d0a-fbd6420cdaf8",
+            "target_ref": "attack-pattern--120d5519-3098-4e1c-9191-2aa61232f073",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

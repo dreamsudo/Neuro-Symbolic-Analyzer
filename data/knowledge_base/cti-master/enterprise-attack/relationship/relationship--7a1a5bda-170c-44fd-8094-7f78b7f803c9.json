@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--d856ca54-698c-4f92-93f3-25bd208e5e2c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--7a1a5bda-170c-44fd-8094-7f78b7f803c9",
+            "created": "2019-05-07T17:47:25.127Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "ESET Recon Snake Nest",
+                    "description": "Boutin, J. and Faou, M. (2018). Visiting the snake nest. Retrieved May 7, 2019.",
+                    "url": "https://recon.cx/2018/brussels/resources/slides/RECON-BRX-2018-Visiting-The-Snake-Nest.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:55:27.562Z",
+            "description": "[Epic](https://attack.mitre.org/software/S0091) has overwritten the function pointer in the extra window memory of Explorer's Shell_TrayWnd in order to execute malicious code in the context of the explorer.exe process.(Citation: ESET Recon Snake Nest)",
+            "relationship_type": "uses",
+            "source_ref": "malware--6b62e336-176f-417b-856a-8552dd8c44e1",
+            "target_ref": "attack-pattern--0042a9f5-f053-4769-b3ef-9ad018dfa298",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

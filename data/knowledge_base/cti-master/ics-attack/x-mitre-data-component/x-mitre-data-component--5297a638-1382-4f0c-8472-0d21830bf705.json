@@ -1,0 +1,97 @@
+{
+    "type": "bundle",
+    "id": "bundle--509e8691-fc38-45f0-af12-ff9c7bbfdb8e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--5297a638-1382-4f0c-8472-0d21830bf705",
+            "created": "2021-10-20T15:05:19.273Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0060",
+                    "external_id": "DC0060"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-11-12T22:03:39.105Z",
+            "name": "Service Creation",
+            "description": "The registration of a new service or daemon on an operating system.\n\n*Data Collection Measures:*\n\n- Windows Event Logs\n    - Event ID 4697 - Captures the creation of a new Windows service.\n    - Event ID 7045 - Captures services installed by administrators or adversaries.\n    - Event ID 7034 - Could indicate malicious service modification or exploitation.\n- Sysmon Logs\n    - Sysmon Event ID 1 - Process Creation (captures service executables).\n    - Sysmon Event ID 4 - Service state changes (detects service installation).\n    - Sysmon Event ID 13 - Registry modifications (captures service persistence changes).\n- PowerShell Logging\n    - Monitor `New-Service` and `Set-Service` PowerShell cmdlets in Event ID 4104 (Script Block Logging).\n- Linux/macOS Collection Methods\n    - AuditD & Syslog Daemon Logs (`/var/log/syslog`, `/var/log/messages`, `/var/log/daemon.log`)\n    - AuditD Rules:\n        - `auditctl -w /etc/systemd/system -p wa -k service_creation`\n        - Detects changes to `systemd` service configurations.\n- Systemd Journals (`journalctl -u <service_name>`)\n    - Captures newly created systemd services.\n- LaunchDaemons & LaunchAgents (macOS)\n    - Monitor `/Library/LaunchDaemons/` and `/Library/LaunchAgents/` for new plist files.",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "ics-attack",
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0",
+            "x_mitre_log_sources": [
+                {
+                    "name": "Service",
+                    "channel": "None"
+                },
+                {
+                    "name": "WinEventLog:System",
+                    "channel": "EventCode=7036"
+                },
+                {
+                    "name": "auditd:CONFIG_CHANGE",
+                    "channel": "creation or modification of systemd services"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "Process Events and Launch Daemons"
+                },
+                {
+                    "name": "WinEventLog:System",
+                    "channel": "EventCode=7045"
+                },
+                {
+                    "name": "linux:osquery",
+                    "channel": "newly registered unit file with ExecStart pointing to unknown binary"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "creation or loading of new launchd services"
+                },
+                {
+                    "name": "WinEventLog:Security",
+                    "channel": "EventCode=4697"
+                },
+                {
+                    "name": "linux:syslog",
+                    "channel": "systemctl start/enable with uncommon binary paths"
+                },
+                {
+                    "name": "WinEventLog:System",
+                    "channel": "EventCode=7031, 7034"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "launch_daemons"
+                },
+                {
+                    "name": "macos:unifiedlog",
+                    "channel": "launchd loading new LaunchDaemon or changes to existing daemon configuration"
+                },
+                {
+                    "name": "macos:osquery",
+                    "channel": "detection of new launch agents with suspicious paths or unsigned binaries"
+                },
+                {
+                    "name": "kubernetes:audit",
+                    "channel": "create"
+                },
+                {
+                    "name": "containerLogs:systemd_unit_files",
+                    "channel": "unit file referencing container binary with persistent flags"
+                }
+            ]
+        }
+    ]
+}

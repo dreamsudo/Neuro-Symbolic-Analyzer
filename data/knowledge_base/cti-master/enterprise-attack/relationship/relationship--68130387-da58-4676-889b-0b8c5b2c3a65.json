@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--c0c12fe7-3708-4d73-bbb2-26b13f22b7f3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--68130387-da58-4676-889b-0b8c5b2c3a65",
+            "created": "2022-01-11T14:58:01.888Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Prevailion DarkWatchman 2021",
+                    "description": "Smith, S., Stafford, M. (2021, December 14). DarkWatchman: A new evolution in fileless techniques. Retrieved January 10, 2022.",
+                    "url": "https://web.archive.org/web/20220629230035/https://www.prevailion.com/darkwatchman-new-fileless-techniques/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:20:47.950Z",
+            "description": "[DarkWatchman](https://attack.mitre.org/software/S0673) has the ability to enumerate file and folder names.(Citation: Prevailion DarkWatchman 2021)",
+            "relationship_type": "uses",
+            "source_ref": "malware--63686509-069b-4143-99ea-4e59cad6cb2a",
+            "target_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--f2ee6baf-b3e4-444b-b7fa-1f9608b19577",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--1e049e66-14ce-46d5-8af1-d93ea35f4aec",
+            "created": "2022-02-21T15:38:23.557Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Unit 42 Gamaredon February 2022",
+                    "description": "Unit 42. (2022, February 3). Russia\u2019s Gamaredon aka Primitive Bear APT Group Actively Targeting Ukraine. Retrieved February 21, 2022.",
+                    "url": "https://unit42.paloaltonetworks.com/gamaredon-primitive-bear-ukraine-update-2021/"
+                },
+                {
+                    "source_name": "VenereCiscoTalos_Gamaredon_Mar2025",
+                    "description": "Venere, G. (2025, March 28). Gamaredon campaign abuses LNK files to distribute Remcos backdoor. Retrieved July 23, 2025.",
+                    "url": "https://blog.talosintelligence.com/gamaredon-campaign-distribute-remcos/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-08-21T20:15:07.734Z",
+            "description": "[Gamaredon Group](https://attack.mitre.org/groups/G0047) has used legitimate process names to hide malware including <code>svchosst</code>.(Citation: Unit 42 Gamaredon February 2022) Additionally, [Gamaredon Group](https://attack.mitre.org/groups/G0047) disguised malicious ZIP archives as Office documents that are related to the invasion.(Citation: VenereCiscoTalos_Gamaredon_Mar2025)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf",
+            "target_ref": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

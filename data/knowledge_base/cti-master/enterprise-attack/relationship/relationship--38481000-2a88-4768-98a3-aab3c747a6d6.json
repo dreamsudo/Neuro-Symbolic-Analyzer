@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--e2760b98-28e5-4a18-a703-17caf95e4e31",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--38481000-2a88-4768-98a3-aab3c747a6d6",
+            "created": "2024-07-26T17:54:15.810Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Symantec Daggerfly 2024",
+                    "description": "Threat Hunter Team. (2024, July 23). Daggerfly: Espionage Group Makes Major Update to Toolset. Retrieved July 25, 2024.",
+                    "url": "https://symantec-enterprise-blogs.security.com/threat-intelligence/daggerfly-espionage-updated-toolset"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:07:54.791Z",
+            "description": "[Daggerfly](https://attack.mitre.org/groups/G1034) is linked to the use and potentially development of [MacMa](https://attack.mitre.org/software/S1016) through overlapping command and control infrastructure and shared libraries with other unique tools.(Citation: Symantec Daggerfly 2024)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--f3be6240-f68e-47e1-90d2-ad8f3b3bb8a6",
+            "target_ref": "malware--bdee9574-7479-4073-a7dc-e86d8acd073a",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

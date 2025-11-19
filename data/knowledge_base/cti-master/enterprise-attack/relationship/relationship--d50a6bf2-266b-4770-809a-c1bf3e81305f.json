@@ -1,0 +1,62 @@
+{
+    "type": "bundle",
+    "id": "bundle--23927241-f5a1-4486-af34-208cabb6f02f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--d50a6bf2-266b-4770-809a-c1bf3e81305f",
+            "created": "2021-09-27T20:37:38.840Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "Crowdstrike Qakbot October 2020",
+                    "description": "CS. (2020, October 7). Duck Hunting with Falcon Complete: A Fowl Banking Trojan Evolves, Part 2. Retrieved September 27, 2021.",
+                    "url": "https://www.crowdstrike.com/blog/duck-hunting-with-falcon-complete-qakbot-zip-based-campaign/"
+                },
+                {
+                    "source_name": "Cyberint Qakbot May 2021",
+                    "description": "Cyberint. (2021, May 25). Qakbot Banking Trojan. Retrieved September 27, 2021.",
+                    "url": "https://blog.cyberint.com/qakbot-banking-trojan"
+                },
+                {
+                    "source_name": "Group IB Ransomware September 2020",
+                    "description": "Group IB. (2020, September). LOCK LIKE  A PRO. Retrieved November 17, 2024.",
+                    "url": "https://web.archive.org/web/20220119114433/https://groupib.pathfactory.com/ransomware-reports/prolock_wp"
+                },
+                {
+                    "source_name": "Trend Micro Black Basta October 2022",
+                    "description": "Kenefick, I. et al. (2022, October 12). Black Basta Ransomware Gang Infiltrates Networks via QAKBOT, Brute Ratel, and Cobalt Strike. Retrieved February 6, 2023.",
+                    "url": "https://www.trendmicro.com/en_us/research/22/j/black-basta-infiltrates-networks-via-qakbot-brute-ratel-and-coba.html"
+                },
+                {
+                    "source_name": "Trend Micro Qakbot May 2020",
+                    "description": "Mendoza, E. et al. (2020, May 25). Qakbot Resurges, Spreads through VBS Files. Retrieved September 27, 2021.",
+                    "url": "https://www.trendmicro.com/vinfo/ph/security/news/cybercrime-and-digital-threats/qakbot-resurges-spreads-through-vbs-files"
+                },
+                {
+                    "source_name": "Kroll Qakbot June 2020",
+                    "description": "Sette, N. et al. (2020, June 4). Qakbot Malware Now Exfiltrating Emails for Sophisticated Thread Hijacking Attacks. Retrieved September 27, 2021.",
+                    "url": "https://www.kroll.com/en/insights/publications/cyber/qakbot-malware-exfiltrating-emails-thread-hijacking-attacks"
+                },
+                {
+                    "source_name": "Trend Micro Qakbot December 2020",
+                    "description": "Trend Micro. (2020, December 17). QAKBOT: A decade-old malware still with new tricks. Retrieved November 17, 2024.",
+                    "url": "https://success.trendmicro.com/en-US/solution/KA-0011282"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T22:49:46.021Z",
+            "description": "[QakBot](https://attack.mitre.org/software/S0650) can use VBS to download and execute malicious files.(Citation: Trend Micro Qakbot May 2020)\n(Citation: Kroll Qakbot June 2020)(Citation: Crowdstrike Qakbot October 2020)(Citation: Trend Micro Qakbot December 2020)(Citation: Cyberint Qakbot May 2021)(Citation: Group IB Ransomware September 2020)(Citation: Trend Micro Black Basta October 2022)",
+            "relationship_type": "uses",
+            "source_ref": "malware--edc5e045-5401-42bb-ad92-52b5b2ee0de9",
+            "target_ref": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

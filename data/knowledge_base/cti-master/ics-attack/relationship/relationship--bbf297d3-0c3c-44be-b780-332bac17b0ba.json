@@ -1,0 +1,24 @@
+{
+    "type": "bundle",
+    "id": "bundle--677a8c86-a04c-4875-8566-0b88f44418d7",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--bbf297d3-0c3c-44be-b780-332bac17b0ba",
+            "created": "2020-09-21T17:59:24.739Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:26:43.150Z",
+            "description": "Devices should authenticate all messages between master and outstation assets.\n",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--72e46e53-e12d-4106-9c70-33241b6ed549",
+            "target_ref": "attack-pattern--40b300ba-f553-48bf-862e-9471b220d455",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "bundle",
+    "id": "bundle--b6608ef4-7b25-4754-b5df-04703664f5da",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--4ac5b593-8f47-46cc-9af3-fcb0eb20f66e",
+            "created": "2020-10-15T02:02:39.748Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "external_references": [
+                {
+                    "source_name": "Bitdefender StrongPity June 2020",
+                    "description": "Tudorica, R. et al. (2020, June 30). StrongPity APT - Revealing Trojanized Tools, Working Hours and Infrastructure. Retrieved July 20, 2020.",
+                    "url": "https://www.bitdefender.com/files/News/CaseStudies/study/353/Bitdefender-Whitepaper-StrongPity-APT.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-28T15:46:36.105Z",
+            "description": "[PROMETHIUM](https://attack.mitre.org/groups/G0056) has created self-signed certificates to sign malicious installers.(Citation: Bitdefender StrongPity June 2020)",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--efed95ba-d7e8-47ff-8c53-99c42426ee7c",
+            "target_ref": "attack-pattern--34b3f738-bd64-40e5-a112-29b0542bc8bf",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

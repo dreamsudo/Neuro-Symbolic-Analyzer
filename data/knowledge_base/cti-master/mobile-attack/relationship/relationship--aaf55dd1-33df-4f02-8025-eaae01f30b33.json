@@ -1,0 +1,37 @@
+{
+    "type": "bundle",
+    "id": "bundle--da690b6c-d8cf-4458-be0f-475b3417d6dd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--aaf55dd1-33df-4f02-8025-eaae01f30b33",
+            "created": "2017-12-14T16:46:06.044Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "forcepoint_bitter",
+                    "description": "Dela Paz, R. (2016, October 21). BITTER: a targeted attack against Pakistan. Retrieved March 1, 2024.",
+                    "url": "https://web.archive.org/web/20220706125432/https://www.forcepoint.com/blog/x-labs/bitter-targeted-attack-against-pakistan"
+                },
+                {
+                    "source_name": "Lookout-EnterpriseApps",
+                    "description": "Lookout. (2016, May 25). 5 active mobile threats spoofing enterprise apps. Retrieved December 19, 2016.",
+                    "url": "https://blog.lookout.com/blog/2016/05/25/spoofed-apps/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:50:48.951Z",
+            "description": "[AndroRAT](https://attack.mitre.org/software/S0292) collects contact list information.(Citation: Lookout-EnterpriseApps)(Citation: forcepoint_bitter) ",
+            "relationship_type": "uses",
+            "source_ref": "malware--a3dad2be-ce62-4440-953b-00fbce7aba93",
+            "target_ref": "attack-pattern--e0b9ecb8-a7d1-43c7-aa30-8e19c6a92c86",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

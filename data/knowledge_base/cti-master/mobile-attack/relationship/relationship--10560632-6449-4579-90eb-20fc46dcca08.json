@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--19dad631-79bb-44b1-b6a2-49b75f9768af",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--10560632-6449-4579-90eb-20fc46dcca08",
+            "created": "2020-10-29T19:21:23.200Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "WeLiveSecurity AdDisplayAshas",
+                    "description": "L. Stefanko. (2019, October 24). Tracking down the developer of Android adware affecting millions of users. Retrieved October 29, 2020.",
+                    "url": "https://www.welivesecurity.com/2019/10/24/tracking-down-developer-android-adware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-04-16T21:47:01.070Z",
+            "description": "[Android/AdDisplay.Ashas](https://attack.mitre.org/software/S0525) can check that the device IP is not in the range of known Google IP addresses before triggering the payload and can delay payload deployment to avoid detection during testing and avoid association with unwanted ads.(Citation: WeLiveSecurity AdDisplayAshas)",
+            "relationship_type": "uses",
+            "source_ref": "malware--f7e7b736-2cff-4c2a-9232-352cd383463a",
+            "target_ref": "attack-pattern--6ffad4be-bfe0-424f-abde-4d9a84a800ad",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}

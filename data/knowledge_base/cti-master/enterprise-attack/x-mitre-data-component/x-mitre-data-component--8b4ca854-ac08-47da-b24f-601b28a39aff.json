@@ -1,0 +1,34 @@
+{
+    "type": "bundle",
+    "id": "bundle--eb9c9c58-fd9d-4085-a1ed-25993e3558c8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "x-mitre-data-component",
+            "id": "x-mitre-data-component--8b4ca854-ac08-47da-b24f-601b28a39aff",
+            "created": "2021-10-20T15:05:19.272Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/datacomponents/DC0026",
+                    "external_id": "DC0026"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-10-21T15:10:28.402Z",
+            "name": "Image Deletion",
+            "description": "Removal of a virtual machine image in a cloud infrastructure (ex: Azure Compute Service Images DELETE) Examples: \n\n- Azure Compute Service Image Deletion\n    - Example: Deleting a virtual machine image using Azure CLI: `az image delete --name MyImage --resource-group MyResourceGroup`\n- AWS EC2 AMI (Amazon Machine Image) Deletion\n    - Example: Deregistering an AMI in AWS: `aws ec2 deregister-image --image-id ami-1234567890abcdef0`\n- Google Cloud Compute Engine Image Deletion\n    - Example: Deleting a custom image in Google Cloud: `gcloud compute images delete my-custom-image`\n- VMware vSphere\n    - Example: Deleting a VM image/template from a vSphere environment:\n\nThis data component can be collected through the following measures:\n\nEnable Cloud Platform Logging\n\n- Azure: Enable \"Activity Logs\" to capture DELETE requests to `Microsoft.Compute/images`.\n- AWS: Use AWS CloudTrail to monitor `DeregisterImage` or `DeleteSnapshot` API calls.\n- Google Cloud: Enable \"Cloud Audit Logs\" to track image deletion events under `compute.googleapis.com/images`.\n\nAPI Monitoring\n\n- Monitor API activity to track the deletion of images using:\n    - AWS SDK/CLI `DeregisterImage` or `DeleteSnapshot`.\n    - Azure REST API DELETE operations for images.\n    - Google Cloud Compute Engine APIs for image deletion.\n\nCloud SIEM Integration\n\n- Ingest logs into a centralized SIEM platform for monitoring and alerting:\n\nEvent Correlation\n\n- Correlate image deletion events with unusual account activity or concurrent unauthorized operations.\n",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_version": "2.0",
+            "x_mitre_attack_spec_version": "3.3.0"
+        }
+    ]
+}

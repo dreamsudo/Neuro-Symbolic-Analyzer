@@ -1,0 +1,32 @@
+{
+    "type": "bundle",
+    "id": "bundle--12db5bb6-df65-4c8c-9f3d-3c7968b58a17",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "relationship",
+            "id": "relationship--49c0c003-433c-467f-93b7-ca585aab8232",
+            "created": "2023-08-16T16:46:17.841Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "cyble_chameleon_0423",
+                    "description": "Cyble Research & Intelligence Labs. (2023, April 13). Banking Trojan targeting mobile users in Australia and Poland. Retrieved August 16, 2023.",
+                    "url": "https://cyble.com/blog/chameleon-a-new-android-malware-spotted-in-the-wild/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "modified": "2025-07-07T22:00:48.643Z",
+            "description": "[Chameleon](https://attack.mitre.org/software/S1083) has registered as an `SMSBroadcast` receiver to monitor incoming SMS messages.(Citation: cyble_chameleon_0423)",
+            "relationship_type": "uses",
+            "source_ref": "malware--2cf00c5a-857d-4cb6-8f03-82f15bee0f6f",
+            "target_ref": "attack-pattern--39dd7871-f59b-495f-a9a5-3cb8cc50c9b2",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_deprecated": false,
+            "x_mitre_attack_spec_version": "3.2.0"
+        }
+    ]
+}
