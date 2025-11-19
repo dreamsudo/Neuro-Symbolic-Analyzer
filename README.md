@@ -1,14 +1,12 @@
 Here is your clean, bullet-listed version of the Neurosymbolic AI Enterprise Manual formatted for a README.md on GitHub.
 
-⸻
-
 Neurosymbolic AI – Enterprise Manual
 
 Version: 7.0.0
 Author: Psypher Labs
 Architecture: Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic)
 
-⸻
+
 
 System Overview
 	•	Bridges unstructured data (logs, reports) and structured reasoning (logic, math)
@@ -18,7 +16,7 @@ System Overview
 	•	Reasoning: Predicts future attack paths using Kripke Semantics and Game Theory
 	•	Prediction: Uses Bayesian updates + Fuzzy Logic for threat probability
 
-⸻
+
 
 Installation & Setup
 	•	Prerequisites:
@@ -37,8 +35,6 @@ cd directory
 python3 scripts/preflight.py
 
 
-
-⸻
 
 Configuration Reference
 
@@ -71,7 +67,7 @@ assets.json
 	•	"encrypt": 10.0
 	•	"phishing": 1.0
 
-⸻
+
 
 Data Management
 	•	Input Files:
@@ -87,7 +83,7 @@ Data Management
 	•	edges: Relationships and probabilities
 	•	feedback: User corrections (true/false positives)
 
-⸻
+
 
 Operational Guide
 	•	Run Analysis
@@ -103,7 +99,7 @@ python3 -m src.main
 	•	Reasoning Trace: Fact → Inference → Prediction
 	•	Alerts: Triggered only for future threats
 
-⸻
+
 
 Tools & Utilities
 	•	Graph Visualizer
@@ -124,7 +120,7 @@ python3 scripts/preflight.py
 
 
 
-⸻
+
 
 Algorithms & Logic
 	•	Sliding Window NLP (semantic_analysis.py)
@@ -138,7 +134,7 @@ Algorithms & Logic
 	•	Minimax simulation
 	•	Chooses optimal Defender action based on Attacker utility
 
-⸻
+
 
 Troubleshooting
 	•	Data changes ignored:
@@ -155,7 +151,3 @@ Troubleshooting
 	•	Blank graph output:
 	•	Cause: No input data
 	•	Fix: Add .txt to data/raw/, enable auto-download in settings.json
-
-⸻
-
-Let me know if you want this saved as a README.md or packaged with a .gitignore and setup script.
