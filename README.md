@@ -75,20 +75,24 @@ Defines Game Theory weights:
 Data Management
 
 Input Files
-	•	.txt: Human-written incident narratives
+	•  .txt: Human-written incident narratives
 Example:
+
 T1059 was detected on Host A. This suggests T1003.
 	•	.json: Structured machine logs
 Example:
+
 [{"message": "...", "event_id": 4624}]
 
 Caching Behavior
+
 	•	Cache file: data/knowledge_base/mitre_cache.pkl
 	•	To refresh:
 	•	Delete .pkl, or
 	•	Set "use_cache": false in settings.json
 
 Graph Database (SQLite)
+
 	•	File: data/db/neurosymbolic.db
 	•	Tables:
 	•	nodes: Threat identifiers and descriptions
@@ -103,6 +107,7 @@ Run Main Analyzer
 python3 -m src.main
 
 Output Meaning
+
 	•	Risk Scores:
 	•	neural: BERT classifier
 	•	llm: Extractive confidence
@@ -134,6 +139,7 @@ Preflight Environment Checker
 python3 scripts/preflight.py
 
 Validates:
+
 	•	Python packages (e.g., torch, networkx, llama-cpp-python)
 	•	Model file presence
 	•	Directory write permissions
@@ -144,6 +150,7 @@ Algorithms & Logic
 1. Sliding Window NLP
 
 File: src/semantic_analysis.py
+
 	•	Treats text as a character stream
 	•	Searches for:
 
@@ -155,6 +162,7 @@ File: src/semantic_analysis.py
 2. Epistemic Math
 
 File: src/epistemic_math.py
+
 	•	Bayesian Update:
 
 P(H|E) = [P(E|H) * P(H)] / P(E)
@@ -166,16 +174,7 @@ P(H|E) = [P(E|H) * P(H)] / P(E)
 3. Game Theory Engine
 
 File: src/epistemic_reasoning.py
+
 	•	Minimax Algorithm:
 	•	Simulates defender actions: isolate, monitor, patch
 	•	Chooses action that minimizes attacker’s utility
-
-
-Troubleshooting
-
-Symptom	Cause	Solution
-Output doesn’t update	Stale cache	Delete .pkl or set "use_cache": false
-ModuleNotFoundError: src	Wrong directory context	Run from root folder or use patched main.py
-LLM_NOT_LOADED	Model or library missing	Run preflight.py, ensure .gguf model exists
-1.16 Confidence	Overflow in logic	Use version 7.0+ (includes probability clamping)
-Blank HTML Graph	No input data	Place .txt in data/raw/, enable download_enabled
