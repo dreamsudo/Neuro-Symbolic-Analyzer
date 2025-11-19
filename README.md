@@ -9,6 +9,7 @@ Architecture: Hybrid Neuro-Symbolic (Deep Learning + Epistemic Logic)
 
 
 System Overview
+
 	•	Bridges unstructured data (logs, reports) and structured reasoning (logic, math)
 	•	Core Capabilities:
 	•	Perception: Transformer models (BERT/LLM) extract threat entities from text
@@ -19,6 +20,7 @@ System Overview
 
 
 Installation & Setup
+
 	•	Prerequisites:
 	•	OS: Ubuntu/Debian Linux or macOS
 	•	Python: 3.8+
@@ -39,6 +41,7 @@ python3 scripts/preflight.py
 Configuration Reference
 
 settings.json
+
 	•	Paths
 	•	raw_data: Directory for logs
 	•	database: Path to SQLite DB
@@ -60,6 +63,7 @@ settings.json
 	•	enabled: Enable alert polling
 
 assets.json
+
 	•	Assets:
 	•	"DomainController": 100
 	•	"Printer": 5
@@ -70,6 +74,7 @@ assets.json
 
 
 Data Management
+
 	•	Input Files:
 	•	.txt: Incident narratives
 	•	.json: Structured logs (event logs)
@@ -86,6 +91,7 @@ Data Management
 
 
 Operational Guide
+
 	•	Run Analysis
 
 python3 -m src.main
@@ -123,6 +129,7 @@ python3 scripts/preflight.py
 
 
 Algorithms & Logic
+
 	•	Sliding Window NLP (semantic_analysis.py)
 	•	Detects threat chains using a 200-char window
 	•	Example keywords: "leads to", "if/then", "results in"
@@ -137,6 +144,7 @@ Algorithms & Logic
 
 
 Troubleshooting
+
 	•	Data changes ignored:
 	•	Cause: Old .pkl cache
 	•	Fix: Delete mitre_cache.pkl or disable cache in settings.json
